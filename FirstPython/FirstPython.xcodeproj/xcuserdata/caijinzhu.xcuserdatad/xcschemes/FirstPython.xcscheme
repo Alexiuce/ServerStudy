@@ -59,7 +59,7 @@
       </MacroExpansion>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "$(SRCROOT)/SocketWork.py"
+            argument = "$(SRCROOT)/RenameAll.py"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

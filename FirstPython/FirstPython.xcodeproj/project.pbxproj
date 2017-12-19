@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		561599B01FE7BDAF00AB5B26 /* SocketWork.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SocketWork.py; sourceTree = "<group>"; };
+		564148A81FE8F9DE0030659C /* RenameAll.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = RenameAll.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -15,6 +16,7 @@
 			isa = PBXGroup;
 			children = (
 				561599B01FE7BDAF00AB5B26 /* SocketWork.py */,
+				564148A81FE8F9DE0030659C /* RenameAll.py */,
 			);
 			sourceTree = "<group>";
 		};
