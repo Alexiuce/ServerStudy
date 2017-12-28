@@ -3,6 +3,8 @@
 
 from bs4 import BeautifulSoup
 import urllib2
+import os
+from threading import Thread
 
 
 def getHtml(main_url):
@@ -11,7 +13,7 @@ def getHtml(main_url):
     req = urllib2.Request(main_url, headers=headers)
     response = urllib2.urlopen(req)
     html = response.read()
-    return html.decode('gbk')
+    return html.decode('gbk','ignore')
 
 def parseHtml(html):
     formated_html = BeautifulSoup(html,'lxml')
@@ -45,10 +47,10 @@ def parseTextInHtml(tUrl = ""):
 
 
 def save_to_file(filename,data):
+
     file = open(filename,'a')
     file.write(data)
     file.closed
-
 
 
 
@@ -57,11 +59,28 @@ if __name__ == '__main__':
     # 获取所有章节列表
     charpters = parseHtml(getHtml("http://www.biquge5200.com/2_2247/"))
 
+    if os.path.exists('LTJ') == False:
+        os.mkdir('LTJ')
+    os.chdir('LTJ')
     for charpter in charpters:
         charpter_url = charpter['href'].encode('utf-8')
         charpter_title = charpter.getText().encode('utf-8')
-        text = parseTextInHtml(charpter_url)
-        save_to_file(charpter_title,text)
+
+        if charpter_title.find("第") != 0:
+            continue
+
+        print charpter_title
+        # text = parseTextInHtml(charpter_url)
+        #
+        # save_to_file(charpter_title,text)
+
+
+
+
+
+
+
+
 
 
 
