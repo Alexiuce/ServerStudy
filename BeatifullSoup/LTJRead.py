@@ -20,18 +20,21 @@ def parseHtml(html):
     dt_tag = formated_html.find_all("dl")[0]
     result = []
     flag = 0
-    # print dt_tag
+
     for child_node in dt_tag.children:
-        # print type(child_node)
-        # print child_node.name
-        # print child_node
-        # print "=="*30
+
         if child_node.name == 'dt':
             flag += 1
         if flag ==2 and child_node.name == 'dd':
-            # print "~"*10
             result.append(child_node.a)
     return result
+
+def parseTitleInHtml(html):
+    html_soup = BeautifulSoup(html,'lxml')
+    title = html_soup.find_all(id="info")[0]
+    tcontext = title.h1.getText().encode('utf-8')
+    return tcontext
+
 
 def parseTextInHtml(tUrl = ""):
     html = getHtml(tUrl)
@@ -56,23 +59,33 @@ def save_to_file(filename,data):
 
 
 if __name__ == '__main__':
-    # 获取所有章节列表
-    charpters = parseHtml(getHtml("http://www.biquge5200.com/2_2247/"))
 
-    if os.path.exists('LTJ') == False:
-        os.mkdir('LTJ')
-    os.chdir('LTJ')
+    target_url = "http://www.biquge5200.com/0_857/"
+    # 根据url 获取html内容
+    html_text = getHtml(target_url)
+    # 解析文章名称
+    title = parseTitleInHtml(html_text)
+    # 获取所有章节列表
+    charpters = parseHtml(html_text)
+
+    # 根据文章名称创建文件夹(在当前文件夹下创建)
+    if os.path.exists(title) == False:
+        os.mkdir(title)
+    os.chdir(title)
+
+    # 遍历所有章节的元素
     for charpter in charpters:
+        # 获取章节的url地址
         charpter_url = charpter['href'].encode('utf-8')
+        # 获取章节的名称
         charpter_title = charpter.getText().encode('utf-8')
 
         if charpter_title.find("第") != 0:
             continue
-
         print charpter_title
-        # text = parseTextInHtml(charpter_url)
-        #
-        # save_to_file(charpter_title,text)
+        text = parseTextInHtml(charpter_url)
+
+        save_to_file(charpter_title + '.txt' ,text)
 
 
 
