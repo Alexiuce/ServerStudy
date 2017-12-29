@@ -7,16 +7,17 @@ import os
 from threading import Thread
 
 
-def getHtml(main_url):
+def get_html(main_url):
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     headers = {'User-Agent': user_agent}
     req = urllib2.Request(main_url, headers=headers)
     response = urllib2.urlopen(req)
     html = response.read()
-    return html.decode('gbk','ignore')
+    return html.decode('gbk', 'ignore')
 
-def parseHtml(html):
-    formated_html = BeautifulSoup(html,'lxml')
+
+def parse_html(html):
+    formated_html = BeautifulSoup(html, 'lxml')
     dt_tag = formated_html.find_all("dl")[0]
     result = []
     flag = 0
@@ -29,15 +30,16 @@ def parseHtml(html):
             result.append(child_node.a)
     return result
 
-def parseTitleInHtml(html):
+
+def parse_title_in_html(html):
     html_soup = BeautifulSoup(html,'lxml')
     title = html_soup.find_all(id="info")[0]
     tcontext = title.h1.getText().encode('utf-8')
     return tcontext
 
 
-def parseTextInHtml(tUrl = ""):
-    html = getHtml(tUrl)
+def parse_text_in_html(t_url = ""):
+    html = getHtml(t_url)
     html_soup = BeautifulSoup(html,'lxml')
     html_content = html_soup.find_all(id="content")[0]
     total_text = ""
@@ -49,27 +51,25 @@ def parseTextInHtml(tUrl = ""):
     return total_text
 
 
-def save_to_file(filename,data):
+def save_to_file(filename, data):
 
-    file = open(filename,'a')
-    file.write(data)
-    file.closed
-
-
+    f = open(filename, 'a')
+    f.write(data)
+    f.closed
 
 
 if __name__ == '__main__':
 
     target_url = "http://www.biquge5200.com/0_857/"
     # 根据url 获取html内容
-    html_text = getHtml(target_url)
+    html_text = get_html(target_url)
     # 解析文章名称
-    title = parseTitleInHtml(html_text)
+    title = parse_title_in_html(html_text)
     # 获取所有章节列表
-    charpters = parseHtml(html_text)
+    charpters = parse_html(html_text)
 
     # 根据文章名称创建文件夹(在当前文件夹下创建)
-    if os.path.exists(title) == False:
+    if os.path.exists(title) is False:
         os.mkdir(title)
     os.chdir(title)
 
@@ -83,9 +83,9 @@ if __name__ == '__main__':
         if charpter_title.find("第") != 0:
             continue
         print charpter_title
-        text = parseTextInHtml(charpter_url)
+        text = parse_text_in_html(charpter_url)
 
-        save_to_file(charpter_title + '.txt' ,text)
+        save_to_file(charpter_title + '.txt', text)
 
 
 
