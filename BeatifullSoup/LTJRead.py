@@ -38,9 +38,9 @@ def parse_title_in_html(html):
     return tcontext
 
 
-def parse_text_in_html(t_url = ""):
-    html = getHtml(t_url)
-    html_soup = BeautifulSoup(html,'lxml')
+def parse_text_in_html(t_url):
+    html = get_html(t_url)
+    html_soup = BeautifulSoup(html, 'lxml')
     html_content = html_soup.find_all(id="content")[0]
     total_text = ""
     for item in html_content.strings:
@@ -58,9 +58,16 @@ def save_to_file(filename, data):
     f.closed
 
 
+def handle_url_text(url, filename):
+    text = parse_title_in_html(url)
+    save_to_file(filename, text)
+    # print url
+    # print filename
+
+
 if __name__ == '__main__':
 
-    target_url = "http://www.biquge5200.com/0_857/"
+    target_url = "http://www.biquge5200.com/0_984/"
     # 根据url 获取html内容
     html_text = get_html(target_url)
     # 解析文章名称
@@ -83,6 +90,8 @@ if __name__ == '__main__':
         if charpter_title.find("第") != 0:
             continue
         print charpter_title
+        # t = Thread(target=handle_url_text, args=(charpter_url, charpter_title))
+        # t.start()
         text = parse_text_in_html(charpter_url)
 
         save_to_file(charpter_title + '.txt', text)
