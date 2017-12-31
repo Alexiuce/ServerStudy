@@ -61,13 +61,11 @@ def save_to_file(filename, data):
 def handle_url_text(url, filename):
     text = parse_title_in_html(url)
     save_to_file(filename, text)
-    # print url
-    # print filename
 
 
 if __name__ == '__main__':
 
-    target_url = "http://www.biquge5200.com/0_984/"
+    target_url = "http://www.biquge5200.com/0_28/"
     # 根据url 获取html内容
     html_text = get_html(target_url)
     # 解析文章名称
