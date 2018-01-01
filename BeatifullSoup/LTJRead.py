@@ -65,7 +65,7 @@ def handle_url_text(url, filename):
 
 if __name__ == '__main__':
 
-    target_url = "http://www.biquge5200.com/0_28/"
+    target_url = "http://www.biquge5200.com/0_368/"
     # 根据url 获取html内容
     html_text = get_html(target_url)
     # 解析文章名称
@@ -91,7 +91,6 @@ if __name__ == '__main__':
         # t = Thread(target=handle_url_text, args=(charpter_url, charpter_title))
         # t.start()
         text = parse_text_in_html(charpter_url)
-
         save_to_file(charpter_title + '.txt', text)
 
 
