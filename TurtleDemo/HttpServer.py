@@ -4,13 +4,10 @@
 import os
 import http.server
 
-
-
-def startServer():
-    httpd = http.server.HTTPServer(('',8989),http.server.SimpleHTTPRequestHandler)
+def startServer(port):
+    httpd = http.server.HTTPServer(('',port),http.server.SimpleHTTPRequestHandler)
     httpd.serve_forever()
 
 
-
 if __name__ == '__main__':
-    startServer()
+    startServer(8999)
