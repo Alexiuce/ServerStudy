@@ -54,7 +54,7 @@ else:
     print("a not +_5")
 '''
 
-# =========================== loop example =====================
+# =========================== loop example (循环) =====================
 
 '''
 num = 80
@@ -66,7 +66,9 @@ for c in name:
     print(c)
 '''
 
-#
+# =========================== String slice(字符串切片) =====================
+
+'''
 first = 'hello'
 middle = 'good' + '{"url":"baidu"}'
 print(first + middle)
@@ -74,7 +76,42 @@ print(first + middle)
 print(middle[2:5])
 print(middle[2::3])
 
-#
+'''
+# =========================== List(列表) 增删改查 =====================
+persons = ['alex', 'job', 'tom', 'leo']   # 定义了一个数组,python中列表可以存储各种不同的数据类型
+
+print(persons)
+
+# 列表添加元素
+persons.append('gates')  # 添加对象到列表中
+persons.insert(1, 'steve')  # 插入对象到列表的指定位置
+print(persons)
+
+webs = ["bai", "google", "facebook"]
+
+pw = persons + webs    # + 返回合并后新的列表
+persons.extend(webs)   # extend 合并列表  改变原列表,没有返回值
+print(pw)
+
+#  列表删除元素
+# pw.pop()         # 删除最后一个元素
+# pw.pop(2)         # 删除指定位置的元素
+# pw.remove("job")    # 删除指定元素
+# del pw[0]        # 删除指定下标位置的元素  pop(index)
+# print(pw)
+#  列表修改
+pw[0] = "xiuce"
+print(pw)
+
+# 列表查找 in / not in
+if "xiuce" in pw:
+    print("already add xiuce")
+
+if "bai11" not in pw:
+    print('pw not include bai')
+
+
+
 ##
 ##
 
