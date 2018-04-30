@@ -123,3 +123,14 @@ info.pop('name')
 
 for key in info:
     print(info[key])
+
+# =========================== for - else =====================
+
+'''
+for xxx :
+    pass
+else:
+    pass   # 仅当for循环中使用了break,才会不执行else中的语句 
+
+'''
+
