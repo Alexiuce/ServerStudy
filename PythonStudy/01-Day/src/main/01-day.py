@@ -78,6 +78,9 @@ print(middle[2::3])
 
 '''
 # =========================== List(列表) 增删改查 =====================
+
+
+'''
 persons = ['alex', 'job', 'tom', 'leo']   # 定义了一个数组,python中列表可以存储各种不同的数据类型
 
 print(persons)
@@ -110,8 +113,13 @@ if "xiuce" in pw:
 if "bai11" not in pw:
     print('pw not include bai')
 
+'''
+# =========================== Dictionary(字典) 增删改查 =====================
+info = {"name": "alex", "age": 18, "job": "dev"}
+print(info)
+info['gender'] = 'man'
 
+info.pop('name')
 
-##
-##
-
+for key in info:
+    print(info[key])
