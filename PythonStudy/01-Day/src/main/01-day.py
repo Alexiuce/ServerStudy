@@ -115,15 +115,23 @@ if "bai11" not in pw:
 
 '''
 # =========================== Dictionary(字典) 增删改查 =====================
+'''
 info = {"name": "alex", "age": 18, "job": "dev"}
 print(info)
 info['gender'] = 'man'
 
 info.pop('name')
 
+print(info.values())
 for key in info:
     print(info[key])
 
+
+for (k, v) in info.items():
+    print(k)
+    print(v)
+
+'''
 # =========================== for - else =====================
 
 '''
@@ -133,4 +141,10 @@ else:
     pass   # 仅当for循环中使用了break,才会不执行else中的语句 
 
 '''
+# ========================= tuple (元组) : 不可以修改元素 ===========================
 
+total = (12, "hello", 45)
+
+print(total)
+
+print(len(total))
