@@ -92,7 +92,7 @@ print(persons)
 
 webs = ["bai", "google", "facebook"]
 
-pw = persons + webs    # + 返回合并后新的列表
+pw = persons + webs    # + 返回合并后的列表,修改原列表
 persons.extend(webs)   # extend 合并列表  改变原列表,没有返回值
 print(pw)
 

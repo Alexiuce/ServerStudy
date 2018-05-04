@@ -126,7 +126,7 @@ print(b1)
 '''
 # 递归
 
-
+"""
 def mulity_nums(n):
     if n == 1:
         return 1
@@ -135,6 +135,44 @@ def mulity_nums(n):
 
 
 print(mulity_nums(5))
+"""
+# 匿名函数  lambda 表达式
+"""
+lambda 参数: 语句
+ * 语句前默认有return ,所以lambda 仅支持一个简单的表达式
 
+
+
+l1 = lambda x, y: x + y
+print(l1(1, 2))
+
+perInfos = [{"name": "alex", "age": 18}, {"name": "blex", "age": 108}, {"name": "clex", "age": 28}]
+
+
+# 根据key值进行排序
+perInfos.sort(key=lambda x: x["age"])
+print(perInfos)
+
+
+def lamb_func(a, b, func):       # 参数func 接收一个lambda 表达式
+    r = func(a, b)
+    print(r)
+
+
+lamb_func(9, 2, lambda x, y: x + y)    # 传递一个lambda 到函数中
+
+
+fn = input("please input a func to do ")
+fn = eval(fn)   # python3 中 eval 去掉字符串的最外层的"",
+lamb_func(10, 20, fn)
+
+"""
+# 列表的 + 和 += 是不同的操作 : += 不会改变地址 +后结果会改变引用新的地址
+t1 = [100]
+print(id(t1))
+t1 += t1
+print(id(t1))
+t1 = t1 + [200]
+print(id(t1))
 
 
