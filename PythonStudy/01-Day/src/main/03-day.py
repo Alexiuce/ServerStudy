@@ -4,7 +4,7 @@
 """ 文件操作
 open("文件名",方式) : 打开文件
 
-r  :  只读
+r  :  只读  (默认方式,可省略)
 w  : 写
 a  : 追加
 
@@ -19,7 +19,6 @@ f.close()
 # f.write("hello file")
 # r = f.read(1)
 # print(r)
-"""
 
 filename = "abc.txt"
 ns = filename.rsplit(".", 1)
@@ -29,5 +28,12 @@ print(filename[0:position])
 print(filename[position:])
 print(ns)
 
+"""
 
+# read & readlinse
+"""
+read(size)  : 默认全部读取,返回字符串 
+readline():  读取一行
+readlines() : 按行读取,返会列表(包含所有行)
+"""
 
