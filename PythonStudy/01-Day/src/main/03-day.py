@@ -1,6 +1,8 @@
 # 03-day.py
 # Created by Alexcai at 2018/5/5
 
+import os
+
 """ 文件操作
 open("文件名",方式) : 打开文件
 
@@ -46,3 +48,21 @@ from: 0 -- 文件开始位置  1 -- 文件当前位置  2 --- 文件末尾
 tell(): 获取当前读取的文件位置
 
 """
+# 文件操作
+"""
+导入 os 
+os.mkdir()  : 创建文件夹
+os.getcwd(): 获取当前路径
+os.rename(old,new) : 重命名文件
+os.remove(filename) : 删除文件(当前文件夹内)
+os.chdir(path) : 变更当前路径
+os.listdir(path) : 获取路径下的内容列表
+os.rmdir(path) : 删除文件夹
+
+"""
+
+print(os.getcwd())
+print(os.listdir())
+
+
+
