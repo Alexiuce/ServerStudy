@@ -166,7 +166,6 @@ fn = input("please input a func to do ")
 fn = eval(fn)   # python3 中 eval 去掉字符串的最外层的"",
 lamb_func(10, 20, fn)
 
-"""
 # 列表的 + 和 += 是不同的操作 : += 不会改变地址 +后结果会改变引用新的地址
 t1 = [100]
 print(id(t1))
@@ -174,5 +173,42 @@ t1 += t1
 print(id(t1))
 t1 = t1 + [200]
 print(id(t1))
+"""
+
+# 字符串的操作  find
+my_str = "this is hello world for python"
+"""
+result = my_str.find("is")
+print(result)
+r1 = my_str.rfind("is")   # 从右向左查找
+print(r1)
+new_str = my_str.replace("is", "at")  # 替换后返回新的字符串
+print(new_str)
+items = my_str.split(" ")   # 切割字符串
+print(items)
+
+print(my_str.title())         # 每个单词的首字母大写
+print(my_str.capitalize())    # 第一个单词首字母大写
+print(my_str.lower())         # 小写
+print(my_str.upper())         # 大写
+
+print(my_str.center(100))      #文字居中 ,总宽度100
+print(my_str.rjust(100))       # 宽度100,文字右对齐
+print(my_str.ljust(100))       # 文字左对齐,宽度100
+
+print(my_str.lstrip())       # 去除左边的空白字符
+print(my_str.strip())       # 去除左右两边的空白字符
+"""
+
+
+print(my_str.partition("world"))
+
+print(my_str.isalpha())
+print(my_str.isdigit())
+print(my_str.isalnum())
+
+s1 = "123"
+s2 = "abd"
+print(s1 + s2)
 
 
