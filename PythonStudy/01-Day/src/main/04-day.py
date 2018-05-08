@@ -92,3 +92,33 @@ print(sp)
 
 rf = sys.getrefcount(sp)
 print(rf)
+
+# 继承
+
+
+class Animal:
+
+    def eat(self):
+        print("eat")
+
+    def run(self):
+        print("run")
+
+    def sleep(self):
+        print("sleep")
+
+
+""" 使用()表示继承某个类
+class 类名(父类):
+    pass
+"""
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("wangwang...")
+
+
+d = Dog()
+d.eat()
