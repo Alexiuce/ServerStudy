@@ -11,7 +11,7 @@ class 类名:
 
 """
 
-
+""" example
 class Cat:
 
     # 初始化方法
@@ -35,11 +35,60 @@ class Cat:
         print("%s 的年龄是%d" % (self.name, self.age))
 
 
-
-c = Cat("tom",13)
+c = Cat("tom", 13)
 c.eat()
 c.sleep()
-c.name = "bluecat"
+c.name = "blue cat"
+c.friends = "steven"
 c.say()
 print(c)
+print(c.friends)
 
+"""
+
+
+class SweetPotato:
+
+    def __init__(self):
+        self.cookedString = "生的"
+        self.cookedTimer = 0
+        self.__s = ""   # 定义私有属性
+
+    def __test(self):
+        print("这个是私有方法")
+
+    def cooked(self, time):
+        self.__test()
+        self.cookedTimer += time
+        if 0 < self.cookedTimer < 3:
+            self.cookedString = "半生"
+        elif 3 < self.cookedTimer < 5:
+            self.cookedString = "半熟"
+        elif 5 < self.cookedTimer < 8:
+            self.cookedString = "熟了"
+        else:
+            self.cookedString = "糊了"
+
+    def __str__(self):
+        return "烤了 %d 分钟 已经 %s" % (self.cookedTimer, self.cookedString)
+
+    # 等价于oc的dealloc方法
+    def __del__(self):
+        print("对象释放了")
+
+import sys
+sp = SweetPotato()
+sp.cooked(1)
+print(sp.cookedString)
+sp.cooked(3)
+print(sp.cookedString)
+sp.cooked(5)
+print(sp.cookedString)
+ar = ["23", "ab", "mo"]
+sta = str(ar)
+print(sta)
+print(sp)
+# print(sp.__s)
+
+rf = sys.getrefcount(sp)
+print(rf)
