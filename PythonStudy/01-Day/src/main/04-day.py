@@ -119,6 +119,14 @@ class Dog(Animal):
     def bark(self):
         print("wangwang...")
 
+    # 重写父类方法
+    def run(self):
+        print("---fly on the sky---")
+        # 调用父类被重写的方法 方式1
+        # Animal.run(self)
+        # 调用父类被重写的方法 方式2
+        super().run()
 
 d = Dog()
 d.eat()
+d.run()
