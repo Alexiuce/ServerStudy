@@ -4,7 +4,7 @@
 
 类的定义
 class 类名:
-    属性
+    属性:(这里的都是类属性)   使用: 类名.属性 获取
     方法 : 方法参数必须有self
     def 方法名(self):
         方法体
@@ -44,7 +44,6 @@ c.say()
 print(c)
 print(c.friends)
 
-"""
 
 
 class SweetPotato:
@@ -84,14 +83,14 @@ sp.cooked(3)
 print(sp.cookedString)
 sp.cooked(5)
 print(sp.cookedString)
+
 ar = ["23", "ab", "mo"]
 sta = str(ar)
 print(sta)
-print(sp)
 # print(sp.__s)
 
-rf = sys.getrefcount(sp)
-print(rf)
+# rf = sys.getrefcount(sp)
+# print(rf)
 
 # 继承
 
@@ -107,16 +106,24 @@ class Animal:
     def sleep(self):
         print("sleep")
 
+    # 私有方法
+    def __say(self):
+        print("say something...")
+"""
+
 
 """ 使用()表示继承某个类
-class 类名(父类):
+支持多继承
+class 类名(父类1, 父类2, 父类3....):
     pass
-"""
+    
+    
+__mro__ : C3算法,决定多继承时,父类方法重名时的查找顺序     
 
 
 class Dog(Animal):
 
-    def bark(self):
+    def bark_for_someone(self):
         print("wangwang...")
 
     # 重写父类方法
@@ -127,6 +134,47 @@ class Dog(Animal):
         # 调用父类被重写的方法 方式2
         super().run()
 
+    def __init__(self):
+        print("init func ...")
+
+
 d = Dog()
 d.eat()
 d.run()
+
+print(id(Dog))
+
+"""
+# d.__say()     : 父类的私有属性和私有不能被继承
+
+""" 类方法, 实例方法, 静态方法
+类方法调用: 1, 使用类名调用 2 ,使用对象调用
+
+Example
+"""
+
+
+class Game(object):
+
+    level = 0   # 类属性,使用类名访问
+    
+    #实例方法
+    def play(self):
+        print("play game")
+
+    @classmethod  # 使用@classmethod 将方法声明为类方法( @classmethod 本质是装饰器)
+    def configured(cls):
+        print("setup ...")
+        cls.level = 100
+
+    @staticmethod  # 静态方法, 可以没有参数
+    def test():
+        print("star play")
+
+
+g = Game()
+# Game.configured()
+g.configured()
+print(Game.level)
+Game.test()
+g.test()
