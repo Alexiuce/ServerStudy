@@ -12,15 +12,16 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonStudy$04_day.coverage" NAME="04-day Coverage Results" MODIFIED="1525844346795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$03_day.coverage" NAME="03-day Coverage Results" MODIFIED="1525662430976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
-    <SUITE FILE_PATH="coverage/PythonStudy$02_day.coverage" NAME="02-day Coverage Results" MODIFIED="1525403842190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
+    <SUITE FILE_PATH="coverage/PythonStudy$01_day.coverage" NAME="01-day Coverage Results" MODIFIED="1525921085712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
+    <SUITE FILE_PATH="coverage/PythonStudy$02_day.coverage" NAME="02-day Coverage Results" MODIFIED="1525921858609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="01-day.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/01-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1501">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            <state relative-caret-position="2052">
+              <caret line="108" column="18" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -28,28 +29,33 @@
       <file leaf-file-name="02-day.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/02-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="640">
+              <caret line="202" column="23" lean-forward="true" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03-day.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="03-day.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/03-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="1087">
+              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04-day.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04-day.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/04-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+            <state relative-caret-position="585">
+              <caret line="150" column="26" lean-forward="true" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05-day.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-Day/src/main/05-day.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -64,10 +70,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01-Day/src/main/01-day.py" />
-        <option value="$PROJECT_DIR$/01-Day/src/main/02-day.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/03-day.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/04-day.py" />
+        <option value="$PROJECT_DIR$/01-Day/src/main/05-day.py" />
+        <option value="$PROJECT_DIR$/01-Day/src/main/01-day.py" />
+        <option value="$PROJECT_DIR$/01-Day/src/main/02-day.py" />
       </list>
     </option>
   </component>
@@ -91,6 +98,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,7 +132,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +153,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.04-day">
+  <component name="RunManager" selected="Python.02-day">
+    <configuration name="01-day" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-Day/src/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-Day/src/main/01-day.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="02-day" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,12 +234,14 @@
       <item itemvalue="Python.02-day" />
       <item itemvalue="Python.03-day" />
       <item itemvalue="Python.04-day" />
+      <item itemvalue="Python.01-day" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02-day" />
+        <item itemvalue="Python.01-day" />
         <item itemvalue="Python.04-day" />
         <item itemvalue="Python.03-day" />
-        <item itemvalue="Python.02-day" />
       </list>
     </recent_temporary>
   </component>
@@ -239,9 +267,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3305478" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23305479" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18326694" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18575697" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -264,6 +292,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/01-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/02-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/03-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/04-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3021">
+          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/01-day.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1501">
@@ -355,31 +411,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/05-day.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/01-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        <state relative-caret-position="2052">
+          <caret line="108" column="18" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/02-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/03-day.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="640">
+          <caret line="202" column="23" lean-forward="true" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/04-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+        <state relative-caret-position="585">
+          <caret line="150" column="26" lean-forward="true" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/03-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -145,6 +145,9 @@ else:
 
 total = (12, "hello", 45)
 
+
+print(10 ** 3)
+
 print(total)
 
 print(len(total))

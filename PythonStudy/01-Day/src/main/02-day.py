@@ -19,11 +19,8 @@ print(response.read().decode())
 
 
 def my_add(a1, b1):
-
     return a1 + b1
 
-"""
-"""
 
 def print_line():
     print(a)
@@ -201,7 +198,7 @@ print(my_str.strip())       # 去除左右两边的空白字符
 """
 
 
-print(my_str.partition("world"))
+print(my_str.partition("world"))   # 以world 为中心 进行左右分割
 
 print(my_str.isalpha())
 print(my_str.isdigit())
