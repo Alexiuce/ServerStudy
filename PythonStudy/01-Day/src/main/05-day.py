@@ -81,3 +81,45 @@ try:
     11/ 0
 except Exception as error:
     print(error)
+
+
+# 自定义异常
+"""
+  raise 自定义类(): 抛出自定义的异常, 自定义异常类必须继承Exception 才可以被raise 抛出  
+"""
+
+
+class CustomException(Exception):
+
+    def __init__(self, name):
+        self.name = name
+
+
+try:
+    print("begin....")
+    raise CustomException("hello")
+except CustomException as result:
+    if result.name == "hello":
+        print("happend exception")
+        print(result.name)
+    else:
+        raise     # 将异常继续抛出
+
+# if 判断 真假
+"""
+空的字符串/元组/列表/字典 以及none,0 都表示假
+"""
+if "":
+    print("ok")
+if []:
+    print("[]")
+if {}:
+    print("{}")
+if ():
+    print("()")
+if 0:
+    print("0")
+if None:
+    print("none")
+
+
