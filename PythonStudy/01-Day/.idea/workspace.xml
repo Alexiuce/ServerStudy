@@ -13,6 +13,7 @@
     <SUITE FILE_PATH="coverage/01_Day$01_day.coverage" NAME="01-day Coverage Results" MODIFIED="1525165917994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main" />
     <SUITE FILE_PATH="coverage/01_Day$03_day.coverage" NAME="03-day Coverage Results" MODIFIED="1525491370612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main" />
     <SUITE FILE_PATH="coverage/01_Day$02_day.coverage" NAME="02-day Coverage Results" MODIFIED="1525486698242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main" />
+    <SUITE FILE_PATH="coverage/01_Day$06_day.coverage" NAME="06-day Coverage Results" MODIFIED="1526093528672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="01-Day" />
@@ -31,17 +32,35 @@
       <file leaf-file-name="02-day.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/02-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="207" column="23" lean-forward="true" selection-start-line="206" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
+            <state relative-caret-position="3876">
+              <caret line="204" column="23" selection-start-line="203" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03-day.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03-day.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/03-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="520">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/XCMessage/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06-day.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/06-day.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -50,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/abc.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -72,6 +91,7 @@
         <option value="$PROJECT_DIR$/src/main/02-day.py" />
         <option value="$PROJECT_DIR$/src/main/abc.txt" />
         <option value="$PROJECT_DIR$/src/main/03-day.py" />
+        <option value="$PROJECT_DIR$/src/XCMessage/setup.py" />
       </list>
     </option>
   </component>
@@ -84,7 +104,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="229" />
     <option name="y" value="53" />
     <option name="width" value="1188" />
@@ -113,6 +133,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="01-Day" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01-Day" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="XCMessage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -138,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.03-day">
+  <component name="RunManager" selected="Python.06-day">
     <configuration name="01-day" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="01-Day" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,13 +222,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="06-day" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01-Day" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/06-day.py" />
+      <option name="PARAMETERS" value="a b c" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.01-day" />
       <item itemvalue="Python.02-day" />
       <item itemvalue="Python.03-day" />
+      <item itemvalue="Python.06-day" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.06-day" />
         <item itemvalue="Python.03-day" />
         <item itemvalue="Python.02-day" />
         <item itemvalue="Python.01-day" />
@@ -223,8 +270,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="53" width="1188" height="847" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50069445" side_tool="true" weight="0.32900944" />
@@ -233,7 +279,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49930555" weight="0.32848486" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.20767888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.17310444" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -261,6 +307,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/01-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/02-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="207" column="23" lean-forward="true" selection-start-line="206" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/abc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/03-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/01-day.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2299">
@@ -326,22 +400,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/02-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="207" column="23" lean-forward="true" selection-start-line="206" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
+        <state relative-caret-position="3876">
+          <caret line="204" column="23" selection-start-line="203" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/abc.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/03-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="520">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XCMessage/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/06-day.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
