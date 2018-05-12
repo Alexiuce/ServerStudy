@@ -34,5 +34,28 @@ print(c)
 d = [i for i in range(9) if i % 3 == 0]
 print(d)
 
+""" 集合
+{元素}  : 集合中的元素都不会重复(重复添加没有效果)
+"""
+
+j = {11, 22, 33, 11, 44}
+print(j)
+
+# 列表去重
+
+t = [1, 32, 44, 1, 5, 32]
+b = []
+for i in t:
+    if i not in b:
+        b.append(i)
+print(b)
+
+# 使用集合对数组进行去重 : set转换-> list 转换
+df = set(t)
+da = list(df)
+print(da)
+df.
+
+
 
 
