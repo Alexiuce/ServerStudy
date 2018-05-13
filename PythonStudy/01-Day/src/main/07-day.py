@@ -54,7 +54,6 @@ print(b)
 df = set(t)
 da = list(df)
 print(da)
-df.
 
 
 
