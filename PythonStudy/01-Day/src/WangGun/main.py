@@ -10,7 +10,6 @@ def main():
     print(box)
 
 
-
 if __name__ == "__main__":
     main()
 
