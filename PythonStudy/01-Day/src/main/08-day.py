@@ -44,4 +44,19 @@ print(id(t2))
 a.append(10)
 print(t1[0])
 
+"""
+进制转换
 
+bin() : 十进制转二进制
+oct() : 十进制转换八进制
+hex() : 十进制转换十六进制
+
+int("",2/8/16): 其他进制转十进制
+
+"""
+
+o1 = 18
+print(bin(o1))
+print(oct(o1))
+print(hex(o1))
+print(int("0101", 2))
