@@ -18,7 +18,33 @@ class Person(object):
     def __init__(self):
         self.__age = 100
 
+    # property 方式1
+    # def set_age(self, new_age):
+    #     self.__age = new_age
+    #
+    # def get_age(self):
+    #     return self.__age
+    # age = property(get_age, set_age)
+
+    # property 方式2
+
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self, new_age):
+        self.__age = new_age
+
 
 p = Person()
-p.__age = 5
-print(p.__age)
+# print(p.__age)
+p.age = 120
+print(p.age)
+
+""" Property : 相当于 Objective-C 中的点语法对setter 和getter 的封装   
+property(get方法名, set方法名)  : 第一个参数为get方法,第二个参数为set方法
+
+"""
+
+
