@@ -60,3 +60,18 @@ print(bin(o1))
 print(oct(o1))
 print(hex(o1))
 print(int("0101", 2))
+
+"""位运行
+<< 左移
+>> 右移
+| 按位或
+^ 按位异或
+& 按位与
+~ 按位取反
+"""
+
+y = 9
+print(bin(y))
+print(y << 1)
+print(~y)
+print(y | 3)
