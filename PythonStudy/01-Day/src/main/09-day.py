@@ -76,6 +76,8 @@ def outside_func():
     a = 100
 
     def inner_func():
+        nonlocal a
+        a = 200
         print("a is %d" % a)
 
     return inner_func
