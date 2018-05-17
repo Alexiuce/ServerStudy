@@ -48,3 +48,40 @@ property(get方法名, set方法名)  : 第一个参数为get方法,第二个参
 """
 
 
+"""迭代器(在上一个的基础上继续....)
+
+
+"""
+
+from collections import Iterable
+from collections import Iterator
+
+
+it = isinstance("abc", Iterable)   # 判断是否可以迭代
+print(it)
+
+it1 = isinstance([1, 2, 3], Iterator)  # 判断是否是迭代器, 迭代器可以调用next方法来获取下一个元素
+print(it1)
+
+it2 = iter("abc")   # 将可迭代对象转换为迭代器对象,
+print(next(it2))
+print(next(it2))
+
+"""闭包
+在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用。这样就构成了一个闭包
+"""
+
+
+def outside_func():
+    a = 100
+
+    def inner_func():
+        print("a is %d" % a)
+
+    return inner_func
+
+
+outside_func()()
+a = outside_func()
+a()
+
