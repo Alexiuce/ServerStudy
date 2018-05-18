@@ -72,18 +72,32 @@ print(next(it2))
 """
 
 
-def outside_func():
-    a = 100
+def outside_func(func):
 
     def inner_func():
-        nonlocal a
-        a = 200
-        print("a is %d" % a)
-
+        print("添加装饰效果....")
+        func()
     return inner_func
 
 
-outside_func()()
-a = outside_func()
-a()
+# a = outside_func()
+# a()
 
+""" 装饰器
+一种遵循开发封闭原则的语法糖
+对已有功能进行扩展
+
+"""
+
+
+@outside_func              # @闭包 即为装饰器, 它等价于 test_example = outside_func(test_example)
+def test_example():
+    print("test.....")
+
+
+@outside_func
+def test_example1():
+    print("test.....1")
+
+
+test_example()
