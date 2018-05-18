@@ -99,8 +99,8 @@
       <file leaf-file-name="09-day.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/09-day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+            <state relative-caret-position="464">
+              <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
               <folding>
                 <element signature="e#929#961#0" expanded="true" />
               </folding>
@@ -357,7 +357,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24512535" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24512535" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20916335" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -734,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/09-day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        <state relative-caret-position="464">
+          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
           <folding>
             <element signature="e#929#961#0" expanded="true" />
           </folding>
