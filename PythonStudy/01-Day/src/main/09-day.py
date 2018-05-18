@@ -86,10 +86,22 @@ def outside_func(func):
 """ 装饰器
 一种遵循开发封闭原则的语法糖
 对已有功能进行扩展
+* 多个装饰器对同一个方法的效果是从下到上的顺序执行(离被装饰方法最近的最先获得执行效果)
+装饰器执行时刻: 解释器解析的时候就会执行装饰器代码,而不是等到函数调用的时候.
+
+* 装饰器装饰的时候是从下向上进行装饰, 执行的时候是从上到下的顺序执行, 就像装箱(装饰)和拆箱(调用)的顺序刚刚相反一样
 
 """
 
 
+def decorate_func(func):
+    def wap1():
+        print("decorating....")
+        func()
+    return wap1
+
+
+@decorate_func
 @outside_func              # @闭包 即为装饰器, 它等价于 test_example = outside_func(test_example)
 def test_example():
     print("test.....")
@@ -100,4 +112,4 @@ def test_example1():
     print("test.....1")
 
 
-test_example()
+# test_example()
