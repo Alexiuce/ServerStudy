@@ -84,7 +84,7 @@ def outside_func(func):
 # a()
 
 """ 装饰器
-一种遵循开发封闭原则的语法糖
+一种遵循开放封闭原则的语法糖
 对已有功能进行扩展
 * 多个装饰器对同一个方法的效果是从下到上的顺序执行(离被装饰方法最近的最先获得执行效果)
 装饰器执行时刻: 解释器解析的时候就会执行装饰器代码,而不是等到函数调用的时候.
@@ -112,4 +112,49 @@ def test_example1():
     print("test.....1")
 
 
-# test_example()
+test_example()
+""" 带参数的函数进行装饰  : 使用 *args 和 **kwargs 接收可变参数
+
+带参数的装饰器:需要对装饰器再使用一个函数进行封装,并且由此函数来接收外界传递的参数: 即相当于对一个装饰器又使用了一层装饰
+
+"""
+
+
+def func_args(v):
+    print(v)
+
+    def decorator_func(func):
+        def inner_func():
+            func()
+        return inner_func
+    return decorator_func
+
+
+def common(func):
+    def inner_func(*args, **kwargs):
+        print("common func decorator")
+        # 如果func 有返回值,则需要处理返回值
+        result = func(*args, **kwargs)
+        return result
+    return inner_func
+
+
+@common
+def test1(a):
+    print(a)
+
+
+@common
+def test2(a, b, c):
+    print("a = %d, b=%d, c= %d" % (a, b, c))
+
+
+@func_args("hello ...")
+def test3():
+    print("test3....")
+
+
+test1(10)
+test2(1, 11, 111)
+test3()
+
