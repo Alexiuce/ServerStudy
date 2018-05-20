@@ -9,7 +9,7 @@ LEGB规则: local-->encoding (闭包) --> global --> build_in
 
 
 a = 100
-print(globals())
+# print(globals())
 
 
 def test():
@@ -17,6 +17,22 @@ def test():
     print(locals())
 
 
-test()
+# test()
 
 
+""" Python 的动态性
+* 运行时给对象添加属性和方法
+
+
+"""
+
+
+class Person(object):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+zs = Person("zhangsan", 20)
+
+print(zs.name)
