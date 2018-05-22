@@ -36,8 +36,38 @@ n = gen_number()
 for num in n:
     print(num)
 
-"""yield 多任务示例 ( 协程 )
+
+""" 类当作装饰器
+* 类中实现__call__方法
+* 类装饰器会先创建一个实例对象,被修饰的方法将指向此实例对象
+* 类的init方法,需要一个接收方法的参数
 """
+
+
+class Dog(object):
+    def __init__(self, func):
+        self.__func = func
+        self.name = "Normal"
+        print("init dog... function name is %s" % func.__name__)
+
+    def __call__(self, *args, **kwargs):
+        print("call.....")
+        self.__func()
+
+
+@Dog              # 相当于shapi = Dog(shapi)
+def shapi():
+    print("sha pi ....")
+
+
+shapi()
+print(shapi.name)
+
+# d = Dog()
+# d()    # 由于Dog实现了__cal__方法,可以对实例对象使用()来调用
+
+
+"""yield 多任务示例 ( 协程 )
 import time
 
 
@@ -62,3 +92,4 @@ while True:
     time.sleep(1)
     next(t2)
 
+"""
