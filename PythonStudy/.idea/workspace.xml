@@ -153,9 +153,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="2048" />
-    <option name="height" value="1152" />
+    <option name="height" value="1130" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -352,7 +353,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
+    <frame x="0" y="22" width="2048" height="1130" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -360,7 +361,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24512535" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24512535" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32961932" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21912351" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
