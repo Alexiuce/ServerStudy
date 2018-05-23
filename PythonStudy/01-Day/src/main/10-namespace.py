@@ -1,4 +1,4 @@
-# 10-day.py
+# 10-namespace.py
 # Created by Alexcai at 2018/5/20
 
 """ 命名空间
