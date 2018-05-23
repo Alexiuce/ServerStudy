@@ -4,6 +4,9 @@
 """ 元类
 * 类也是对象
 * 使用type 创建类:  type(类名, 由父类名称组成的元组(针对继承情况)可以为空, 包含属性的字典(key=value))
+* __metaclass__ : 如果类中明确设置了这个属性,则创建类时,会根据这个属性指定的方法创建该类.
+* __metaclass__ = func(classname,fathername,attribute) : 这个方法必须有三个参数: 类名, 父类名,属性
+
 """
 
 
@@ -34,4 +37,32 @@ T = type("Teacher", (), {"name": "alex"})    # 使用type 创建类对象 name�
 t1 = T()
 print(T.name)
 print(t1.name)
+
+Cat = type("Cat", (Animal,), {"name": "kitty"})
+
+cat = Cat()
+print(cat.name)
+
+# __metaclass__ demo
+
+
+def upper_attr(classname, fathername, old_attr):
+    new_attr = {}
+    a = ""
+    a.upper()
+    for name, value in old_attr.items():
+        if not name.startswith("__"):
+            new_attr[name.upper()] = value
+    # 调用type创建类
+    return type(classname, fathername, new_attr)
+
+
+class Tai(object, metaclass=upper_attr):
+    # __metaclass__ = upper_attr
+    bar = "tip"
+
+
+print(hasattr(Tai, 'bar'))
+print(hasattr(Tai, "BAR"))
+
 
