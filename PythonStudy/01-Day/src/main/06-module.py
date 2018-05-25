@@ -9,6 +9,8 @@ print("06 ")
 msgkit.HelloModel.say()
 
 help(hashlib.md5)
-p = hashlib.md5("joinf".encode("utf8"))
+
+p = hashlib.md5(b"joinf")
+
 print(p.hexdigest())
 
