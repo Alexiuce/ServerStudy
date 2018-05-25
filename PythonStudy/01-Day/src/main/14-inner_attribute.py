@@ -52,7 +52,6 @@ wraps(): 在装饰器的使用过程中,会丢失一些关于原方法的文档�
 """
 import functools
 
-
 def deca(func):
 
     @functools.wraps(func)      # 对原函数的信息进行保留
