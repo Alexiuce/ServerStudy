@@ -1,4 +1,4 @@
-# 07-day.py
+# 07-list&gen.py
 # Created by Alexcai at 2018/5/12
 
 

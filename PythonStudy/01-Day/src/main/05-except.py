@@ -72,7 +72,7 @@ excepte (异常类型1, 异常类型2, 异常类型3 ....):
 """
 
 try:
-    print(abc)
+    print(aaaa)
     print("123")
 except NameError:
     print("name not exist")
