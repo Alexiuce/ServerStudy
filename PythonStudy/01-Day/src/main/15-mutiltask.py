@@ -19,7 +19,7 @@ def sing():
 
 def dance():
     for _ in range(3):
-        print("dance.....")
+        print("dance.....%d " % os.getpid())
         sleep(1)
 
 
@@ -75,12 +75,27 @@ class MProcess(Process):
 
 
 """ 进程池
-
+from multiprocess import Pool
 """
+from multiprocessing import Pool
+
+
+
 
 if __name__ == '__main__':
     # test1()
-    mp = MProcess(2)
-    mp.start()   # 开启子进程
+
+    # 使用继承类实现多进程
+    # mp = MProcess(2)
+    # mp.start()   # 开启子进程
     # mp.join()   等待子进程结束后再执行后续代码
+
+    # 使用进程池
+    pool = Pool(3)       # 创建进程池, 有3个子进程
+    for i in range(10):    # 添加任务
+        pool.apply_async(dance)
+
+    pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
+    pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
+
     print("main")
