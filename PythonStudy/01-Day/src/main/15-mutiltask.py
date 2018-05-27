@@ -42,11 +42,45 @@ def test():
 
 
 # 使用multiprocessing 中的   Process 创建多进程
+""" 
+默认Process的主进程会等待子进程执行结束后才会结束,但代码的执行不会等待子进程
+
+join(): 主进程会等待子进程结束后才会结束
+"""
 
 def test1():
     p = Process(target=sing)
-    p.start()
+    p.start()    # 启动子进程
+    # p.join()    # join方法会等待子进程执行结束后再继续执行后面的语句( 即阻塞效果) ,可以传递参数用来表示阻塞的时长
+    print('test....')
+    # p.terminate():  结束子进程
+
+"""  使用类(继承Process)实现多进程
+1. 定义一个类继承自Process
+2. 重写run方法
+
+"""
+
+class MProcess(Process):
+    def __init__(self, interval):
+        super().__init__()
+        self.interval = interval
+
+    # 重写父类的run 方法 当代用对象的start 方法时,系统会自动调用run方法
+    def run(self):
+        while True:
+            print("MProcess ... run")
+            sleep(1)
+
+
+
+""" 进程池
+
+"""
 
 if __name__ == '__main__':
-    test1()
+    # test1()
+    mp = MProcess(2)
+    mp.start()   # 开启子进程
+    # mp.join()   等待子进程结束后再执行后续代码
     print("main")
