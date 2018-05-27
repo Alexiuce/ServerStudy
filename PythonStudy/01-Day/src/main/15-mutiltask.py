@@ -93,7 +93,8 @@ if __name__ == '__main__':
     # 使用进程池
     pool = Pool(3)       # 创建进程池, 有3个子进程
     for i in range(10):    # 添加任务
-        pool.apply_async(dance)
+        # pool.apply_async(dance)   # 异步方式添加任务
+        pool.apply(dance)  # 同步方式执行任务
 
     pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
     pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
