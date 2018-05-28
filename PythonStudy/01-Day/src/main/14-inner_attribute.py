@@ -44,6 +44,13 @@ arr = [1, 3, 4, 5]
 res = map(lambda x: x+2, arr)
 for i in res:
     print(i)
+
+r1 = filter(lambda x: x > 2, arr)
+
+print('-------filter-------')
+for i in r1:
+    print(i)
+
 """ function tools
 常用函数: 
 partial(): 偏函数, 通常用来给一下函数设置默认固定的调用参数, 简化使用. 它的返回值就是带固定默认参数的新函数

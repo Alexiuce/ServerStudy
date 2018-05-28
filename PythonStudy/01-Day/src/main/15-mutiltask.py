@@ -79,6 +79,26 @@ from multiprocess import Pool
 """
 from multiprocessing import Pool
 
+""" 进程间通信 Queue
+
+from queue import Queue
+get(): 获取最新的队列消息
+put(): 添加消息到队列
+qsize(): 获取队列当前消息数
+empty(): 判断队列是否已空
+full():  判断队列是否已满
+put_nowait(): 立即添加消息到队列
+get_nowait(): 立即获取队列中的消息
+
+"""
+from queue import Queue
+def queue_test():
+    q = Queue(3)
+    q.put("hh")
+
+    print(q.qsize())
+    print(q.get())
+
 
 
 
@@ -91,12 +111,12 @@ if __name__ == '__main__':
     # mp.join()   等待子进程结束后再执行后续代码
 
     # 使用进程池
-    pool = Pool(3)       # 创建进程池, 有3个子进程
-    for i in range(10):    # 添加任务
-        # pool.apply_async(dance)   # 异步方式添加任务
-        pool.apply(dance)  # 同步方式执行任务
-
-    pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
-    pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
-
+    # pool = Pool(3)       # 创建进程池, 有3个子进程
+    # for i in range(10):    # 添加任务
+    #     pool.apply_async(dance)   # 异步方式添加任务
+    #     pool.apply(dance)  # 同步方式执行任务
+    #
+    # pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
+    # pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
+    queue_test()
     print("main")
