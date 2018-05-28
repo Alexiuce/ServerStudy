@@ -10,16 +10,18 @@ from multiprocessing import Process
 from time import sleep
 import os
 
-def sing():
+def sing(q):
     for _ in range(3):
         print("sing....")
+        q.put("222..")
         # os.getpid()    # 获得当前进程的pid
         # os.getppid() # 获取父进程的pid
         sleep(1)
 
-def dance():
+def dance(q):
     for _ in range(3):
         print("dance.....%d " % os.getpid())
+        print(q.get())
         sleep(1)
 
 
@@ -90,7 +92,13 @@ full():  判断队列是否已满
 put_nowait(): 立即添加消息到队列
 get_nowait(): 立即获取队列中的消息
 
+* 进程池中的Queue
+- 必须使用Manager().Queue() 的队列才可以
+
 """
+
+from multiprocessing import Manager
+
 from queue import Queue
 def queue_test():
     q = Queue(3)
@@ -100,6 +108,13 @@ def queue_test():
     print(q.get())
 
 
+
+def queue_reqd(q):
+    print("read queue: %s" % q.get())
+
+def queue_write(q,t):
+    print("write queue: %s" % t)
+    q.put(t)
 
 
 if __name__ == '__main__':
@@ -111,12 +126,14 @@ if __name__ == '__main__':
     # mp.join()   等待子进程结束后再执行后续代码
 
     # 使用进程池
-    # pool = Pool(3)       # 创建进程池, 有3个子进程
-    # for i in range(10):    # 添加任务
-    #     pool.apply_async(dance)   # 异步方式添加任务
-    #     pool.apply(dance)  # 同步方式执行任务
-    #
-    # pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
-    # pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
-    queue_test()
+    pool = Pool(3)       # 创建进程池, 有3个子进程
+    pq = Manager().Queue()
+
+
+    for i in range(2):    # 添加任务
+        pool.apply_async(queue_write, (pq,str(i)))   # 异步方式添加任务
+        pool.apply_async(queue_reqd, (pq,))  # 同步方式执行任务
+
+    pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
+    pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
     print("main")
