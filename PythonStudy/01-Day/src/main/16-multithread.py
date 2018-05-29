@@ -7,7 +7,7 @@
 
 - 多线程数据共享: 互斥锁
 from threading import Lock
-acquire() : 加锁
+acquire(block,timeout) : 加锁 block=True 阻塞, timeout = 超时时长
 release() : 解锁
 
 """
@@ -37,4 +37,5 @@ if __name__ == '__main__':
     t.start()
     print("----")
     test()
+    help(Thread)
     print("main")
