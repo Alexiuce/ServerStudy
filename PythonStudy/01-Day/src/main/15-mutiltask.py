@@ -47,7 +47,7 @@ def test():
 """ 
 默认Process的主进程会等待子进程执行结束后才会结束,但代码的执行不会等待子进程
 
-join(): 主进程会等待子进程结束后才会结束
+join(sec): 主进程会等待子进程结束后才会继续执行
 """
 
 def test1():
@@ -109,7 +109,7 @@ def queue_test():
 
 
 
-def queue_reqd(q):
+def queue_read(q):
     print("read queue: %s" % q.get())
 
 def queue_write(q,t):
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     for i in range(2):    # 添加任务
         pool.apply_async(queue_write, (pq,str(i)))   # 异步方式添加任务
-        pool.apply_async(queue_reqd, (pq,))  # 同步方式执行任务
+        pool.apply_async(queue_read, (pq,))  # 同步方式执行任务
 
     pool.close()   # 关闭进程池后, 不能再向进程池中添加任务
     pool.join()    # 进程池阻塞,等待进程池中的任务结束再继续
