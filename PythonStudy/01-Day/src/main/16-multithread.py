@@ -162,6 +162,23 @@ def async_callback():
     pool.close()
     pool.join()
 
+""" GIL (全局解释器锁) 
+
+多核cpu执行多线程任务时, 会被GIL管理, 保证同一时刻只能有一个线程被cpu执行
+GIL的存在,是的多线程在本质上还是单一任务的方式
+- 克服GIL问题方案:
+ 1. 使用C语言编写需要执行的任务代码
+ 2. 将.c文件编译为动态库: gcc -shared *.c -o libyourname.so 
+ 3. 在python文件中加载动态库: 
+    from ctypes import *
+    # 加载动态链接库
+    cdll.LoadLibrary("./libyourname.so")
+    
+多进程不会被GIL限制
+
+"""
+
+
 
 if __name__ == '__main__':
     # 多线程任务实现方式1
