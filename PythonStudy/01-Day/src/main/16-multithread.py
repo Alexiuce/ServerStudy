@@ -139,6 +139,29 @@ def local_test():
     t1.join()
     t2.join()
 
+"""进程异步回调"""
+
+from multiprocessing import Pool
+import os
+
+def atest():
+    print("进程池中的进程 %d , ppid= %d" % ( os.getpid(), os.getppid()))
+    for i in range(3):
+        print("i = %d " % i)
+        time.sleep(1)
+    return "good"
+
+def btest(args):
+    print("callback pid = %d" % os.getpid())
+    print("args = %s" % args)
+
+
+def async_callback():
+    pool = Pool(3)
+    pool.apply_async(atest,callback=btest)
+    pool.close()
+    pool.join()
+
 
 if __name__ == '__main__':
     # 多线程任务实现方式1
@@ -157,6 +180,8 @@ if __name__ == '__main__':
     # pc_test()
 
     # 全局线程对象
-    local_test()
+    # local_test()
 
+    # 进程 异步回调
+    async_callback()
 
