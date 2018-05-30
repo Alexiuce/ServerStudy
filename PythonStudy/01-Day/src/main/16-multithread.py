@@ -117,6 +117,28 @@ def pc_test():
         c = Customer()
         c.start()
 
+"""ThreadLocal 线程全局对象 """
+import threading
+
+tl = threading.local()  # 创建全局的线程对象, 不同线程该对象的同一个属性的修改不会影响其他线程在此属性上的赋值和取值...
+def local_task(name):
+    tl.name = name
+    proce_name()
+
+def proce_name():
+    n = tl.name
+    print("hi, %s in thread: %s" % (n, threading.current_thread().name))
+
+
+
+def local_test():
+    t1 = Thread(target=local_task,args=("alex",),name="Tha")
+    t2 = Thread(target=local_task,args=("xiuce",),name="Thb")
+    t1.start()
+    t2.start()
+    t1.join()
+    t2.join()
+
 
 if __name__ == '__main__':
     # 多线程任务实现方式1
@@ -131,6 +153,10 @@ if __name__ == '__main__':
     # sync_test()
 
     # 生产者,消费者模式
-    my_queue = Queue()
-    pc_test()
+    # my_queue = Queue()
+    # pc_test()
+
+    # 全局线程对象
+    local_test()
+
 
