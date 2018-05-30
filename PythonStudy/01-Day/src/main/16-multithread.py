@@ -71,16 +71,66 @@ def sync_test():
     t2.start()
     t3.start()
 
+# 使用类的方式实现多线程
 def test():
     for _ in range(5):
         th = MThread()
         th.start()
 
+
+""" 生产者消费者模式 (解耦)
+python2: from Queue import Queue
+python3: from queue import Queue
+
+
+"""
+from queue import Queue
+
+class Producter(Thread):
+    def run(self):
+        count = 0
+        while True:
+            if my_queue.qsize() < 1000:
+                for i in range(100):
+                    count += 1
+                    msg = "制作产品" + str(count)
+                    my_queue.put(msg)
+                    print(msg)
+            time.sleep(1)
+
+class Customer(Thread):
+
+    def run(self):
+        while True:
+            if my_queue.qsize() > 100:
+                for i in range(3):
+                    print(self.name + "消费产品" + my_queue.get())
+            time.sleep(1)
+
+def pc_test():
+    for i in range(500):
+        my_queue.put("初始产品" +  str(i))
+    for _ in range(2):
+        p = Producter()
+        p.start()
+    for _ in range(5):
+        c = Customer()
+        c.start()
+
+
 if __name__ == '__main__':
-    t = Thread(target=say)
-    t.start()
-    print("----")
-    test()
-    help(Thread)
-    print("main")
-    sync_test()
+    # 多线程任务实现方式1
+    # t = Thread(target=say)
+    # t.start()
+
+    # 使用类实现多线程
+    #  test()
+
+
+    # 线程同步
+    # sync_test()
+
+    # 生产者,消费者模式
+    my_queue = Queue()
+    pc_test()
+
