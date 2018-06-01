@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/PythonStudy$15_mutiltask.coverage" NAME="15-mutiltask Coverage Results" MODIFIED="1527477855927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$16_multithread.coverage" NAME="16-multithread Coverage Results" MODIFIED="1527649069629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$main.coverage" NAME="main Coverage Results" MODIFIED="1526265785494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/WangGun" />
-    <SUITE FILE_PATH="coverage/PythonStudy$17_tcpip.coverage" NAME="17-tcpip Coverage Results" MODIFIED="1527746096156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
+    <SUITE FILE_PATH="coverage/PythonStudy$17_tcpip.coverage" NAME="17-tcpip Coverage Results" MODIFIED="1527819641991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$06_module.coverage" NAME="06-module Coverage Results" MODIFIED="1527217216665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$03_day.coverage" NAME="03-day Coverage Results" MODIFIED="1525662430976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$13_garbagecollection.coverage" NAME="13-garbagecollection Coverage Results" MODIFIED="1527059252750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
@@ -76,7 +76,7 @@
       <file leaf-file-name="16-multithread.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3173">
+            <state relative-caret-position="3154">
               <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
               <folding>
                 <element signature="e#269#303#0" expanded="true" />
@@ -88,8 +88,11 @@
       <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="594">
+              <caret line="43" column="81" lean-forward="true" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
+              <folding>
+                <element signature="e#72#92#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,7 +100,7 @@
       <file leaf-file-name="06-module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/06-module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="209">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#1#21#0" expanded="true" />
@@ -158,9 +161,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="347" />
-    <option name="y" value="195" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="420" />
+    <option name="y" value="228" />
     <option name="width" value="1227" />
     <option name="height" value="783" />
   </component>
@@ -359,23 +362,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="347" y="195" width="1227" height="783" extended-state="0" />
+    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500498" side_tool="true" weight="0.19591458" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5131195" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.499502" visible="true" weight="0.19591458" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.44846797" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3201348" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19223107" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968128" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32968128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925718" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925718" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -708,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/06-module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="209">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#1#21#0" expanded="true" />
@@ -739,7 +742,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3173">
+        <state relative-caret-position="3154">
           <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
           <folding>
             <element signature="e#269#303#0" expanded="true" />
@@ -749,8 +752,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="594">
+          <caret line="43" column="81" lean-forward="true" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
+          <folding>
+            <element signature="e#72#92#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

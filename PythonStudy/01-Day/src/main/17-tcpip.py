@@ -6,7 +6,7 @@
 
 """
 from socket import *
-
+import time
 
 
 def upd_socket_test():
@@ -23,12 +23,31 @@ def upd_socket_test():
     s.sendto(b'world',host)
     s.close()   # 关闭socket
 
-def upd_receive():
+def upd_receive_test():
     sc = socket(AF_INET, SOCK_DGRAM)
-    port = ("", 9988)
-    sc.bind(port)
+    port = ("", 9988)    # 默认地址为"" 表示本机的任意网络接口
+    sc.bind(port)     # socket 绑定本机端口
     rece_data = sc.recvfrom(1024)
     print(rece_data)
 
+
+def udp_chat_test():
+    sc = socket(AF_INET,SOCK_DGRAM)
+    port = ('', 9999)
+    sc.bind(port)
+    while True:
+        rece_data,client_info = sc.recvfrom(1024)
+        text = rece_data.decode('gb2312')
+        client_host,client_port = client_info
+        if text == "quit":
+            break
+        print("receive message from %s:%d ->%s "%(client_host,client_port,text) )
+        sc.sendto(rece_data,client_info)   # 将接收到的信息返回给发送者
+    sc.close()
+
+
 if __name__ == '__main__':
-    upd_socket_test()
+    # upd_socket_test()
+    # upd_receive_test()
+    udp_chat_test()
+    print(time.ctime())
