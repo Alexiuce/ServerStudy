@@ -7,7 +7,7 @@
 """
 from socket import *
 import time
-
+from threading import Thread
 
 def upd_socket_test():
     s = socket(AF_INET,SOCK_DGRAM)   # 创建socket 对象, 使用udp协议
@@ -45,9 +45,36 @@ def udp_chat_test():
         sc.sendto(rece_data,client_info)   # 将接收到的信息返回给发送者
     sc.close()
 
+client_info = None
+
+def receive_task(sc):
+    global client_info
+    while True:
+        receiveInfo,client_info = sc.recvfrom(1024)
+        text = receiveInfo.decode('gb2312')
+        print("receive message: %s"%text)
+
+def send_task(sc):
+    while True:
+        msg = input("please input message for send:")
+        sc.sendto(msg.encode('gb2312'),client_info)
+
+
+def chat_test():
+    sc = socket(AF_INET,SOCK_DGRAM)
+    port = ('',8899)
+    sc.bind(port)
+    t1 = Thread(target=receive_task,args=(sc,))
+    t1.start()
+    t2 = Thread(target=send_task,args=(sc,))
+    t2.start()
+
+
+
 
 if __name__ == '__main__':
     # upd_socket_test()
     # upd_receive_test()
-    udp_chat_test()
-    print(time.ctime())
+    # udp_chat_test()
+    # print(time.ctime())
+    chat_test()
