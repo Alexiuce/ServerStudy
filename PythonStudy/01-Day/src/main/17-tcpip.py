@@ -76,17 +76,26 @@ def chat_test():
      2Byte   nB string   1B  nB     1B
      
 数据包:
-    操作码 | 数据编号 |  数据
+    操作码(3) | 数据编号 |  数据
     2Bytes    2B      512Bytes
 ACK:
-    操作码 | 数据编号
+    操作码(4) | 数据编号
     2Bytes  2Bytes
 ERROR:
-    操作码 | 错误码 | 错误信息 | 0
-    2Bytes  2Bytes   nB       1Bytes 
+    操作码(5) | 错误码 | 错误信息 | 0
+     2Bytes    2Bytes   nB       1Bytes 
 
+* 大端序: 低位内存地址保持数据的高位内容
+* 小端序: 低位内存地址保存数据的低位内容
+
+import struct
+
+pack: 数据包
+pack(fmt) : 以!开始表示网络数据格式, H表示2Byte; s表示一个Byte; b表示1Byte字节 
 """
+import struct
 
+struct.pack("!H8sb5sb",)
 
 
 if __name__ == '__main__':

@@ -70,8 +70,8 @@
       <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/17-tcpip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="480">
+              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -587,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/17-tcpip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="480">
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
         </state>
       </provider>
     </entry>
