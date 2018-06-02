@@ -36,13 +36,13 @@ def udp_chat_test():
     port = ('', 9999)
     sc.bind(port)
     while True:
-        rece_data,client_info = sc.recvfrom(1024)
+        rece_data,client_info1 = sc.recvfrom(1024)
         text = rece_data.decode('gb2312')
-        client_host,client_port = client_info
+        client_host,client_port = client_info1
         if text == "quit":
             break
         print("receive message from %s:%d ->%s "%(client_host,client_port,text) )
-        sc.sendto(rece_data,client_info)   # 将接收到的信息返回给发送者
+        sc.sendto(rece_data,client_info1)   # 将接收到的信息返回给发送者
     sc.close()
 
 client_info = None
@@ -68,7 +68,24 @@ def chat_test():
     t1.start()
     t2 = Thread(target=send_task,args=(sc,))
     t2.start()
+""" TFTP 协议
 
+读写请求:
+  1(下载):2(上传)
+     RD/WD | file name | 0 | mode | 0
+     2Byte   nB string   1B  nB     1B
+     
+数据包:
+    操作码 | 数据编号 |  数据
+    2Bytes    2B      512Bytes
+ACK:
+    操作码 | 数据编号
+    2Bytes  2Bytes
+ERROR:
+    操作码 | 错误码 | 错误信息 | 0
+    2Bytes  2Bytes   nB       1Bytes 
+
+"""
 
 
 
