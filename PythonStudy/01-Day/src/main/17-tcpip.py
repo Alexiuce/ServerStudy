@@ -90,17 +90,26 @@ ERROR:
 
 import struct
 
-pack: 数据包
+pack: 数据包 ,将数据按照指定的格式进行封装
+unpack: 解包 , 将指定的数据按照约定的格式进行解包
 pack(fmt) : 以!开始表示网络数据格式, H表示2Byte; s表示一个Byte; b表示1Byte字节 
 """
 import struct
 
-struct.pack("!H8sb5sb",)
 
+def udp_broast_test():
+    sc = socket(AF_INET,SOCK_DGRAM)
+    # 设置套接字属性,允许发送广播数据
+    sc.setsockopt(SOL_SOCKET,SO_BROADCAST,1)
+    dest = ('<broadcast>', 8888)  # <broadcast> 代表当前网络的广播地址,有通用性
+    sc.sendto(b"hello", dest)
 
+    
 if __name__ == '__main__':
     # upd_socket_test()
     # upd_receive_test()
     # udp_chat_test()
     # print(time.ctime())
-    chat_test()
+    # chat_test()
+    send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
+    print(send_data)
