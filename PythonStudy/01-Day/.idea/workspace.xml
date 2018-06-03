@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e51a3ac9-7302-45f6-9e58-2d568cc02335" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/17-tcpip.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/17-tcpip.py" afterDir="false" />
-    </list>
+    <list default="true" id="e51a3ac9-7302-45f6-9e58-2d568cc02335" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +69,8 @@
       <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/17-tcpip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -588,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/17-tcpip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+        <state relative-caret-position="308">
+          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
         </state>
       </provider>
     </entry>
