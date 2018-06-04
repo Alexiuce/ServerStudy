@@ -119,17 +119,31 @@ def tcp_server_demo():
         tcp_client_socket,tcp_client_info = tcp_sc.accept()   # 阻塞式方法,开启接收数据, 一旦监听到有连接建立,返回一个元组(客户端套接字,客户端info(地址+端口))
         tcp_data = tcp_client_socket.recv(1024)
         print(tcp_data)
-    
+
+
 
 def tcp_client_demo():
-    pass
+    tcp_sc = socket(AF_INET,SOCK_STREAM)
+    server = ('10.211.55.3',23456)
+    tcp_sc.connect(server)
+    tcp_sc.send(b"hello you ...")
+    tcp_data = tcp_sc.recv(1024)
+    print(tcp_data)
+    tcp_sc.close()
     
 if __name__ == '__main__':
+
     # upd_socket_test()
+
     # upd_receive_test()
+
     # udp_chat_test()
+
     # print(time.ctime())
+
     # chat_test()
-    send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
-    print(send_data)
-    tcp_server_demo()
+
+    # send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
+    # print(send_data)
+    # tcp_server_demo()
+    tcp_client_demo()
