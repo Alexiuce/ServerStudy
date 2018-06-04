@@ -103,7 +103,26 @@ def udp_broast_test():
     sc.setsockopt(SOL_SOCKET,SO_BROADCAST,1)
     dest = ('<broadcast>', 8888)  # <broadcast> 代表当前网络的广播地址,有通用性
     sc.sendto(b"hello", dest)
+""" TCP 套接字
+* 默认情况下,tcp方式的套接字为主动套接字(可以发送数据)
+* 如果需要接收数据,需要设置套接字变为被动套接字(可以接受数据)
 
+"""
+
+def tcp_server_demo():
+    # 创建tcp 套接字 : SOCK_STREAM
+    tcp_sc = socket(AF_INET,SOCK_STREAM)
+    port = ('', 23456)
+    tcp_sc.bind(port)
+    tcp_sc.listen(5)  # 已建立和未建立链接的队列长度, 并且套接字为被动套接字模式
+    while True:
+        tcp_client_socket,tcp_client_info = tcp_sc.accept()   # 阻塞式方法,开启接收数据, 一旦监听到有连接建立,返回一个元组(客户端套接字,客户端info(地址+端口))
+        tcp_data = tcp_client_socket.recv(1024)
+        print(tcp_data)
+    
+
+def tcp_client_demo():
+    pass
     
 if __name__ == '__main__':
     # upd_socket_test()
@@ -113,3 +132,4 @@ if __name__ == '__main__':
     # chat_test()
     send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
     print(send_data)
+    tcp_server_demo()
