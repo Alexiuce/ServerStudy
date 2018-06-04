@@ -107,7 +107,26 @@ def udp_broast_test():
 * 默认情况下,tcp方式的套接字为主动套接字(可以发送数据)
 * 如果需要接收数据,需要设置套接字变为被动套接字(可以接受数据)
 
+* tcp server model
+  def server(){
+    socket = socket(AF_INET,SOCK_STREAM)
+    socket.bind(port)
+    socket.listen()
+    while True:
+        client_socket,client_info = socket.accept()
+        #  如果需要多任务,可以将下面的while循环放到新的线程中执行即可
+        while True:
+            data = client_socket.recv(Buffer)
+            ....
+        client_socket.close()
+    socket.close()        
+  }
+
+
 """
+
+
+
 
 def tcp_server_demo():
     # 创建tcp 套接字 : SOCK_STREAM
@@ -119,6 +138,8 @@ def tcp_server_demo():
         tcp_client_socket,tcp_client_info = tcp_sc.accept()   # 阻塞式方法,开启接收数据, 一旦监听到有连接建立,返回一个元组(客户端套接字,客户端info(地址+端口))
         tcp_data = tcp_client_socket.recv(1024)
         print(tcp_data)
+
+
 
 
 
