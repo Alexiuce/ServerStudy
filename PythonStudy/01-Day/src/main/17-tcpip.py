@@ -2,8 +2,6 @@
 # Created by Alexiuce at 2018/5/31
 
 """ TCP/IP  Socket
-
-
 """
 from socket import *
 import time
