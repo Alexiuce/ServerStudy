@@ -135,9 +135,13 @@ Fin_wait1   |    FIN --->       |   close_wait
 Fin_wait2   |     <-- ack       |
             |     <-- Fin       |  last_ack
 time_wait   |                   |
-            |     ack--->       |
+ 2MSL       |     ack--->       |
   close     |                   |   close
             |                   |
+            
+            
+* TTL : 最大转发次数(经过路由器) 
+* MSL : 数据包在网络中的最长存活时间            
 
 """
 
