@@ -171,6 +171,12 @@ def tcp_client_demo():
     tcp_data = tcp_sc.recv(1024)
     print(tcp_data)
     tcp_sc.close()
+
+
+
+""" raw socket 
+
+"""
     
 if __name__ == '__main__':
 
