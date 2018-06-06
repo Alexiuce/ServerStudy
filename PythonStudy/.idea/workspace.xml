@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15-mutiltask.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="15-mutiltask.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/15-mutiltask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2258">
-              <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+            <state relative-caret-position="-441">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -76,7 +76,7 @@
       <file leaf-file-name="16-multithread.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1338">
+            <state relative-caret-position="3154">
               <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
               <folding>
                 <element signature="e#269#303#0" expanded="true" />
@@ -85,20 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2299">
-              <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+            <state relative-caret-position="636">
+              <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pdb.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/pdb.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -153,8 +154,8 @@
         <option value="$PROJECT_DIR$/01-Day/src/main/06-module.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/14-inner_attribute.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/16-multithread.py" />
-        <option value="$PROJECT_DIR$/01-Day/src/main/17-tcpip.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/15-mutiltask.py" />
+        <option value="$PROJECT_DIR$/01-Day/src/main/17-tcpip.py" />
       </list>
     </option>
   </component>
@@ -178,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,7 +379,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.4519774" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.44846797" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2656559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2689519" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968128" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32968128" />
@@ -732,15 +733,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/pdb.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/pdb.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
@@ -748,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1338">
+        <state relative-caret-position="3154">
           <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
           <folding>
             <element signature="e#269#303#0" expanded="true" />
@@ -758,8 +758,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/15-mutiltask.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2258">
-          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+        <state relative-caret-position="-441">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
         </state>
       </provider>
     </entry>

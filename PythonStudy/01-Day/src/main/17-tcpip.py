@@ -120,6 +120,24 @@ def udp_broast_test():
     socket.close()        
   }
 
+* 十种状态:
+          client       |       server
+            |                   |   listen()
+    syn_sent|       syn-->      |
+            |    <--syn+ack     |  syn_recv
+            |       ack-->      |  established      
+established |                   |
+            |   <-- data -->    |
+            |   <-- data -->    |
+            |   <-- data -->    |
+            |        ...        |
+Fin_wait1   |    FIN --->       |   close_wait
+Fin_wait2   |     <-- ack       |
+            |     <-- Fin       |  last_ack
+time_wait   |                   |
+            |     ack--->       |
+  close     |                   |   close
+            |                   |
 
 """
 
