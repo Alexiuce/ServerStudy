@@ -169,7 +169,6 @@ def tcp_client_demo():
     tcp_sc.connect(server)
     tcp_sc.send(b"hello you ...")
     tcp_data = tcp_sc.recv(1024)
-    print(tcp_data)
     tcp_sc.close()
 
 
@@ -177,6 +176,10 @@ def tcp_client_demo():
 """ raw socket 
 
 """
+
+def raw_socket():
+    pass
+
     
 if __name__ == '__main__':
 
