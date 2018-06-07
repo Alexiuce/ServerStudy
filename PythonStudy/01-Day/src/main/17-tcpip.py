@@ -193,7 +193,7 @@ if __name__ == '__main__':
 
     # chat_test()
 
-    # send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
-    # print(send_data)
+    send_data = struct.pack("!H8sb5sb", 1, b"test.png", 0, b"octet", 0)
+    print(send_data)
     # tcp_server_demo()
-    tcp_client_demo()
+    # tcp_client_demo()
