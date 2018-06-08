@@ -151,6 +151,7 @@ time_wait   |                   |
 def tcp_server_demo():
     # 创建tcp 套接字 : SOCK_STREAM
     tcp_sc = socket(AF_INET,SOCK_STREAM)
+    tcp_sc.setsockopt(SOL_SOCKET,SO_REUSEADDR,1) # 运行socket 支持对端口的重新绑定
     port = ('', 23456)
     tcp_sc.bind(port)
     tcp_sc.listen(5)  # 已建立和未建立链接的队列长度, 并且套接字为被动套接字模式
@@ -172,6 +173,32 @@ def tcp_client_demo():
     tcp_sc.close()
 
 
+
+
+def tcp_recv_task(sc):
+    try:
+        while True:
+            data = sc.recv(1024)
+            if len(data) > 0:
+                print(data)
+            else:
+                break
+    finally:
+        sc.close()
+
+def tcp_send_task(sc):
+    pass
+
+
+def tcp_mulit_task():
+    sc = socket(AF_INET,SOCK_STREAM)
+    sc.bind(('',9909))
+    sc.listen(5)
+    while True:
+        csc,cinfo = sc.accept()
+        t = Thread(target=tcp_recv_task,args=(csc,))
+        t.start()
+    sc.close()
 
 """ raw socket 
 
