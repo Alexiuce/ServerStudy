@@ -8,9 +8,13 @@
 from socket import *
 
 
-if __name__ == '__main__':
+def single_task():
     sc = socket(AF_INET,SOCK_STREAM)
     port = ('',23456)
     sc.bind(port)
     sc.setblocking(False)  # 设置套接字非阻塞
     sc.listen(5)
+    
+
+if __name__ == '__main__':
+    pass
