@@ -12,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonStudy$15_mutiltask.coverage" NAME="15-mutiltask Coverage Results" MODIFIED="1527477855927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$16_multithread.coverage" NAME="16-multithread Coverage Results" MODIFIED="1527649069629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
-    <SUITE FILE_PATH="coverage/PythonStudy$18_server.coverage" NAME="18-server Coverage Results" MODIFIED="1528683049698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
+    <SUITE FILE_PATH="coverage/PythonStudy$18_server.coverage" NAME="18-server Coverage Results" MODIFIED="1528706459661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$main.coverage" NAME="main Coverage Results" MODIFIED="1526265785494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/WangGun" />
     <SUITE FILE_PATH="coverage/PythonStudy$17_tcpip.coverage" NAME="17-tcpip Coverage Results" MODIFIED="1528682893909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$06_module.coverage" NAME="06-module Coverage Results" MODIFIED="1527217216665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
@@ -50,7 +50,7 @@
       <file leaf-file-name="14-inner_attribute.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/14-inner_attribute.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="988">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
@@ -77,7 +77,7 @@
       <file leaf-file-name="16-multithread.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3154">
+            <state relative-caret-position="3173">
               <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
               <folding>
                 <element signature="e#269#303#0" expanded="true" />
@@ -89,8 +89,8 @@
       <file leaf-file-name="17-tcpip.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="192" column="21" lean-forward="true" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+            <state relative-caret-position="3610">
+              <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,8 +98,8 @@
       <file leaf-file-name="18-server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/18-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            <state relative-caret-position="242">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="e#324#344#0" expanded="true" />
               </folding>
@@ -120,7 +120,7 @@
       <file leaf-file-name="06-module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/06-module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="266">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#1#21#0" expanded="true" />
@@ -169,6 +169,7 @@
         <option value="$PROJECT_DIR$/01-Day/src/main/16-multithread.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/15-mutiltask.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/17-tcpip.py" />
+        <option value="$USER_HOME$/PycharmProjects/untitled/venv/lib/python3.6/site-packages/impacket/ImpactPacket.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/18-server.py" />
       </list>
     </option>
@@ -183,16 +184,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="228" />
-    <option name="y" value="131" />
-    <option name="width" value="1557" />
-    <option name="height" value="975" />
+    <option name="x" value="120" />
+    <option name="y" value="53" />
+    <option name="width" value="1393" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,11 +227,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="XCMessage" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PythonStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="PythonStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (untitled) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +247,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -383,23 +393,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="228" y="131" width="1557" height="975" extended-state="0" />
-    <editor active="true" />
+    <frame x="120" y="53" width="1393" height="716" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500498" side_tool="true" weight="0.19591458" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50110865" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.3454039" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32961932" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.34555554" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.44846797" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.27224785" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" sideWeight="0.49889135" visible="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.44749597" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.31189948" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968128" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32968128" />
       <window_info id="Structure" order="1" sideWeight="0.7800338" side_tool="true" weight="0.20567729" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925718" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -421,27 +430,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/04-class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/05-except.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/01-datatype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/02-func&amp;lambda&amp;string.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3838">
@@ -711,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/06-module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="266">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#1#21#0" expanded="true" />
@@ -721,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/14-inner_attribute.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="988">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
@@ -748,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/16-multithread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3154">
+        <state relative-caret-position="3173">
           <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
           <folding>
             <element signature="e#269#303#0" expanded="true" />
@@ -765,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/17-tcpip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="192" column="21" lean-forward="true" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+        <state relative-caret-position="3610">
+          <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -775,10 +763,27 @@
         <state relative-caret-position="-4362" />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/lib/python3.6/site-packages/impacket/ImpactDecoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/lib/python3.6/site-packages/impacket/ImpactPacket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14844">
+          <caret line="844" selection-start-line="844" selection-end-line="844" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/lib/python3.6/site-packages/scapy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/18-server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        <state relative-caret-position="242">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="e#324#344#0" expanded="true" />
           </folding>

@@ -16,6 +16,8 @@ select.select([收数据的套接字列表],[发数据的套接字列表],[套�
 
 from socket import *
 import select
+import scapy.all
+
 
 def single_task():
     sc = socket(AF_INET,SOCK_STREAM)
@@ -54,11 +56,26 @@ def epoll_server():
     server_socket.bind(port)
     server_socket.listen(5)
     # 注册套接字的文件描述符
-    server_epoll = select.
+    server_epoll = select.epoll()   # 无法找到epoll这个方法
 
+def raw_socket_demo():
+    desthost_ip = ImpactPacket.IP()
+    desthost_ip.set_ip_src("192.168.0.130")
+    desthost_ip.set_ip_dst("192.168.0.133")
+    tcp_pack = ImpactPacket.TCP()
+    tcp_pack.set_th_sport(9909)
+    tcp_pack.set_th_dport(49155)
+    tcp_pack.set_th_seq(1)
 
+    desthost_ip.contains(tcp_pack)
+
+    st = socket(AF_INET,SOCK_RAW,IPPROTO_TCP)
+    st.setsockopt(IPPROTO_IP,IP_HDRINCL,1)
+    tcp_pack.compute_checksum()
+    st.sendto(desthost_ip.get_packet(),("192.168.0.133",49155))
 
 
 
 if __name__ == '__main__':
-    epoll_server()
+    target_host = "192.168.0.133"
+
