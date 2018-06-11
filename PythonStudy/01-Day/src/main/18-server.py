@@ -7,6 +7,10 @@ select 服务器 : 使用linux底层技术进行对连接的socket进行检测,�
 import select
 select.select([收数据的套接字列表],[发数据的套接字列表],[套接字异常列表])  这个方法是阻塞式的.
 
+* select 是单进程的,支持的监视文件描述符为1024(32位系统) 使用的轮询方式,效率低
+* pool : 无1024的上限, 也是轮询方式检测
+* epool: 非轮询方式,采用事件通知方式,无1024限制
+
 """
 
 
@@ -22,7 +26,7 @@ def single_task():
     
 
 def select_server():
-    server_socket = socket(AF_INET,SOCK_DGRAM)
+    server_socket = socket(AF_INET,SOCK_STREAM)
     port = ('',9999)
     server_socket.bind(port)
     server_socket.listen(5)
@@ -43,11 +47,18 @@ def select_server():
                 inputs.remove(sock)
                 sock.close()
 
-
+def epoll_server():
+    # 初始化套接字
+    server_socket = socket(AF_INET,SOCK_STREAM)
+    port = ('',9909)
+    server_socket.bind(port)
+    server_socket.listen(5)
+    # 注册套接字的文件描述符
+    server_epoll = select.
 
 
 
 
 
 if __name__ == '__main__':
-    pass
+    epoll_server()
