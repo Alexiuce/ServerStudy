@@ -16,7 +16,7 @@ select.select([收数据的套接字列表],[发数据的套接字列表],[套�
 
 from socket import *
 import select
-from scapy.all import *
+# from scapy.all import *
 
 
 def single_task():
@@ -75,8 +75,7 @@ def raw_socket_demo():
     st.sendto(desthost_ip.get_packet(),("192.168.0.133",49155))
 
 
-
-if __name__ == '__main__':
+def send_raw_pack():
     target_host = "192.168.0.133"
     arp = ARP()
     arp.pdst = '192.168.0.133'
@@ -85,4 +84,9 @@ if __name__ == '__main__':
     arp.hwdst = 'b8:97:5a:8b:f:72'
     send(arp)
 
+
+if __name__ == '__main__':
+    print('hello')
+
+    print(select.__file__)
 
