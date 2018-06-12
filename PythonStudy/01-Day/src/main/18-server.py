@@ -16,7 +16,7 @@ select.select([收数据的套接字列表],[发数据的套接字列表],[套�
 
 from socket import *
 import select
-# from scapy.all import *
+from scapy.all import *
 
 
 def single_task():
