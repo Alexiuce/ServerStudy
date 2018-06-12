@@ -53,6 +53,29 @@ def func_e(n):
         print(gevent.getcurrent())
         gevent.sleep(0.5)
 
+# 使用gevent方式的tcp server
+
+from gevent import socket,monkey
+
+monkey.patch_all()
+
+def tcp_gevent_server():
+    sc = socket.socket()
+    sc.bind(('',9999))
+    sc.listen(5)
+    while True:
+        client_sc,client_info = sc.accept()
+        gevent.spawn(handle_client_request,client_sc)
+
+
+def handle_client_request(client):
+    while True:
+        data = client.recv(1024)
+        if not data:
+            client.close()
+            break
+        print(data)
+        client.send(data)
 
 
 if __name__ == '__main__':
