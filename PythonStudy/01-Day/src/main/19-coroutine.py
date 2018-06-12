@@ -12,6 +12,7 @@
 
 import time
 from greenlet import greenlet
+import gevent
 
 
 def fun_a():
@@ -42,15 +43,33 @@ def func_d():
         time.sleep(0.5)
 
 
-""" gevent 版本
+""" gevent 版本 
+
+* 自动切换协程
+
 """
+def func_e(n):
+    for i in range(n):
+        print(gevent.getcurrent())
+        gevent.sleep(0.5)
+
 
 
 if __name__ == '__main__':
+    # 生成器方式(协程原理)
     # a = fun_a()
     # fun_b(a)
 
-    # greenlet 方式
-    g1 = greenlet(func_c)
-    g2 = greenlet(func_d)
-    g1.switch()
+    # greenlet 方式的协程切换
+    # g1 = greenlet(func_c)
+    # g2 = greenlet(func_d)
+    # g1.switch()
+
+    # gevent 方式的协程切换
+    ge1 = gevent.spawn(func_e,4)
+    ge2 = gevent.spawn(func_e,4)
+    ge3 = gevent.spawn(func_e,4)
+
+    ge1.join()
+    ge2.join()
+    ge3.join()
