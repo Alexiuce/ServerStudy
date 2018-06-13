@@ -44,3 +44,16 @@
 505   （HTTP 版本不受支持） 服务器不支持请求中所用的 HTTP 协议版本。
 
 """
+
+
+from socket import *
+
+
+def http_server(port):
+    pass
+
+
+if __name__ == '__main__':
+    pass
+
+
