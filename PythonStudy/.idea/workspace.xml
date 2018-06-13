@@ -108,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="19-coroutine.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="19-coroutine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/19-coroutine.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="763">
@@ -116,6 +116,15 @@
               <folding>
                 <element signature="e#142#153#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20-http.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-Day/src/main/20-http.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -163,6 +172,7 @@
         <option value="$PROJECT_DIR$/01-Day/src/main/18-server.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/19-coroutine.py" />
         <option value="$PROJECT_DIR$/01-Day/src/main/pdb.md" />
+        <option value="$PROJECT_DIR$/01-Day/src/main/20-http.py" />
       </list>
     </option>
   </component>
@@ -176,8 +186,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
-    <option name="y" value="50" />
+    <option name="x" value="100" />
+    <option name="y" value="152" />
     <option name="width" value="1569" />
     <option name="height" value="910" />
   </component>
@@ -373,7 +383,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="50" width="1569" height="910" extended-state="0" />
+    <frame x="100" y="152" width="1569" height="910" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -411,13 +421,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-Day/src/main/03-fileoperation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/04-class.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2850">
@@ -761,6 +764,13 @@
           <folding>
             <element signature="e#142#153#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-Day/src/main/20-http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
