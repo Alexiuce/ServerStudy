@@ -47,16 +47,10 @@
 
 
 from socket import *
-
+from multiprocessing import Process
 
 res = """HTTP/1.1 200 OK
 
-Server: nginx/1.10.2
-Date: Wed, 13 Jun 2018 04:41:22 GMT
-Last-Modified: Tue, 12 Jun 2018 02:55:27 GMT
-Connection: keep-alive
-ETag: "5b1f361f-18f3"
-Access-Control-Allow-Origin: *.sspai.co
 
 <html>
  <title>
@@ -65,19 +59,32 @@ Access-Control-Allow-Origin: *.sspai.co
   hello .....
 </html>
             """
+
+
+
+
+
 def http_server(port):
     sc = socket(AF_INET,SOCK_STREAM)
     sc.bind(('',port))
     sc.listen(5)
     while True:
         client_sc,client_info = sc.accept()
-        # while True:
-        data = client_sc.recv(1024)
-        print(data)
-        # if not data:
-        #     break
-        client_sc.send(res.encode('utf8'))
+        p = Process(target=handle_request,args=(client_sc,))
+        p.start()
         client_sc.close()
+
+
+def handle_request(client):
+    """处理请求"""
+    # while True:
+    request_data = client.recv(1024)
+    # if not request_data:
+    #     break
+    print(request_data.decode('utf-8'))
+    client.send(res.encode('utf-8'))
+    client.close()
+
 
 
 if __name__ == '__main__':
