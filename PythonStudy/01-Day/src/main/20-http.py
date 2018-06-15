@@ -61,9 +61,6 @@ res = """HTTP/1.1 200 OK
             """
 
 
-
-
-
 def http_server(port):
     sc = socket(AF_INET,SOCK_STREAM)
     sc.bind(('',port))
@@ -73,6 +70,7 @@ def http_server(port):
         p = Process(target=handle_request,args=(client_sc,))
         p.start()
         client_sc.close()
+
 
 
 def handle_request(client):
@@ -86,9 +84,37 @@ def handle_request(client):
     client.close()
 
 
+class HTTP_Server(object):
+    """ Http server class """
+    def __init__(self,port):
+        sc = socket(AF_INET, SOCK_STREAM)
+        sc.bind(('', port))
+        sc.listen(5)
+        self.__socket__ = sc
+
+    def start(self):
+        while True:
+            client_sc, client_info = self.__socket__.accept()
+            p = Process(target=self.handle_request, args=(client_sc,))
+            p.start()
+            client_sc.close()
+
+    def handle_request(self,client):
+        # while True:
+        request_data = client.recv(1024)
+        # if not request_data:
+        #     break
+        print(request_data.decode('utf-8'))
+        client.send(res.encode('utf-8'))
+        client.close()
+
+
+def main():
+    http_server = HTTP_Server(9877)
+    http_server.start()
 
 if __name__ == '__main__':
-    print(res)
-    http_server(9989)
-
+    # print(res)
+    # http_server(9989)
+    main()
 
