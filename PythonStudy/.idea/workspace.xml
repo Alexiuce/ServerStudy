@@ -106,8 +106,8 @@
       <file leaf-file-name="20-http.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/20-http.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+            <state relative-caret-position="76">
+              <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
               <folding>
                 <element signature="e#1781#1801#0" expanded="true" />
               </folding>
@@ -180,9 +180,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="267" />
-    <option name="y" value="229" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="338" />
+    <option name="y" value="223" />
     <option name="width" value="1613" />
     <option name="height" value="717" />
   </component>
@@ -378,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
+    <frame x="338" y="223" width="1613" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -386,9 +386,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49850598" weight="0.3286908" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.4657321" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.57788163" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.44749597" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.22310758" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.2848061" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968128" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32968128" />
@@ -761,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/20-http.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        <state relative-caret-position="76">
+          <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
           <folding>
             <element signature="e#1781#1801#0" expanded="true" />
           </folding>

@@ -83,16 +83,16 @@ def handle_request(client):
     client.send(res.encode('utf-8'))
     client.close()
 
-
+# 使用类进行封装 Http Server
 class HTTP_Server(object):
     """ Http server class """
     def __init__(self,port):
         sc = socket(AF_INET, SOCK_STREAM)
         sc.bind(('', port))
-        sc.listen(5)
         self.__socket__ = sc
 
     def start(self):
+        self.__socket__.listen(5)
         while True:
             client_sc, client_info = self.__socket__.accept()
             p = Process(target=self.handle_request, args=(client_sc,))
