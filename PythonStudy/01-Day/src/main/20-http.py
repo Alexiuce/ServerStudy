@@ -109,8 +109,11 @@ class HTTP_Server(object):
         client.close()
 
 """WSGI 
-* http 框架协议之一
-
+* http 框架协议之一(接口协议),要求web开发者实现一个application函数就可以响应request
+* application(): 接收两个参数,它的返回值为response body部分
+1. environment: 一个包含所有http请求信息的dict
+2. start_response : 一个发送响应的函数,有两个参数: 状态码和响应内容(元组方式),多个内容使用[(元组1),(元组2)...]
+   这个方法用来处理response header 
 """
 def main():
     http_server = HTTP_Server(9877)
