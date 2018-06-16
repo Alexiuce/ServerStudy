@@ -108,7 +108,10 @@ class HTTP_Server(object):
         client.send(res.encode('utf-8'))
         client.close()
 
+"""WSGI 
+* http 框架协议之一
 
+"""
 def main():
     http_server = HTTP_Server(9877)
     http_server.start()
