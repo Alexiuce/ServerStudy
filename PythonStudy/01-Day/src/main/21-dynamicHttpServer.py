@@ -40,6 +40,12 @@ class WebServer(object):
         client.close()
 
 
+"""动态导入模块
+
+model = __import__(模块名)   # 根据模块名导入相应的模块并返回导入的模块
+
+"""
+
 
 
 def main():
