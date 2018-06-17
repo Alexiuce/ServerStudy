@@ -32,7 +32,7 @@ class WebServer(object):
             p.start()
             client_sock.close()
 
-    def start_response(self):
+    def start_response(self,status_code,response_headers):
         pass
 
 
