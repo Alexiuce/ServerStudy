@@ -32,10 +32,20 @@ class WebServer(object):
             p.start()
             client_sock.close()
 
+    def start_response(self):
+        pass
+
 
     def handle_resquest(self,client):
         request_data = client.recv(1024)
         print(request_data)
+        filename = request_data.decode('utf8')
+        if filename.endswith('.py'):
+            m = __import__(filename)
+            env = {}
+            response_body = m.application(env,self.start_response)
+            print(response_body)
+
         client.send(res.encode('utf8'))
         client.close()
 
