@@ -9,6 +9,8 @@ from socket import *
 from multiprocessing import Process
 
 
+PY_DIR = "./msgkit"
+
 res = """HTTP/1.1 200 OK
 
 <html>
@@ -40,7 +42,9 @@ class WebServer(object):
         request_data = client.recv(1024)
         print(request_data)
         filename = request_data.decode('utf8')
+        filename = filename[1:-3]
         if filename.endswith('.py'):
+
             m = __import__(filename)
             env = {}
             response_body = m.application(env,self.start_response)

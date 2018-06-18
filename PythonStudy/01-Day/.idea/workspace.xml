@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e51a3ac9-7302-45f6-9e58-2d568cc02335" name="Default" comment="" />
+    <list default="true" id="e51a3ac9-7302-45f6-9e58-2d568cc02335" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/21-dynamicHttpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/21-dynamicHttpServer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,8 +99,8 @@
       <file leaf-file-name="21-dynamicHttpServer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/21-dynamicHttpServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            <state relative-caret-position="400">
+              <caret line="52" column="2" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="2" />
               <folding>
                 <element signature="e#89#109#0" expanded="true" />
               </folding>
@@ -152,7 +154,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="878" />
@@ -163,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,13 +188,19 @@
               <item name="01-Day" type="b2602c69:ProjectViewProjectNode" />
               <item name="01-Day" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="msgkit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="01-Day" type="b2602c69:ProjectViewProjectNode" />
+              <item name="01-Day" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="XCMessage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,7 +357,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -358,7 +367,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4985694" weight="0.32848486" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
-      <window_info content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.21030043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.21316166" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
@@ -623,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/21-dynamicHttpServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        <state relative-caret-position="400">
+          <caret line="52" column="2" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="2" />
           <folding>
             <element signature="e#89#109#0" expanded="true" />
           </folding>
