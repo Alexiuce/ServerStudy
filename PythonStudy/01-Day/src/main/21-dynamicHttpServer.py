@@ -5,9 +5,10 @@
 dynamic web server
 
 """
+import sys
 from socket import *
 from multiprocessing import Process
-
+import re
 
 PY_DIR = "./msgkit"
 
@@ -71,5 +72,7 @@ def main():
     web.start()
 
 if __name__ == '__main__':
-    main()
-
+    # main()
+    print(sys.path)
+    str = "http://192.168.0.111/hello.py?id=12&code=abc"
+    print(re.match(r'\w+:', str).group(0))
