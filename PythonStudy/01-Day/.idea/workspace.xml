@@ -99,8 +99,8 @@
       <file leaf-file-name="21-dynamicHttpServer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/21-dynamicHttpServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="52" column="2" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="2" />
+            <state relative-caret-position="590">
+              <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="e#89#109#0" expanded="true" />
               </folding>
@@ -632,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/21-dynamicHttpServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="2" />
+        <state relative-caret-position="590">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
           <folding>
             <element signature="e#89#109#0" expanded="true" />
           </folding>

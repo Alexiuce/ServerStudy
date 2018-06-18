@@ -58,6 +58,10 @@ class WebServer(object):
 
 model = __import__(模块名)   # 根据模块名导入相应的模块并返回导入的模块
 
+*python 先从当前目录导入py文件,如果没有,会到系统默认的路径中寻找
+
+* import sys 后,可以通过sys.path 添加模块搜索路径,便于找到我们自定目录下的py文件
+
 """
 
 
