@@ -5,10 +5,11 @@
 dynamic web server
 
 """
-import sys
+
 from socket import *
 from multiprocessing import Process
 import re
+import sys
 
 PY_DIR = "./msgkit"
 
@@ -65,6 +66,18 @@ model = __import__(模块名)   # 根据模块名导入相应的模块并返回�
 
 """
 
+def test():
+    sys.path.insert(1,PY_DIR)
+    print(sys.path)
+
+    m = __import__('HelloModel')
+    m.say()
+
+def reg_test():
+    str = "http://192.168.0.111/hello.py?id=12&code=abc"
+    print(re.match(r'\w+:', str).group(0))
+    header = "GET / HTTP1.1"
+    print(re.match(r'\w+', header).group(0))
 
 
 def main():
@@ -73,9 +86,9 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    print(sys.path)
-    str = "http://192.168.0.111/hello.py?id=12&code=abc"
-    print(re.match(r'\w+:', str).group(0))
-    header = "GET / HTTP1.1"
-    print(re.match(r'\w+', header).group(0))
+    test()
+    # reg_test()
+
+
+
 
