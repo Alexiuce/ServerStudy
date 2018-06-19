@@ -76,3 +76,6 @@ if __name__ == '__main__':
     print(sys.path)
     str = "http://192.168.0.111/hello.py?id=12&code=abc"
     print(re.match(r'\w+:', str).group(0))
+    header = "GET / HTTP1.1"
+    print(re.match(r'\w+', header).group(0))
+
