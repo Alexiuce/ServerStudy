@@ -33,7 +33,19 @@ class Application(object):
 获取对象的属性内容:
 getattr(objc, attrname) : 获取对象objc的attrname属性
 
+* 新式类(object)与旧式类
+多继承时, 新式类查找按照广度优先,而旧式类按照深度优先
+
+A--> B,C --> D
+
+新式类时, 查找D的属性时,会先找B,再找C,最后找A
+旧式类时, 查找D的属性时,先找B,再找A
+
+
+
 """
+
+
 
 
 
