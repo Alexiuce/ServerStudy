@@ -27,9 +27,16 @@ class Application(object):
         start_response(status,headers)
         return "Path not exist"
 
+    def __getattr__(self, item):
+        pass
+    def __getattribute__(self, item):
+        pass
+
 
 """ getattr 
 
+** 当在对象属性中查询不到相应属性时,会调用getattr方法进行进一步的查找
+* __getattribute__ 方法是访问对象属性时,就会调用这个方法
 获取对象的属性内容:
 getattr(objc, attrname) : 获取对象objc的attrname属性
 
@@ -40,6 +47,9 @@ A--> B,C --> D
 
 新式类时, 查找D的属性时,会先找B,再找C,最后找A
 旧式类时, 查找D的属性时,先找B,再找A
+
+
+
 
 
 
