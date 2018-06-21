@@ -11,6 +11,22 @@
 
 \w  单词字符: 字母 数字 下划线  可以参考标识符命名规则
 
+[] 匹配[]中的任意一个元素
+[^] 同上相反,匹配不包含在[]中的元素
+=====================================================
+数量描述
+
+* : 任意个
++ : 至少1个
+? : 0个或者1个
+{n} : 重复n个
+{m,} : 至少m个
+{m,n}: m~n 个
+
+re.match 方法
+
+* 默认情况下,match 方法从左向右的检查字符串,一旦不匹配,就结束并返回结果
+
 """
 
 import re
@@ -19,9 +35,8 @@ import re
 def test():
     """ re.match(正则,字符串) """
 
-
-    pattern = "\w"
-    result = re.match(pattern," hi hello world hello alex")
+    pattern = "\w[^i123]"
+    result = re.match(pattern,"h5 hello world hello alex")
     print(result)
 
 
