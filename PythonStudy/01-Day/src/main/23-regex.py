@@ -35,8 +35,8 @@ import re
 def test():
     """ re.match(正则,字符串) """
 
-    pattern = "\w[^i123]"
-    result = re.match(pattern,"h5 hello world hello alex")
+    pattern = "[a-z]+\d{4}"
+    result = re.match(pattern,"abc123")
     print(result)
 
 
