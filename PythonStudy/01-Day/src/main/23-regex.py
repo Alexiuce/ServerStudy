@@ -39,6 +39,11 @@ def test():
     result = re.match(pattern,"abc123")
     print(result)
 
+    print("*"*30)
+    s = r'\nabc'   # 原始字符串
+    print(s)
+
+
 
 def main():
     test()
