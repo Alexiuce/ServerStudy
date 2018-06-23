@@ -54,6 +54,19 @@ def test():
     print(res2.group(1))   # Hello p  获取第一组()中的匹配内容
 
 
+    html = "<html><body><p>Html body p</p></body></html>"
+    # ptn = r'<(.+)><(.+)><(.+)>(.+)</\3></\2></\1>'
+
+    """
+    定义组名 (?P<groupname>)
+    使用组名 (?P=groupname)
+    """
+
+    ptn = r'<(?P<key1>.+)><(?P<key2>.+)><(?P<key3>.+)>.+</(?P=key3)></(?P=key2)></(?P=key1)>'
+    r2 = re.match(ptn,html)
+    print(r2.group(1))
+
+
 def main():
     test()
 
