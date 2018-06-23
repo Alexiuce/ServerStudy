@@ -66,10 +66,35 @@ def test():
     r2 = re.match(ptn,html)
     print(r2.group(1))
 
+""" re 模块的其他用法
+search  : 根据正则搜索字符串,默认情况下一旦找到后,就停止继续搜索,并返回结果
+findall : 根据正则查找,匹配所有的部分
+sub : 根据正则进行替换, 替换规则可以是一个函数进行处理
+
+
+"""
+
+def search_test():
+    html = "<html><body><p>Html body p</p></body></html>"
+    result = re.search(r'p',html)
+    print(result.group)
+
+def sub_test():
+    html = "<html><body><p>Html body p90</p></body></html>"
+    # re.sub('html','Html',html)
+
+    a = re.sub(r'Html',replace_handle,html)
+    print(a)
+
+
+
+def replace_handle(result):
+    return "Body"
 
 def main():
-    test()
-
+    # test()
+    # search_test()
+    sub_test()
 
 
 if __name__ == '__main__':
