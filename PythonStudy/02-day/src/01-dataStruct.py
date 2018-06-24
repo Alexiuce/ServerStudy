@@ -12,7 +12,15 @@ def sample_1():
     # r2 = (x for x in range(1001))
     # r3 = (x for x in range(1001))
     rang1 = range(1001)
-    
+
+
+    """时间复杂度T
+    大O记法: 
+    """
+    # T = 1000 * 1000 * 1000 *2
+      # T(n) = N * N * N * 2 时间复杂度,n 代表范围规模
+      # T(n) = k* N^3
+
     # for a in rang1:
     #     for b in rang1:
     #         for c in rang1:
