@@ -16,6 +16,11 @@ def sample_1():
 
     """时间复杂度T
     大O记法: 
+    
+    复杂度顺序:
+    
+    O(1) < O(log n) < O(n) < O(n* log n) < O(n^2) <O(n^3) < O(2^n) < O(n!) < O(n^n)
+    
     """
     # T = 1000 * 1000 * 1000 *2
       # T(n) = N * N * N * 2 时间复杂度,n 代表范围规模
@@ -30,11 +35,23 @@ def sample_1():
 
     for a in rang1:
         for b in rang1:
-            c = 1000 - q - b
+            c = 1000 - a - b
             if  a**2 + b**2 == c**2:
                 print("a=%d b=%d c=%d" %(a,b,c))
 
 
+
+""" timeit 模块 (代码执行时间测量模块)
+class timeit.Timer(stmt='',setup='',timer=<func>)
+* stmt : 需要测试的代码语句
+* setup: 运行代码的设置
+* timer: 定时器函数
+
+
+timeit.Timer.timeit(number=100)
+
+
+"""
 
 
 
