@@ -52,11 +52,43 @@ timeit.Timer.timeit(number=100)
 
 
 """
+from timeit import Timer
 
+def test():
+    l = []
+    for i in range(100):
+        l.append(i)
 
+def tet1():
+    l = []
+    for i in range(100):
+        l += [i]
 
+def tet2():
+    l = [i for i in range(100)]
+
+def tet3():
+    l = list(range(100))
+
+def timer_sample():
+    timer1 = Timer('test()','from __main__ import test')
+    tr = timer1.timeit(10000)
+    print("append:",tr)
+
+    timer2 = Timer('tet1()','from __main__ import tet1')
+    tr2 = timer2.timeit(10000)
+    print("array += :",tr2)
+
+    timer3 = Timer('tet2()','from __main__ import tet2')
+    tr3 = timer3.timeit(10000)
+    print("list generator:",tr3)
+
+    timer4 = Timer('tet3()','from __main__ import tet3')
+    tr4 = timer4.timeit(10000)
+    print("list ():",tr4)
 
 
 
 if __name__ == '__main__':
-    sample_1()
+    # sample_1()
+    timer_sample()
