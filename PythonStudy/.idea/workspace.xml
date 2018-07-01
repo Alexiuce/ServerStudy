@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/PythonStudy$15_mutiltask.coverage" NAME="15-mutiltask Coverage Results" MODIFIED="1527477855927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$16_multithread.coverage" NAME="16-multithread Coverage Results" MODIFIED="1527649069629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$18_server.coverage" NAME="18-server Coverage Results" MODIFIED="1528766013771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
-    <SUITE FILE_PATH="coverage/PythonStudy$23_regex.coverage" NAME="23-regex Coverage Results" MODIFIED="1529651272803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
+    <SUITE FILE_PATH="coverage/PythonStudy$23_regex.coverage" NAME="23-regex Coverage Results" MODIFIED="1529888043486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$main.coverage" NAME="main Coverage Results" MODIFIED="1526265785494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/WangGun" />
     <SUITE FILE_PATH="coverage/PythonStudy$17_tcpip.coverage" NAME="17-tcpip Coverage Results" MODIFIED="1528682893909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
     <SUITE FILE_PATH="coverage/PythonStudy$21_dynamicHttpServer.coverage" NAME="21-dynamicHttpServer Coverage Results" MODIFIED="1529376921653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-Day/src/main" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="18-server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/18-server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="361">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#324#344#0" expanded="true" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="19-coroutine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/19-coroutine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
+            <state relative-caret-position="1634">
               <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
               <folding>
                 <element signature="e#142#153#0" expanded="true" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="21-dynamicHttpServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/21-dynamicHttpServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1653">
+            <state relative-caret-position="1710">
               <caret line="90" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#90#110#0" expanded="true" />
@@ -126,8 +126,8 @@
       <file leaf-file-name="23-regex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-Day/src/main/23-regex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+            <state relative-caret-position="-372">
+              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -197,18 +197,16 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="325" />
-    <option name="y" value="187" />
-    <option name="width" value="1613" />
-    <option name="height" value="717" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2048" />
+    <option name="height" value="1130" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,6 +240,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,23 +394,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
+    <frame x="0" y="22" width="2048" height="1130" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50149405" side_tool="true" weight="0.3286908" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.42804086" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49850598" weight="0.3286908" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499502" weight="0.42804086" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.44749597" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.19173306" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.21996616" visible="true" weight="0.19472112" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968128" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32968128" />
       <window_info id="Structure" order="1" sideWeight="0.7800338" side_tool="true" weight="0.20567729" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925718" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -638,7 +637,7 @@
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-1367265669/select.py" />
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/18-server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="361">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#324#344#0" expanded="true" />
@@ -647,17 +646,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/pdb.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="570">
             <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -684,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/19-coroutine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
+        <state relative-caret-position="1634">
           <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
           <folding>
             <element signature="e#142#153#0" expanded="true" />
@@ -750,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/21-dynamicHttpServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
+        <state relative-caret-position="1710">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#90#110#0" expanded="true" />
@@ -774,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-Day/src/main/23-regex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="-372">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
         </state>
       </provider>
     </entry>

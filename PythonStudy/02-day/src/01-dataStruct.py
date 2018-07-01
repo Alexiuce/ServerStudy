@@ -16,6 +16,11 @@ def sample_1():
 
     """时间复杂度T
     大O记法: 
+    
+    复杂度顺序:
+    
+    O(1) < O(log n) < O(n) < O(n* log n) < O(n^2) <O(n^3) < O(2^n) < O(n!) < O(n^n)
+    
     """
     # T = 1000 * 1000 * 1000 *2
       # T(n) = N * N * N * 2 时间复杂度,n 代表范围规模
@@ -30,18 +35,60 @@ def sample_1():
 
     for a in rang1:
         for b in rang1:
-            c = 1000 - q - b
+            c = 1000 - a - b
             if  a**2 + b**2 == c**2:
                 print("a=%d b=%d c=%d" %(a,b,c))
 
-""" 顺序表结构
-* 表头信息:总容量,当前容量 
-* 数据区: 
 
-一体式: 表头信息与数据区连续存储,获取数据时跳过表头信息
-分离式: 表头信息增加一个字段,用来存储数据地址
+
+""" timeit 模块 (代码执行时间测量模块)
+class timeit.Timer(stmt='',setup='',timer=<func>)
+* stmt : 需要测试的代码语句
+* setup: 运行代码的设置
+* timer: 定时器函数
+
+
+timeit.Timer.timeit(number=100)
+
 
 """
+from timeit import Timer
+
+def test():
+    l = []
+    for i in range(100):
+        l.append(i)
+
+def tet1():
+    l = []
+    for i in range(100):
+        l += [i]
+
+def tet2():
+    l = [i for i in range(100)]
+
+def tet3():
+    l = list(range(100))
+
+def timer_sample():
+    timer1 = Timer('test()','from __main__ import test')
+    tr = timer1.timeit(10000)
+    print("append:",tr)
+
+    timer2 = Timer('tet1()','from __main__ import tet1')
+    tr2 = timer2.timeit(10000)
+    print("array += :",tr2)
+
+    timer3 = Timer('tet2()','from __main__ import tet2')
+    tr3 = timer3.timeit(10000)
+    print("list generator:",tr3)
+
+    timer4 = Timer('tet3()','from __main__ import tet3')
+    tr4 = timer4.timeit(10000)
+    print("list ():",tr4)
+
+
 
 if __name__ == '__main__':
-    sample_1()
+    # sample_1()
+    timer_sample()
