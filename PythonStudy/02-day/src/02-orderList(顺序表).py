@@ -13,3 +13,46 @@
 分离式: 表头信息增加一个字段,用来存储数据地址
 
 """
+
+
+#################
+""" 栈与队列
+1. 栈的特点:
+2. 队列的特点: 
+
+"""
+
+class MStack(object):
+
+    def __init__(self):
+        self.__list = []
+
+    def push(self, item):
+        self.__list.append(item)
+
+    def pop(self):
+        return self.__list.pop()
+
+    def peek(self):
+        """返回顶部元素"""
+        if self.__list:
+            return self.__list[-1]
+        else:
+            return  None
+
+    def is_empty(self):
+        return self.__list == []
+
+    def size(self):
+        return len(self.__list)
+
+
+
+
+
+def main():
+    s = MStack()
+
+
+if __name__ == '__main__':
+    main()
