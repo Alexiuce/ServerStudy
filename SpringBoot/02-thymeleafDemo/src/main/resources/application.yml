@@ -1,7 +1,0 @@
-spring:
-  thymeleaf:
-    cache: false     #  关闭缓存
-    mode: LEGACYHTML5    # 使用非严格html5
-    encoding: utf-8
-    servlet:
-      content-type: text/html
