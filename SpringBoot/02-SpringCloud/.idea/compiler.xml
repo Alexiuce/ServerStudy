@@ -9,6 +9,7 @@
         <module name="serverprovider" />
         <module name="eurekaserver" />
         <module name="eureka-server" />
+        <module name="resttemplate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="12" />
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="resttemplate" options="-parameters" />
       <module name="serverprovider" options="-parameters" />
     </option>
   </component>
