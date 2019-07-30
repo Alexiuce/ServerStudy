@@ -11,6 +11,7 @@
     <modules>
         <module>eureka-server</module>
         <module>server-provider</module>
+        <module>resttemplate</module>
     </modules>
 
     <properties>
@@ -55,6 +56,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
     </dependencies>
 
 
