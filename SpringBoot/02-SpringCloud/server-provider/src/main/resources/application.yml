@@ -1,0 +1,14 @@
+server:
+  port: 9980
+
+spring:
+  application:
+    name: provide
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9988/eureka/
+  instance:
+    prefer-ip-address: true
+
+
