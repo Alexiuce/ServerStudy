@@ -12,6 +12,7 @@
         <module>eureka-server</module>
         <module>server-provider</module>
         <module>resttemplate</module>
+        <module>consumer</module>
     </modules>
 
     <properties>
