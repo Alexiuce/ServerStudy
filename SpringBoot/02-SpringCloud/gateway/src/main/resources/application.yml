@@ -1,14 +1,14 @@
 server:
-  port: 9981
-
+  port: 8030
 spring:
   application:
-    name: provide
+    name: gateway-alex
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9988/eureka/
-  instance:
-    prefer-ip-address: true
-
+zuul:
+  routes:
+    provide: /pro/**
 
