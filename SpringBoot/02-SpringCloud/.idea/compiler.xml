@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="serverprovider" />
-        <module name="eurekaserver" />
+        <module name="gateway" />
         <module name="eureka-server" />
         <module name="resttemplate" />
+        <module name="eurekaserver" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="consumer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="serverprovider" options="-parameters" />
     </option>
