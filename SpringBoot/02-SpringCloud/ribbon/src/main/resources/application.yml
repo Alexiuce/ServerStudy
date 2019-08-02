@@ -1,15 +1,13 @@
 server:
-  port: 8030
+  port: 8040
 
 spring:
   application:
-    name: gateway-alex
+    name: ribbon-alex
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9988/eureka/
-zuul:
-  routes:
-    provide: /pro/**
-
+  instance:
+    prefer-ip-address: true
