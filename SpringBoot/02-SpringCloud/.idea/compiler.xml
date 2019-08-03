@@ -10,6 +10,7 @@
         <module name="gateway" />
         <module name="eureka-server" />
         <module name="resttemplate" />
+        <module name="server-provider" />
         <module name="ribbon" />
         <module name="eurekaserver" />
         <module name="consumer" />
@@ -25,6 +26,7 @@
       <module name="gateway" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="server-provider" options="-parameters" />
       <module name="serverprovider" options="-parameters" />
     </option>
   </component>
