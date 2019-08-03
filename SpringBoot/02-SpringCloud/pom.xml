@@ -15,6 +15,7 @@
         <module>consumer</module>
         <module>gateway</module>
         <module>ribbon</module>
+        <module>feign</module>
     </modules>
 
     <properties>

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160c7bca-5660-491e-93f0-f761869e697c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ribbon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/alex/RibbonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon/src/main/java/com/alex/controller/RibbonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../jv8_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jv8_demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../jv8_demo/src/main/java/JXCApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jv8_demo/src/main/java/JXCApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/server-provider/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,24 +65,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/alex/RibbonApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="161">
               <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/alex/controller/RibbonController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#421#422#0" expanded="true" />
@@ -98,6 +86,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feign/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -161,7 +154,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -174,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,116 +174,11 @@
               <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
               <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="alex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="alex" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloudfactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="02-SpringCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -450,17 +337,17 @@
       <workItem from="1564542560551" duration="385000" />
       <workItem from="1564622345318" duration="4063000" />
       <workItem from="1564712071425" duration="3176000" />
+      <workItem from="1564831702690" duration="295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18059000" />
+    <option name="totallyTimeSpent" value="18354000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29295427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2985167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -483,7 +370,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49938196" visible="true" weight="0.46602973" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49938196" visible="true" weight="0.46599776" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -645,6 +532,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ribbon/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -659,24 +553,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/alex/RibbonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ribbon/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/alex/RibbonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -687,17 +577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ribbon/src/main/java/com/alex/controller/RibbonController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#421#422#0" expanded="true" />
@@ -705,6 +588,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
