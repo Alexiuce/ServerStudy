@@ -1,14 +1,11 @@
 server:
-  port: 9981
-
+  port: 8050
 spring:
   application:
-    name: provide
+    name: feign-alex
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9988/eureka/
+      defaultZone:  http://localhost:9988/eureka/
   instance:
     prefer-ip-address: true
-
-
