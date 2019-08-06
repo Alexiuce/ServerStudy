@@ -16,6 +16,7 @@
         <module>gateway</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>hystrix-alex</module>
     </modules>
 
     <properties>
