@@ -13,6 +13,7 @@
         <module name="feign" />
         <module name="server-provider" />
         <module name="ribbon" />
+        <module name="hystrixalex" />
         <module name="eurekaserver" />
         <module name="consumer" />
       </profile>
@@ -26,6 +27,7 @@
       <module name="eurekaserver" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="hystrixalex" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="server-provider" options="-parameters" />
