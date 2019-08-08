@@ -1,8 +1,8 @@
 
-import sun.security.util.Length;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class JXCApplication {
 
@@ -26,7 +26,13 @@ public class JXCApplication {
 //
 //        System.out.println(result);
 
-        test();
+//        test();
+
+        List<String>result = Stream.of("one","two","three","four","five")
+                .peek(e -> System.out.println("Peek value:" +e))
+                .collect(Collectors.toList());
+        System.out.println("==========");
+        System.out.println(result);
     }
 
 
