@@ -17,6 +17,8 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>hystrix-alex</module>
+        <module>configserver</module>
+        <module>config-server-alex</module>
     </modules>
 
     <properties>

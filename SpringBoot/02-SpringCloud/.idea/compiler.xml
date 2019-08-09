@@ -9,6 +9,7 @@
         <module name="serverprovider" />
         <module name="gateway" />
         <module name="eureka-server" />
+        <module name="configserveralex" />
         <module name="resttemplate" />
         <module name="feign" />
         <module name="server-provider" />
@@ -18,10 +19,14 @@
         <module name="consumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="12" />
+    <bytecodeTargetLevel target="12">
+      <module name="configserver" target="12" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configserver" options="-parameters" />
+      <module name="configserveralex" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
