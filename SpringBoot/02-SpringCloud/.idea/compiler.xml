@@ -9,6 +9,7 @@
         <module name="serverprovider" />
         <module name="gateway" />
         <module name="eureka-server" />
+        <module name="configserverone" />
         <module name="configserveralex" />
         <module name="resttemplate" />
         <module name="feign" />
@@ -21,18 +22,21 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="12">
       <module name="configserver" target="12" />
+      <module name="hystrixone" target="12" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="configserver" options="-parameters" />
       <module name="configserveralex" options="-parameters" />
+      <module name="configserverone" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrixalex" options="-parameters" />
+      <module name="hystrixone" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="server-provider" options="-parameters" />
