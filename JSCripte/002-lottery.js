@@ -110,8 +110,6 @@ function CS(total, num, i=0, concat) {
 //遍历每组比赛，取每场比赛的一个选项进行组合
 function mix(list, limit, idx=0, concat) {
     let ret=[];
-    // console.log(list[idx])
-    // console.log("wwwwww")
     for(let i=0,len=list[idx].length; i<len; i++){
         let rest = concat ? concat.concat(list[idx][i]) : [list[idx][i]];
         if(limit>1){
