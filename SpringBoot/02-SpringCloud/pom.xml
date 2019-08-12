@@ -19,6 +19,8 @@
         <module>hystrix-alex</module>
         <module>configserver</module>
         <module>config-server-alex</module>
+        <module>hystrix-one</module>
+        <module>configserver-one</module>
     </modules>
 
     <properties>
