@@ -1,0 +1,13 @@
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://47.98.101.213:3306/mmall_learning
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+mybatis:
+  mapper-locations: classpath:/mappers/*Mapper.xml
+  type-aliases-package: com.back.demo.pojo
