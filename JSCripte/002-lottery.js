@@ -57,8 +57,20 @@ const PASS_MODE_MAP = [
  * @param {Number} cgMode 串关方式
  */
 function createMode (matches, cgCount, cgMode){
-// export default function createMode (matches, cgCount, cgMode){
-    let cgroup = PASS_MODE_MAP[cgCount-3];
+    // 根据选定的场数,获取对应的串关场数的二维数组
+    /**
+     *  [
+     *   [7, 6, 6], //7x7
+         [8, 7, 6], //7x8
+         [21, 5, 5], //7x21
+         [35, 4, 4], //7x35
+         [120, 7, 2] //7x120
+     *  ]
+     */
+    let cgroup = PASS_MODE_MAP[cgCount-3];    
+    /*
+      定义容器数组;用来存放遍历cgroup中的内容 
+     */
     let range = [];
 
     for(let i=0,len=cgroup.length; i<len; i++){
