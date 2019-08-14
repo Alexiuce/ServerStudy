@@ -36,6 +36,8 @@ public class JXCApplication {
     }
 
 
+    
+
     private static void test() {
         String url = "http://361pay.qu68s.cn/api/paynew/bankPay";
 
