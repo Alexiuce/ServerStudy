@@ -37,5 +37,17 @@ function duplexComb(r,n,m){
     return r * c - (r - 1) * e
  }
 
-let result = duplexComb(5,10,9)
-console.log(result)
+// let result = duplexComb(5,10,9)
+// console.log(result)
+
+/**
+ * 
+ * @param {*} selectCount  选择的个数
+ * @param {*} targetArray  可供选择的数组
+ */
+function combationList(selectCount,targetArray){
+    let total = targetArray.length;
+    console.log(total)
+}
+
+combationList(3,[1,2,4])
