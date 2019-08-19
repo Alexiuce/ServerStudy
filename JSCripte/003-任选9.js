@@ -47,6 +47,9 @@ function duplexComb(r,n,m){
  */
 function combationList(selectCount,targetArray){
     let total = targetArray.length;
+    if (selectCount == total){return targetArray}
+    
+
     console.log(total)
 }
 
