@@ -47,7 +47,20 @@ function duplexComb(r,n,m){
  */
 function combationList(selectCount,targetArray){
     let total = targetArray.length;
+    if (selectCount == total){return targetArray}
+    
+
     console.log(total)
 }
 
-combationList(3,[1,2,4])
+// combationList(3,[1,2,4])
+
+
+// 位运算
+
+let t1 = 0x6;
+for( i = 0; i< 4; i++){
+    
+    console.log((t1 >> i) & 0x1)
+    console.log('-------')
+}
