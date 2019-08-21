@@ -61,6 +61,19 @@ function combationList(selectCount,targetArray){
 let t1 = 0x6;
 for( i = 0; i< 4; i++){
     
-    console.log((t1 >> i) & 0x1)
-    console.log('-------')
+    console.log((t1 >> i) & 0x1) 
 }
+console.log('-------')
+
+function combationBinary(count, from){
+    var array = []
+    for(i = 0; i < from; i++){
+        let v = i < count ? 1 : 0
+        array.push(v)
+    }
+
+    console.log(array)
+}
+
+combationBinary(3,5)
+
