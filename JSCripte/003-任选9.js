@@ -58,30 +58,34 @@ function combationList(selectCount,targetArray){
 
 // 位运算
 
-let t1 = 0x6;
+/* let t1 = 0x6;
 for( i = 0; i< 4; i++){
     
     console.log((t1 >> i) & 0x1) 
 }
-console.log('-------')
+console.log('-------') */
 
 
 
 
 function combationBinary(count, from){
+
+    var result = []
+
     var array = []
     for(i = 0; i < from; i++){
         let v = i < count ? 1 : 0
         array.push(v)
     }
    
-    for(i = 0; i < from; i++){
+    for(i = 0; i < from; ++i){
+       
         if (array[i] == 1 && array[i+1] == 0){
             // 交换 1 和 0;
             let tmp = array[i]
             array[i] = array[i + 1]
             array[i + 1] = tmp
-
+          
             // 移动所有i 前面的1 到最左边;
             var flag = 0;
             for(j = 0; j < i; j++){
@@ -92,11 +96,13 @@ function combationBinary(count, from){
                     flag += 1
                 }
             }
-            console.log(array)
+            result.push(array)
+            i = -1
 
         }
     }
+    console.log(result.length)
 }
 
-combationBinary(6,8)
+combationBinary(2,4)
 
