@@ -71,12 +71,12 @@ console.log('-------') */
 function combationBinary(count, from){
 
     var result = []
-
     var array = []
     for(i = 0; i < from; i++){
         let v = i < count ? 1 : 0
         array.push(v)
     }
+   result.push(Array.from(array))
    
     for(i = 0; i < from; ++i){
        
@@ -85,7 +85,6 @@ function combationBinary(count, from){
             let tmp = array[i]
             array[i] = array[i + 1]
             array[i + 1] = tmp
-          
             // 移动所有i 前面的1 到最左边;
             var flag = 0;
             for(j = 0; j < i; j++){
@@ -96,13 +95,15 @@ function combationBinary(count, from){
                     flag += 1
                 }
             }
-            result.push(array)
+            result.push(Array.from(array))
             i = -1
 
         }
     }
-    console.log(result.length)
+    console.log('所有组合:')
+    console.log(result)
+    console.log(`组合总数: ${result.length}`)
 }
 
-combationBinary(2,4)
+combationBinary(2,5)
 
