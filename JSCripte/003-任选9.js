@@ -112,3 +112,13 @@ function combationBinary(count, from){
 
 combationBinary(2,5)
 
+/*  复式 组合 计算注数 
+例如, 1,2,3,4,5  返回一注;
+     12,2,3,4,5 返回2注;
+     12,23,3,4,5 返回注;
+*/
+
+function complex(){
+    
+}
+
