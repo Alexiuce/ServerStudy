@@ -108,6 +108,7 @@ function combationBinary(count, from){
     console.log('所有组合:')
     console.log(result)
     console.log(`组合总数: ${result.length}`)
+    return result.length
 }
 
 combationBinary(2,5)
@@ -132,10 +133,6 @@ combationBinary(2,5)
             |
             |
             1. 如上数组, 进行 5 选 2 后 进行复式计算注数
-            |
-            |
-            |
-            |
             猜测: 0. 先计算 5选2 的组合数   == n;
                   1. 计算包含复式组合的组合个数 == m
                   2. 根据复式组合的个数 计算复式带来的变化注数 == l,
@@ -145,10 +142,13 @@ combationBinary(2,5)
 */
 
 function complex(){
+    let n = combationBinary(2,5)
+    let m = 3       // [1,2,3] 复式选择的个数
+    let l = combationBinary(1,4) 
     
-
-      
-
-    
+    return n + (m - 1) * l    
 }
+
+
+console.log(complex())
 
