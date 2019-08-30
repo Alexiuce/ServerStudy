@@ -137,16 +137,19 @@ combationBinary(2,5)
                   1. 计算包含复式组合的组合个数 == m
                   2. 根据复式组合的个数 计算复式带来的变化注数 == l,
                   3. 如果有多组复式选项, 则根据步骤2 计算每个复式项带来的额外注数;
-                  4. 合并计算结果 : result = n  + (m - 1) * l  
+                  3.1 计算 包含所有复式选项的组合数 == r;
+                  3.2 计算这些复式选项的注数 == s ; (s = 复式选项1的复式个数 * 复式选项2的复式个数 * 复式选项3的复式个数 * ....)
+                  4. 合并计算结果 : result = n  + (m - 1) * l - (r - 1) * s  
 
 */
 
 function complex(){
-    let n = combationBinary(2,5)
+    let n = combationBinary(3,6)     // 6 选3
     let m = 3       // [1,2,3] 复式选择的个数
-    let l = combationBinary(1,4) 
-    
-    return n + (m - 1) * l    
+    let l = combationBinary(2,5) 
+    let r = 1  // 仅有一个是复式;
+    let s = 3  // 复式的组合注数;  
+    return n + (m - 1) * l - (r - 1) * s    
 }
 
 
