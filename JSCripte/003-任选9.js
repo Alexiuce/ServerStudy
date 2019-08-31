@@ -144,11 +144,11 @@ combationBinary(2,5)
 */
 
 function complex(){
-    let n = combationBinary(3,6)     // 6 选3
-    let m = 3       // [1,2,3] 复式选择的个数
+    let n = combationBinary(3,6)     // 6 选3    [[123],[123],3,4,5,6]
+    let m = 3      // [1,2,3] 复式选择的个数
     let l = combationBinary(2,5) 
-    let r = 1  // 仅有一个是复式;
-    let s = 3  // 复式的组合注数;  
+    let r = 2  // 仅有一个是复式;
+    let s = 3 * 3 // 复式的组合注数;  
     return n + (m - 1) * l - (r - 1) * s    
 }
 
