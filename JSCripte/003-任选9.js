@@ -165,3 +165,18 @@ function complex(){
 
 console.log(complex())
 
+
+
+// https://github.com/dragonflylxp/cal-bonus/blob/master/奖金范围%26奖金优化.pdf 
+/*** 足彩 奖金计算
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
