@@ -152,7 +152,7 @@ combationBinary(2,5)
 
 
 */
-
+/** 这个方法不正确....修改测试用; */
 function complex(){
     let n = combationBinary(3,6)     // 6 选3    [[123],[456],7,8,9,10]
     let m = 3      // [1,2,3] 复式选择的个数
