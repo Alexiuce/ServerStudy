@@ -150,7 +150,6 @@ combationBinary(2,5)
 
 
 
-
 */
 /** 这个方法不正确....修改测试用; */
 function complex(){
@@ -160,6 +159,12 @@ function complex(){
     let r = 2  // 有两个是复式; [123] [456] 
     let s = 3 * 3 // 复式的组合注数;  
     return n + (m - 1) * l - (r - 1) * s    
+}
+
+/** 遍历复式数组 */
+
+function lookAroundComplex(){
+    
 }
 
 
