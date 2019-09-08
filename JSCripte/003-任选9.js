@@ -169,9 +169,12 @@ function lookAroundComplex(){
     let arr = [[1,3,5],[2,3,45,7],[9,0,12],3,4,5,6,7]
 
 
-   for(i = 0; i < 10; i++){
+    for(i = 0; i < 10; i++){
+        let item = arr[i];
+        // 判断是否是数组;
 
-   }
+        
+    }
 
 }
 
