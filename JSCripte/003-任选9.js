@@ -275,7 +275,5 @@ document.write(pb+' ');
            
   }
     }
-document.write('<br><br><span style=\"font-size: 12px\"><b>电脑运算完毕·共有'+s+'注<\/b><\/span>');
-document.writeln("<br><br><b><a href=\"\/hukva\/kjl\/ball\/fsjsq.htm\" style=\"text-decoration: none\"><span style=\"font-size: 12px\">返回【重新计算】<\/span><\/a><\/p>")
 
 }
