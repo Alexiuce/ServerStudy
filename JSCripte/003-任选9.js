@@ -212,6 +212,7 @@ function Fushi(chkno)
   var jub; 
   var mp; 
 
+  /** 循环遍历选择的项目 */
   for (var i=1;i<=tshu;i++)
   {
     init[i]=i; 
