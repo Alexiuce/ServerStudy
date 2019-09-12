@@ -212,7 +212,7 @@ function Fushi(chkno)
   var jub; 
   var mp; 
 
-  /** 循环遍历选择的项目 */
+  /** 循环遍历选择的项目 : 获取初始化值;*/
   for (var i=1;i<=tshu;i++)
   {
     init[i]=i; 
