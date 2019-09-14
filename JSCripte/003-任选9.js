@@ -239,42 +239,30 @@ function Fushi(chkno)
 	 return false;
    }
 
-   for(var i=1;i<=s;i++)
-   {
-document.write('<br>');
-     for(var p=1;p<=tshu;p++)
-  {
-    pb=cball[init[p]];
-    if(pb<10)
-    {
-             pb="0"+pb;
-           }
-document.write(pb+' '); 
-  }
+   for(var i=1;i<=s;i++){
+        document.write('<br>');
+        for(var p=1;p<=tshu;p++){
+            pb=cball[init[p]];
+            if(pb<10){pb="0"+pb;}
+            document.write(pb+' '); 
+        }
   
-  if(i%10000==0)
-  {
-    alert('共输出了'+i+'个组合，剩余：'+(s-i));
-  }
-       exc=parseInt(tshu); 
-       jub=true;
+        if(i%10000==0){ alert('共输出了'+i+'个组合，剩余：'+(s-i));}
+        exc=parseInt(tshu); 
+        jub=true;
   
-  while((exc>0)&(jub==true))
-  {
-           mp=ssum-tshu+exc; 
-    if(init[exc]<mp)
-    {             
-      pvx=init[exc];
-   for(var gox=exc;gox<=tshu;gox++)
-   {
-     init[gox]=pvx+1;                
-     pvx+=1;
-   }
-   jub=false;
-    }
-    exc-=1;
-           
-  }
+        while((exc>0)&(jub==true)){
+            mp=ssum-tshu+exc; 
+            if(init[exc]<mp){             
+                pvx=init[exc];
+                for(var gox=exc;gox<=tshu;gox++){
+                init[gox]=pvx+1;                
+                pvx+=1;
+                }
+                jub=false;
+            }
+            exc-=1;        
+        }
     }
 
 }
