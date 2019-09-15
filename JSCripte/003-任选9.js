@@ -213,31 +213,21 @@ function Fushi(chkno)
   var mp; 
 
   /** 循环遍历选择的项目 : 获取初始化值;*/
-  for (var i=1;i<=tshu;i++)
-  {
+  for (var i=1;i<=tshu;i++){
     init[i]=i; 
   }
   
-  for (var i=0;i<chkno.length;i++)
-  {  
-  if (chkno[i].checked==true) 
-   {
-   ssum+=1;
-   cball[ssum]=chkno[i].value; 
-   }
+  for (var i=0;i<chkno.length;i++){  
+    if (chkno[i].checked==true) {
+        ssum+=1;
+        cball[ssum]=chkno[i].value; 
+    }
   }
-   if(tshu>=ssum)
-   {
+   if(tshu>=ssum){
      document.all('tishi').innerHTML="所选的球数必须要比每组球数多！";
 	 return false;
    }
    s=Math.round(Trun(ssum)/Trun(ssum-tshu)/Trun(tshu)); 
-   
-   if(s>500000)
-   {
-     document.all('tishi').innerHTML="组合超过50万注，暂不提供输出，抱歉！";
-	 return false;
-   }
 
    for(var i=1;i<=s;i++){
         document.write('<br>');
