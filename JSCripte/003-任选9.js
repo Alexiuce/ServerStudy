@@ -188,14 +188,6 @@ console.log(complex())
 /*** 足彩 奖金计算
  * 
  * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
  */
 
 function Fushi(chkno)
@@ -223,10 +215,6 @@ function Fushi(chkno)
         cball[ssum]=chkno[i].value; 
     }
   }
-   if(tshu>=ssum){
-     document.all('tishi').innerHTML="所选的球数必须要比每组球数多！";
-	 return false;
-   }
    s=Math.round(Trun(ssum)/Trun(ssum-tshu)/Trun(tshu)); 
 
    for(var i=1;i<=s;i++){
