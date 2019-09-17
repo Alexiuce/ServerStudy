@@ -147,3 +147,6 @@ let matches = [
 
 let result1= createMode(matches, 4, 6); //上述比赛选项进行4x6串关后共201注
 console.log(result1.length)
+// 
+
+// 混合 串场 计算  (转换语言测试)
