@@ -54,8 +54,6 @@ function combationList(selectCount,targetArray){
 }
 
 // combationList(3,[1,2,4])
-
-
 // 位运算
 
 /* let t1 = 0x6;
@@ -64,7 +62,6 @@ for( i = 0; i< 4; i++){
     console.log((t1 >> i) & 0x1) 
 }
 console.log('-------') */
-
 
 
 /* 二进制辅助法 计算组合
@@ -166,25 +163,16 @@ function complex(){
 /** 遍历复式数组 */
 
 function lookAroundComplex(){
-    
+
     let arr = [[1,3,5],[2,3,45,7],[9,0,12],3,4,5,6,7]
-
-
     for(i = 0; i < 10; i++){
         let item = arr[i];
         // 判断是否是数组;
-
-        
+        // 复式计算..处理测试
     }
-
 }
 
-
 console.log(complex())
-
-
-
-
 
 // https://github.com/dragonflylxp/cal-bonus/blob/master/奖金范围%26奖金优化.pdf 
 /*** 足彩 奖金计算
