@@ -8,31 +8,31 @@ public class JXCApplication {
 
     public static void main(String[] args) {
 
-//        Arrays.asList("a", "b", "c", "d").forEach(System.out::println);
-//
-//
-//        HashMap<String, String> hm = new HashMap<>();
-//        hm.put("a", "1");
-//        hm.put("g", "2");
-//        hm.put("c", "3");
-//        hm.put("k", "4");
-//        hm.put("e", "5");
-//        hm.put("f", "6");
-//
-//        List<String>result = hm.entrySet()
-//                .stream()
-//                .sorted((x, y) -> x.getKey().compareTo(y.getKey()))
-//                .map(s -> s.getKey() + s.getValue() + ";").collect(Collectors.toList());
-//
-//        System.out.println(result);
+        Arrays.asList("a", "b", "c", "d").forEach(System.out::println);
+
+
+        HashMap<String, String> hm = new HashMap<>();
+        hm.put("a", "1");
+        hm.put("g", "2");
+        hm.put("c", "3");
+        hm.put("k", "4");
+        hm.put("e", "5");
+        hm.put("f", "6");
+
+        List<String>result = hm.entrySet()
+                .stream()
+                .sorted((x, y) -> x.getKey().compareTo(y.getKey()))
+                .map(s -> s.getKey() + s.getValue() + ";").collect(Collectors.toList());
+
+        System.out.println(result);
 
 //        test();
 
-        List<String>result = Stream.of("one","two","three","four","five")
+        List<String>result1 = Stream.of("one","two","three","four","five")
                 .peek(e -> System.out.println("Peek value:" +e))
                 .collect(Collectors.toList());
         System.out.println("==========");
-        System.out.println(result);
+        System.out.println(result1);
     }
     
 
