@@ -8,7 +8,7 @@ public class JXCApplication {
 
     public static void main(String[] args) {
 
-        Arrays.asList("a", "b", "c", "d").forEach(System.out::println);
+        Arrays.asList("a", "b", "c", "d").forEach(JXCApplication::myPrint);
 
 
         HashMap<String, String> hm = new HashMap<>();
