@@ -8,7 +8,14 @@ public class JXCApplication {
 
     public static void main(String[] args) {
 
-        Arrays.asList("a", "b", "c", "d").forEach(JXCApplication::myPrint);
+
+        List <String> al = Arrays.asList("a", "b", "c", "d");
+
+        al.forEach(JXCApplication::myPrint);
+
+
+        List <String> bl = al.stream().map(i -> i + "2").collect(Collectors.toList());
+        bl.forEach(JXCApplication::myPrint);
 
 
         HashMap<String, String> hm = new HashMap<>();
