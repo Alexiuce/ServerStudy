@@ -14,6 +14,13 @@ public class JXCApplication {
         al.forEach(JXCApplication::myPrint);
 
 
+        System.out.println("--------------------");
+        Stream str = al.stream();
+        List <String>fs = (List) str.filter(i -> i == "a").collect(Collectors.toList());
+        fs.forEach(JXCApplication::myPrint);
+        System.out.println("========================");
+
+
         List <String> bl = al.stream().map(i -> i + "2").collect(Collectors.toList());
         bl.forEach(JXCApplication::myPrint);
 
