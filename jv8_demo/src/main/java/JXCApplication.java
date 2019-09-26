@@ -7,8 +7,26 @@ import java.util.stream.Stream;
 public class JXCApplication {
 
     public static void main(String[] args) {
+        testLambdaCode();
+
+    }
+
+    /** lambda code */
+    private static void testLambdaCode(){
+        // JDK 7
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("this is a new thread" + Thread.currentThread());
+            }
+        }).start();
+       // Lambda  (只有一句代码时,可以省略{})
+        new Thread(()->System.out.println("lambda thread running" + Thread.currentThread())).start();
+
+    }
 
 
+    private static void testStreamCode(){
         List <String> al = Arrays.asList("a", "b", "c", "d");
 
         al.forEach(JXCApplication::myPrint);
@@ -52,7 +70,6 @@ public class JXCApplication {
         System.out.println("==========");
         System.out.println(result1);
     }
-    
 
     private static void test() {
         String url = "http://361pay.qu68s.cn/api/paynew/bankPay";
