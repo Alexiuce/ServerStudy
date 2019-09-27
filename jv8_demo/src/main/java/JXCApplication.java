@@ -8,6 +8,7 @@ public class JXCApplication {
 
     public static void main(String[] args) {
         testLambdaCode();
+        testStreamCode();
 
     }
 
@@ -27,48 +28,53 @@ public class JXCApplication {
 
 
     private static void testStreamCode(){
-        List <String> al = Arrays.asList("a", "b", "c", "d");
+        List <String> al = Arrays.asList("a", "ab", "bc", "ad","back");
 
-        al.forEach(JXCApplication::myPrint);
+        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
 
 
 
-        Stream <String>str = al.stream();
 
-        str.filter(i -> i != "a").forEach(JXCApplication::myPrint);
-        System.out.println("--------------------");
+//        al.forEach(JXCApplication::myPrint);
+//
+//
+//
+//        Stream <String>str = al.stream();
+//
+//        str.filter(i -> i != "a").forEach(JXCApplication::myPrint);
+//        System.out.println("--------------------");
 
 //        List <String>fs = (List) str.filter(i -> i == "a").collect(Collectors.toList());
 //        fs.forEach(JXCApplication::myPrint);
 //        System.out.println("========================");
 
 
-        List <String> bl = al.stream().map(i -> i + "2").collect(Collectors.toList());
-        bl.forEach(JXCApplication::myPrint);
-
-
-        HashMap<String, String> hm = new HashMap<>();
-        hm.put("a", "1");
-        hm.put("g", "2");
-        hm.put("c", "3");
-        hm.put("k", "4");
-        hm.put("e", "5");
-        hm.put("f", "6");
-
-        List<String>result = hm.entrySet()
-                .stream()
-                .sorted((x, y) -> x.getKey().compareTo(y.getKey()))
-                .map(s -> s.getKey() + s.getValue() + ";").collect(Collectors.toList());
-
-        System.out.println(result);
+//        List <String> bl = al.stream().map(i -> i + "2").collect(Collectors.toList());
+//        bl.forEach(JXCApplication::myPrint);
+//
+//
+//        HashMap<String, String> hm = new HashMap<>();
+//        hm.put("a", "1");
+//        hm.put("g", "2");
+//        hm.put("c", "3");
+//        hm.put("k", "4");
+//        hm.put("e", "5");
+//        hm.put("f", "6");
+//
+//        List<String>result = hm.entrySet()
+//                .stream()
+//                .sorted((x, y) -> x.getKey().compareTo(y.getKey()))
+//                .map(s -> s.getKey() + s.getValue() + ";").collect(Collectors.toList());
+//
+//        System.out.println(result);
 
 //        test();
 
-        List<String>result1 = Stream.of("one","two","three","four","five")
-                .peek(e -> System.out.println("Peek value:" +e))
-                .collect(Collectors.toList());
-        System.out.println("==========");
-        System.out.println(result1);
+//        List<String>result1 = Stream.of("one","two","three","four","five")
+//                .peek(e -> System.out.println("Peek value:" +e))
+//                .collect(Collectors.toList());
+//        System.out.println("==========");
+//        System.out.println(result1);
     }
 
     private static void test() {
