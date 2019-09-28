@@ -29,12 +29,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JXCApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1355">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="76" selection-end-column="38" />
+            <state relative-caret-position="362">
+              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3639#3640#0" expanded="true" />
-                <element signature="e#3676#3677#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,17 +186,18 @@
       <workItem from="1569373116744" duration="190000" />
       <workItem from="1569458603107" duration="702000" />
       <workItem from="1569545855789" duration="192000" />
+      <workItem from="1569632312857" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12187000" />
+    <option name="totallyTimeSpent" value="12851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20580964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20951793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -256,12 +255,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JXCApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1355">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="76" selection-end-column="38" />
+        <state relative-caret-position="362">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3639#3640#0" expanded="true" />
-            <element signature="e#3676#3677#0" expanded="true" />
           </folding>
         </state>
       </provider>
