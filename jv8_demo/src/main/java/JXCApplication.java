@@ -30,23 +30,24 @@ public class JXCApplication {
     private static void testStreamCode(){
         List <String> al = Arrays.asList("a", "ab", "bc", "ad","back");
 
-        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
+//        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
+        
+        al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
 
-
-        List<String> l = new ArrayList(Arrays.asList("one", "two","three","four"));
-        class State {
-            boolean s;
-        }
-        final State state = new State();
-        Stream<String> sl = l.stream().map(e -> {
-            if (state.s)
-                return "OK";
-            else {
-                state.s = true;
-                return e;
-            }
-        });
-        sl.forEach(System.out::println);
+//        List<String> l = new ArrayList(Arrays.asList("one", "two","three","four"));
+//        class State {
+//            boolean s;
+//        }
+//        final State state = new State();
+//        Stream<String> sl = l.stream().map(e -> {
+//            if (state.s)
+//                return "OK";
+//            else {
+//                state.s = true;
+//                return e;
+//            }
+//        });
+//        sl.forEach(System.out::println);
 
 
 //        al.forEach(JXCApplication::myPrint);
