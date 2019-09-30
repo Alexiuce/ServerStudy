@@ -34,6 +34,10 @@ public class JXCApplication {
         
         al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
 
+        String joinStr = al.stream().reduce("a~",(result,next)->result + next);
+        System.out.println(joinStr);
+
+
 //        List<String> l = new ArrayList(Arrays.asList("one", "two","three","four"));
 //        class State {
 //            boolean s;
