@@ -32,9 +32,13 @@ public class JXCApplication {
 
 //        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
         
-        al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
+//        al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
 
-        String joinStr = al.stream().reduce("a~",(result,next)->result + next);
+        String joinStr = al.stream().reduce("",(result,next)->{
+            System.out.println("result is =" + result);
+            System.out.println("next is  =" + next);
+            return result + next + "\\n";
+        });
         System.out.println(joinStr);
 
 
