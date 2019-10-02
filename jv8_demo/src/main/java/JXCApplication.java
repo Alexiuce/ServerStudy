@@ -2,12 +2,13 @@
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class JXCApplication {
 
     public static void main(String[] args) {
-        testLambdaCode();
+//        testLambdaCode();
         testStreamCode();
 
     }
@@ -28,18 +29,23 @@ public class JXCApplication {
 
 
     private static void testStreamCode(){
-        List <String> al = Arrays.asList("a", "ab", "bc", "ad","back");
+
+        Stream.of("a","b","c","d").forEach(t-> System.out.println(t));
+
+        IntStream.of(1,2,3,4,5,6).forEach(i-> System.out.println(i));
+
+//        List <String> al = Arrays.asList("a", "ab", "bc", "ad","back");
 
 //        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
         
 //        al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
 
-        String joinStr = al.stream().reduce("",(result,next)->{
-            System.out.println("result is =" + result);
-            System.out.println("next is  =" + next);
-            return result + next + "\\n";
-        });
-        System.out.println(joinStr);
+//        String joinStr = al.stream().reduce("",(result,next)->{
+//            System.out.println("result is =" + result);
+//            System.out.println("next is  =" + next);
+//            return result + next + "\\n";
+//        });
+//        System.out.println(joinStr);
 
 
 //        List<String> l = new ArrayList(Arrays.asList("one", "two","three","four"));
