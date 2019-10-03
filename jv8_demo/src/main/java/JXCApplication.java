@@ -5,12 +5,28 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+
+
+
+
+
 public class JXCApplication {
+
+    static private class Person{
+        String name;
+        int age;
+
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
+
 
     public static void main(String[] args) {
 //        testLambdaCode();
-        testStreamCode();
-
+//        testStreamCode();
+    testStreamObjCode();
     }
 
     /** lambda code */
@@ -28,7 +44,26 @@ public class JXCApplication {
     }
 
 
+
+
+    /** stream  obj data type */
+    private static void testStreamObjCode(){
+
+        Stream.of(new Person("alex",20),new Person("jobs",32))
+                .forEach(i-> System.out.println(i.name));
+
+
+
+    }
+
+
+
+    /** stream base data type */
+
     private static void testStreamCode(){
+
+
+
 
         Stream.of("a","b","c","d").forEach(t-> System.out.println(t));
 
@@ -37,7 +72,7 @@ public class JXCApplication {
 //        List <String> al = Arrays.asList("a", "ab", "bc", "ad","back");
 
 //        al.stream().filter(s->s.startsWith("a")).forEach(JXCApplication::myPrint);
-        
+
 //        al.stream().map(i -> i+"_.txt").forEach(JXCApplication::myPrint);
 
 //        String joinStr = al.stream().reduce("",(result,next)->{
