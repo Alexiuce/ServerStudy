@@ -49,10 +49,16 @@ public class JXCApplication {
     /** stream  obj data type */
     private static void testStreamObjCode(){
 
-        Stream.of(new Person("alex",20),new Person("jobs",32))
-                .forEach(i-> System.out.println(i.name));
+        Person resultPerson = new Person("result",0);
 
+        Person p = Stream.of(new Person("alex",20),new Person("jobs",32))
+                .reduce(resultPerson,(result,next)->{
 
+                   return new Person("a",next.age + result.age);
+
+                });
+
+        System.out.println(p.age);
 
     }
 
