@@ -49,16 +49,19 @@ public class JXCApplication {
     /** stream  obj data type */
     private static void testStreamObjCode(){
 
-        Person resultPerson = new Person("result",0);
 
-        Person p = Stream.of(new Person("alex",20),new Person("jobs",32))
-                .reduce(resultPerson,(result,next)->{
+        int r = Stream.of(new Person("alex",20),new Person("jobs",32))
+                .map(t->t.age)
+                .reduce(0,(result,next)->{
 
-                   return new Person("a",next.age + result.age);
+                   return result + next;
 
                 });
 
-        System.out.println(p.age);
+        System.out.println(r);
+
+
+
 
     }
 
