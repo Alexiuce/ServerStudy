@@ -50,15 +50,23 @@ public class JXCApplication {
     private static void testStreamObjCode(){
 
 
-        int r = Stream.of(new Person("alex",20),new Person("jobs",32))
-                .map(t->t.age)
-                .reduce(0,(result,next)->{
+        Arrays.asList("a1","a2","a3","b1","b2","c1","c2").stream()
+                .filter(s->s.startsWith("a"))
+                .map(s-> s+"--")
+                .forEach(JXCApplication::myPrint);
 
-                   return result + next;
 
-                });
 
-        System.out.println(r);
+
+//        int r = Stream.of(new Person("alex",20),new Person("jobs",32))
+//                .map(t->t.age)
+//                .reduce(0,(result,next)->{
+//
+//                   return result + next;
+//
+//                });
+//
+//        System.out.println(r);
 
 
 
