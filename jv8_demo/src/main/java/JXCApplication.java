@@ -49,11 +49,15 @@ public class JXCApplication {
     /** stream  obj data type */
     private static void testStreamObjCode(){
 
-
         Stream.of(1.0, 2.0, 3.0)
-                .mapToInt(Double::intValue) // double 类型转 int
-                .mapToObj(i -> "a" + i) // 对值拼接前缀 a
+                .map(i -> i + "abc")
                 .forEach(System.out::println); // for 循环打印
+
+
+//        Stream.of(1.0, 2.0, 3.0)
+//                .mapToInt(Double::intValue) // double 类型转 int
+//                .mapToObj(i -> "a" + i) // 对值拼接前缀 a
+//                .forEach(System.out::println); // for 循环打印
 
 //        Arrays.asList("a1","a2","a3","b1","b2","c1","c2").stream()
 //                .filter(s->s.startsWith("a"))
