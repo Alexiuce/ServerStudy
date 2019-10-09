@@ -50,7 +50,7 @@ public class JXCApplication {
     private static void testStreamObjCode(){
 
         Stream.of(1.0, 2.0, 3.0)
-                .map(i -> i + "abc")
+                .map(i -> i.intValue() + "abc")
                 .forEach(System.out::println); // for 循环打印
 
 
