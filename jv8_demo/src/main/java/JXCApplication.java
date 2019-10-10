@@ -1,5 +1,6 @@
 
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -49,9 +50,13 @@ public class JXCApplication {
     /** stream  obj data type */
     private static void testStreamObjCode(){
 
-        Stream.of(1.0, 2.0, 3.0)
-                .map(i -> i.intValue() + "abc")
-                .forEach(System.out::println); // for 循环打印
+        Arrays.asList("1","2","3","4","5").forEach(JXCApplication::myPrint);
+
+
+
+//        Stream.of(1.0, 2.0, 3.0)
+//                .map(i -> i.intValue() + "abc")
+//                .forEach(System.out::println); // for 循环打印
 
 
 //        Stream.of(1.0, 2.0, 3.0)
