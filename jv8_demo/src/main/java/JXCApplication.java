@@ -1,5 +1,6 @@
 
 
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -49,9 +50,26 @@ public class JXCApplication {
     /** stream  obj data type */
     private static void testStreamObjCode(){
 
-        Stream.of(1.0, 2.0, 3.0)
-                .map(i -> i.intValue() + "abc")
-                .forEach(System.out::println); // for 循环打印
+        /** 普通的foreach */
+//        Arrays.asList("1","2","3","4","5").forEach(JXCApplication::myPrint);
+
+        /** stream 是垂直进行的, 所以每个操作的顺序会影响运行的结果和执行效率 */
+
+        Stream.of("d2", "a2", "b1", "b3", "c")
+                .map(s -> {
+                    System.out.println("map: " + s);
+                    return s.toUpperCase();
+                })
+                .filter(s -> {
+                    System.out.println("filter: " + s);
+                    return s.startsWith("A");
+                })
+                .forEach(s -> System.out.println("forEach: " + s));
+
+
+//        Stream.of(1.0, 2.0, 3.0)
+//                .map(i -> i.intValue() + "abc")
+//                .forEach(System.out::println); // for 循环打印
 
 
 //        Stream.of(1.0, 2.0, 3.0)
