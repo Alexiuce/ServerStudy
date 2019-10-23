@@ -7,6 +7,7 @@
 //
 
 #import "RSATool.h"
+#import <BmobSDK/Bmob.h>
 #import <AFNetworking.h>
 #import "ViewController.h"
 #import <CocoaSecurity.h>
@@ -30,6 +31,15 @@ static NSString * const url = @"http://192.168.101.24:7000/api/power/RequestHead
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //往GameScore表添加一条playerName为小明，分数为78的数据
+    BmobObject *gameScore = [BmobObject objectWithClassName:@"t_app_control"];
+    [gameScore setObject:@"10.0.0.1" forKey:@"ipaddress"];
+    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        //进行操作
+        NSString *msg = isSuccessful ? @"ok":@"error";
+        NSLog(@"%@",msg);
+    }];
     _manager = [AFHTTPSessionManager manager];
     _payManager = [AFHTTPSessionManager manager];
     [_manager.requestSerializer setValue:@"1.0.0" forHTTPHeaderField:@"version"];

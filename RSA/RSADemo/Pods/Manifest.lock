@@ -14,25 +14,30 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BmobSDK (2.4.1)
   - CocoaSecurity (1.2.4)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - BmobSDK
   - CocoaSecurity
   - Masonry
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaSecurity
     - Masonry
+  trunk:
+    - BmobSDK
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 2d497662330bc793b97934eb6495f1c8234effad
+PODFILE CHECKSUM: 21988b746565b79370aea4bbfe454d1a5684cec8
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.8.3
