@@ -32,14 +32,36 @@ static NSString * const url = @"http://192.168.101.24:7000/api/power/RequestHead
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //往GameScore表添加一条playerName为小明，分数为78的数据
-    BmobObject *gameScore = [BmobObject objectWithClassName:@"t_app_control"];
-    [gameScore setObject:@"10.0.0.1" forKey:@"ipaddress"];
-    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-        //进行操作
-        NSString *msg = isSuccessful ? @"ok":@"error";
-        NSLog(@"%@",msg);
+//    //往GameScore表添加一条playerName为小明，分数为78的数据
+//    BmobObject *gameScore = [BmobObject objectWithClassName:@"t_app_control"];
+//    [gameScore setObject:@"10.0.0.1" forKey:@"ipaddress"];
+//    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+//        //进行操作
+//        NSString *msg = isSuccessful ? @"ok":@"error";
+//        NSLog(@"%@",msg);
+//    }];
+    
+    
+    
+    
+    //查找t_app_control表
+    BmobQuery   *bquery = [BmobQuery queryWithClassName:@"t_app_control"];
+    //查找GameScore表里面id为25d9c46b1c的数据
+    [bquery getObjectInBackgroundWithId:@"25d9c46b1c" block:^(BmobObject *object,NSError *error){
+      if (error){
+              //进行错误处理
+      }else{
+            //表里有id为0c6db13c的数据
+          if (object) {
+                //得到playerName和cheatMode
+              
+              NSString *playerName = [object objectForKey:@"ipaddress"];
+              NSLog(@"%@",playerName);
+          }
+      }
     }];
+    
+    
     _manager = [AFHTTPSessionManager manager];
     _payManager = [AFHTTPSessionManager manager];
     [_manager.requestSerializer setValue:@"1.0.0" forHTTPHeaderField:@"version"];
