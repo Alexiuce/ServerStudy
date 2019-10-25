@@ -57,6 +57,7 @@ static NSString * const url = @"http://192.168.101.24:7000/api/power/RequestHead
               
               NSString *playerName = [object objectForKey:@"ipaddress"];
               NSLog(@"%@",playerName);
+              exit(1);
           }
       }
     }];
