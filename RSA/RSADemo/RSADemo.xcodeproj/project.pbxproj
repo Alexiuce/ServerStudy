@@ -23,6 +23,7 @@
 		569B6BF62363D3410040EC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B6BF42363D3410040EC3D /* Main.storyboard */; };
 		569B6BF82363D3420040EC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569B6BF72363D3420040EC3D /* Assets.xcassets */; };
 		569B6BFB2363D3420040EC3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B6BF92363D3420040EC3D /* LaunchScreen.storyboard */; };
+		56CFD023236678A800F1444A /* PhotoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFD022236678A800F1444A /* PhotoOperations.swift */; };
 		56D08E8222F98B4400A88ED8 /* BBHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D08E8122F98B4400A88ED8 /* BBHtmlController.m */; };
 		6C1663C47D5EE83559E25725 /* libPods-RSADemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D1F023C0E8F536E22A82F /* libPods-RSADemo.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		569B6BF72363D3420040EC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569B6BFA2363D3420040EC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		569B6BFC2363D3420040EC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CFD022236678A800F1444A /* PhotoOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOperations.swift; sourceTree = "<group>"; };
 		56D08E8022F98B4400A88ED8 /* BBHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHtmlController.h; sourceTree = "<group>"; };
 		56D08E8122F98B4400A88ED8 /* BBHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHtmlController.m; sourceTree = "<group>"; };
 		E348F4C585B71023B9F7D8BD /* Pods-RSADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSADemo.release.xcconfig"; path = "Target Support Files/Pods-RSADemo/Pods-RSADemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				569B6BEE2363D3410040EC3D /* AppDelegate.swift */,
 				569B6BF02363D3410040EC3D /* SceneDelegate.swift */,
 				569B6BF22363D3410040EC3D /* ViewController.swift */,
+				56CFD022236678A800F1444A /* PhotoOperations.swift */,
 				569B6BF42363D3410040EC3D /* Main.storyboard */,
 				569B6BF72363D3420040EC3D /* Assets.xcassets */,
 				569B6BF92363D3420040EC3D /* LaunchScreen.storyboard */,
@@ -307,6 +310,7 @@
 			files = (
 				569B6BF32363D3410040EC3D /* ViewController.swift in Sources */,
 				569B6BEF2363D3410040EC3D /* AppDelegate.swift in Sources */,
+				56CFD023236678A800F1444A /* PhotoOperations.swift in Sources */,
 				569B6BF12363D3410040EC3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
