@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-enum PhoteRecordsState {
+enum PhoteRecordsState: Int {
     case new,download,filted,failed
 }
 
