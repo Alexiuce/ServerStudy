@@ -25,3 +25,22 @@ class PhotoRecord{
         self.url = url
     }
 }
+
+
+class PendingOperations{
+    lazy var downloadInProgress: [IndexPath : Operation] = [:]
+    lazy var downloadQueue : OperationQueue = {
+        var queue = OperationQueue()
+        queue.name = "Download queue"
+        queue.maxConcurrentOperationCount = 1
+        return queue
+    }()
+    
+    lazy var filtrationInProgress : [IndexPath : Operation] = [:]
+    lazy var filtrationQueue: OperationQueue = {
+        var queue = OperationQueue()
+        queue.name = "Image filtration queue"
+        queue.maxConcurrentOperationCount = 1
+        return queue
+    }()
+}
