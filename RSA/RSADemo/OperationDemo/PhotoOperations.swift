@@ -61,5 +61,27 @@ class ImageDownloader: Operation{
             photoRecord.image = UIImage(data: imageData)
         }
     }
+}
+
+class ImageFiltration: Operation {
+    let photeRecord : PhotoRecord
+    init(_ photeRecord: PhotoRecord) {
+        self.photeRecord = photeRecord
+    }
     
+    override func main() {
+        if isCancelled {return}
+        guard self.photeRecord.state == .download else { return }
+        
+        if let image = self.photeRecord.image,
+           let filterImage = applyFilterImage(image){
+            photeRecord.image = filterImage
+            photeRecord.state = .filted
+        }
+    }
+    
+    /** 图片过滤处理 */
+    func applyFilterImage(_ image: UIImage) -> UIImage? {
+        return nil
+    }
 }
