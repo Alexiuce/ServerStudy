@@ -13,7 +13,6 @@ import UIKit
 enum PhoteRecordsState: Int {
     case new,download,filted,failed
 }
-
 class PhotoRecord{
     let name: String
     let url: URL
@@ -25,8 +24,6 @@ class PhotoRecord{
         self.url = url
     }
 }
-
-
 class PendingOperations{
     lazy var downloadInProgress: [IndexPath : Operation] = [:]
     lazy var downloadQueue : OperationQueue = {
@@ -43,4 +40,26 @@ class PendingOperations{
         queue.maxConcurrentOperationCount = 1
         return queue
     }()
+}
+
+class ImageDownloader: Operation{
+    let photoRecord: PhotoRecord
+    
+    init(_ photoRecord: PhotoRecord) {
+        self.photoRecord = photoRecord
+    }
+    
+    override func main() {
+        if isCancelled {return}
+        guard let imageData = try? Data(contentsOf: photoRecord.url) else { return }
+        if isCancelled {return}
+        if imageData.isEmpty {
+            photoRecord.state = .failed
+            photoRecord.image = UIImage(named: "placeholder")
+        }else{
+            photoRecord.state = .download
+            photoRecord.image = UIImage(data: imageData)
+        }
+    }
+    
 }
