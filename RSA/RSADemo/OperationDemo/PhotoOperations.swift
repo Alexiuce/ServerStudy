@@ -79,9 +79,19 @@ class ImageFiltration: Operation {
             photeRecord.state = .filted
         }
     }
-    
     /** 图片过滤处理 */
     func applyFilterImage(_ image: UIImage) -> UIImage? {
-        return nil
+        guard let imgeData = image.pngData() else { return nil }
+        let inputCImage = CIImage(data: imgeData)
+        if isCancelled { return nil }
+        let context = CIContext(options: nil)
+        guard let filter = CIFilter(name: "CISepiaTone") else { return nil }
+        filter.setValue(inputCImage, forKey: kCIInputImageKey)
+        filter.setValue(0.8, forKey: "inputIntensity")
+        if isCancelled { return nil }
+        guard let outputImage = filter.outputImage,
+            let outImage = context.createCGImage(outputImage, from: outputImage.extent)
+            else { return nil }
+        return UIImage(cgImage: outImage)
     }
 }
