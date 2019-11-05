@@ -21,8 +21,13 @@ class ViewController: UIViewController {
         cFilter.setValue(0.5, forKey: kCIInputIntensityKey)
         guard let outputImage = cFilter.outputImage else { return  }
         
-        let newImage = UIImage(ciImage: outputImage)
-        self.imageView.image = newImage
+//        let newImage = UIImage(ciImage: outputImage)
+//        self.imageView.image = newImage
+        
+        let context = CIContext(options: nil)
+        guard let cgImg = context.createCGImage(outputImage, from: outputImage.extent) else {return}
+        imageView.image = UIImage(cgImage: cgImg)
+        
     }
 }
 
