@@ -29,5 +29,14 @@ class ViewController: UIViewController {
         imageView.image = UIImage(cgImage: cgImg)
         
     }
+    
+    
+    
+    @IBAction func changeSlider(_ sender: UISlider) {
+        print("value = \(sender.value)")
+        
+    }
+    
+    
 }
 
