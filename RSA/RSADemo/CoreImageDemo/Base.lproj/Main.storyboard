@@ -31,13 +31,40 @@
                                     <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="GJh-2a-LPS"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skH-cc-iMl">
+                                <rect key="frame" x="0.0" y="437" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IL8-Gi-GDW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-HU-Neg">
+                                <rect key="frame" x="12" y="458" width="80" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.33181117957746481" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="gvl-Jk-4aG"/>
+                                    <constraint firstAttribute="height" constant="30" id="uV9-mG-Ifj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Open Album">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedOpenAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SN8-j3-vlG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="OyZ-HU-Neg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Bee-aw-4RY"/>
                             <constraint firstItem="we0-dn-LBP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Czc-Ig-bo4"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="top" secondItem="we0-dn-LBP" secondAttribute="bottom" constant="85" id="O0k-Jd-dsb"/>
+                            <constraint firstItem="skH-cc-iMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qj7-Dj-Yx5"/>
                             <constraint firstItem="we0-dn-LBP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qvq-jp-1Cd"/>
+                            <constraint firstItem="OyZ-HU-Neg" firstAttribute="top" secondItem="skH-cc-iMl" secondAttribute="bottom" constant="20" id="dzK-fO-Td4"/>
+                            <constraint firstItem="skH-cc-iMl" firstAttribute="top" secondItem="jd9-Pm-SWd" secondAttribute="bottom" constant="20" id="eMi-LM-o10"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we0-dn-LBP" secondAttribute="trailing" id="iY7-CY-zfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="skH-cc-iMl" secondAttribute="trailing" id="k8z-m3-dEA"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDC-XS-sgq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
