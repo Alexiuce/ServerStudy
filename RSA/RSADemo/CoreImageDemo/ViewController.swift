@@ -44,7 +44,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeSlider(_ sender: UISlider) {
-        print("value = \(sender.value)")
         let sliderValue = sender.value;
         mfilter.setValue(sliderValue, forKey: kCIInputIntensityKey)
         guard let outputImg = mfilter.outputImage else {return}
@@ -54,6 +53,20 @@ class ViewController: UIViewController {
     
     }
     
-    
+    @IBAction func clickedOpenAlbum(_ sender: UIButton) {
+        let pickVC = UIImagePickerController()
+        pickVC.delegate = self
+        present(pickVC, animated: true, completion: nil)
+    }
 }
 
+extension ViewController: UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        print(info)
+        
+    }
+}
