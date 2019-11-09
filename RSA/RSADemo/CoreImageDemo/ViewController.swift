@@ -60,6 +60,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+/** UIImagePickerControllerDelegate 协议方法*/
 extension ViewController: UINavigationControllerDelegate,UIImagePickerControllerDelegate{
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
