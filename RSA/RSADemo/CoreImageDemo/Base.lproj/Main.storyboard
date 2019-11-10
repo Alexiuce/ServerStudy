@@ -71,6 +71,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="we0-dn-LBP" id="lYj-dk-eAu"/>
+                        <outlet property="imgSlider" destination="jd9-Pm-SWd" id="HdR-5E-g8M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
