@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imgSlider: UISlider!
     @IBOutlet weak var imageView: UIImageView!
     
     var mcontext: CIContext!
@@ -68,7 +69,11 @@ extension ViewController: UINavigationControllerDelegate,UIImagePickerController
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
-        print(info)
+        
+        let selectedImg = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        beginImg = CIImage(image: selectedImg)
+        mfilter.setValue(beginImg, forKey: kCIInputImageKey)
+        changeSlider(imgSlider)
         
     }
 }
