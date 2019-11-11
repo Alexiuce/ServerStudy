@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import AssetsLibrary
+import Photos
+
+
 
 class ViewController: UIViewController {
 
@@ -59,6 +63,20 @@ class ViewController: UIViewController {
         pickVC.delegate = self
         present(pickVC, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func clickedSaveToAblumBtn(_ sender: UIButton) {
+        guard let ciImage = mfilter.outputImage else { return  }
+        let ciContext = CIContext(options: [CIContextOption.useSoftwareRenderer : true])
+        guard let cgImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return  }
+        let library = ALAssetsLibrary()
+        library.writeImage(toSavedPhotosAlbum: cgImage, metadata: ciImage.properties, completionBlock: nil)
+        
+        
+        
+    }
+    
+    
 }
 
 
