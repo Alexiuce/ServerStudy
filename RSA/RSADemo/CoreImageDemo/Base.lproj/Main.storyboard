@@ -53,14 +53,25 @@
                                     <action selector="clickedOpenAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SN8-j3-vlG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oko-YT-Ga6">
+                                <rect key="frame" x="287" y="459" width="102" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Save To Album"/>
+                                <connections>
+                                    <action selector="clickedSaveToAblumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgk-wb-qgR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="OyZ-HU-Neg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Bee-aw-4RY"/>
                             <constraint firstItem="we0-dn-LBP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Czc-Ig-bo4"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="top" secondItem="we0-dn-LBP" secondAttribute="bottom" constant="85" id="O0k-Jd-dsb"/>
+                            <constraint firstItem="Oko-YT-Ga6" firstAttribute="top" secondItem="skH-cc-iMl" secondAttribute="bottom" constant="21" id="Pn2-Ov-5vr"/>
                             <constraint firstItem="skH-cc-iMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qj7-Dj-Yx5"/>
                             <constraint firstItem="we0-dn-LBP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qvq-jp-1Cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oko-YT-Ga6" secondAttribute="trailing" constant="25" id="TZ0-oz-PS4"/>
                             <constraint firstItem="OyZ-HU-Neg" firstAttribute="top" secondItem="skH-cc-iMl" secondAttribute="bottom" constant="20" id="dzK-fO-Td4"/>
                             <constraint firstItem="skH-cc-iMl" firstAttribute="top" secondItem="jd9-Pm-SWd" secondAttribute="bottom" constant="20" id="eMi-LM-o10"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we0-dn-LBP" secondAttribute="trailing" id="iY7-CY-zfG"/>
