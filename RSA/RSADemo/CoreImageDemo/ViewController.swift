@@ -89,6 +89,7 @@ extension ViewController: UINavigationControllerDelegate,UIImagePickerController
         picker.dismiss(animated: true, completion: nil)
         
         let selectedImg = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        print(selectedImg.imageOrientation.rawValue)
         beginImg = CIImage(image: selectedImg)
         mfilter.setValue(beginImg, forKey: kCIInputImageKey)
         changeSlider(imgSlider)
