@@ -43,9 +43,15 @@ class ViewController: UIViewController {
         mfilter = cFilter
         beginImg = cImage
         
-        
+        logAllFilterInfo()
     }
     
+    func logAllFilterInfo() {
+        let properties = CIFilter.filterNames(inCategory: kCICategoryBuiltIn)
+        properties.forEach{
+            print($0)
+        }
+    }
     
     
     @IBAction func changeSlider(_ sender: UISlider) {
@@ -71,9 +77,6 @@ class ViewController: UIViewController {
         guard let cgImage = ciContext.createCGImage(ciImage, from: ciImage.extent) else { return  }
         let library = ALAssetsLibrary()
         library.writeImage(toSavedPhotosAlbum: cgImage, metadata: ciImage.properties, completionBlock: nil)
-        
-        
-        
     }
     
     
