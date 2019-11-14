@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imgSlider: UISlider!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var randomImgView: UIImageView!
     
     var mcontext: CIContext!
     var mfilter: CIFilter!
@@ -43,7 +44,8 @@ class ViewController: UIViewController {
         mfilter = cFilter
         beginImg = cImage
         
-        logAllFilterInfo()
+//        logAllFilterInfo()
+        generateImgForFilterChain()
     }
     
     func logAllFilterInfo() {
@@ -51,6 +53,16 @@ class ViewController: UIViewController {
         properties.forEach{
             print($0)
         }
+    }
+    /** 滤镜链条 */
+    func generateImgForFilterChain()  {
+        
+        let randomFilter = CIFilter(name: "CIRandomGenerator")
+        
+        guard let ciImg = randomFilter?.outputImage else {return}
+        randomImgView.image = UIImage(ciImage: ciImg);
+        
+        
     }
     
     
