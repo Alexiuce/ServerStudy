@@ -62,6 +62,13 @@
                                     <action selector="clickedSaveToAblumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgk-wb-qgR"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-i7-CYz">
+                                <rect key="frame" x="87" y="562" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8br-BH-bJ4"/>
+                                    <constraint firstAttribute="width" constant="240" id="q89-ma-VqI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -74,8 +81,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oko-YT-Ga6" secondAttribute="trailing" constant="25" id="TZ0-oz-PS4"/>
                             <constraint firstItem="OyZ-HU-Neg" firstAttribute="top" secondItem="skH-cc-iMl" secondAttribute="bottom" constant="20" id="dzK-fO-Td4"/>
                             <constraint firstItem="skH-cc-iMl" firstAttribute="top" secondItem="jd9-Pm-SWd" secondAttribute="bottom" constant="20" id="eMi-LM-o10"/>
+                            <constraint firstItem="Mob-i7-CYz" firstAttribute="top" secondItem="Oko-YT-Ga6" secondAttribute="bottom" constant="73" id="iM3-Mp-y0x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we0-dn-LBP" secondAttribute="trailing" id="iY7-CY-zfG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="skH-cc-iMl" secondAttribute="trailing" id="k8z-m3-dEA"/>
+                            <constraint firstItem="Mob-i7-CYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lxi-Ey-U84"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDC-XS-sgq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -83,6 +92,7 @@
                     <connections>
                         <outlet property="imageView" destination="we0-dn-LBP" id="lYj-dk-eAu"/>
                         <outlet property="imgSlider" destination="jd9-Pm-SWd" id="HdR-5E-g8M"/>
+                        <outlet property="randomImgView" destination="Mob-i7-CYz" id="faW-Xp-pWd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
