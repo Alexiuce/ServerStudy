@@ -59,8 +59,16 @@ class ViewController: UIViewController {
         
         let randomFilter = CIFilter(name: "CIRandomGenerator")
         
-        guard let ciImg = randomFilter?.outputImage else {return}
-        randomImgView.image = UIImage(ciImage: ciImg);
+        
+        guard let lightenFilter = CIFilter(name: "CIColorControls") else { return }
+        lightenFilter.setValue(randomFilter?.outputImage, forKey: kCIInputImageKey)
+        lightenFilter.setValue(0.2, forKey: "inputBrightness")
+        lightenFilter.setValue(0.8, forKey: "inputSaturation")
+    
+        let cropImg = lightenFilter.outputImage!.cropped(to: beginImg.extent)
+        
+
+        randomImgView.image = UIImage(ciImage: cropImg);
         
         
     }
