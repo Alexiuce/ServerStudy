@@ -67,8 +67,14 @@ class ViewController: UIViewController {
     
         let cropImg = lightenFilter.outputImage!.cropped(to: beginImg.extent)
         
+        
+        guard let compsite = CIFilter(name: "CIHardLightBlendMode") else { return  }
+        compsite.setValue(beginImg, forKey: kCIInputImageKey)
+        compsite.setValue(cropImg, forKey: kCIInputBackgroundImageKey)
 
-        randomImgView.image = UIImage(ciImage: cropImg);
+        guard let compImg = compsite.outputImage/*.cropped(to: beginImg.extent)*/ else { return  }
+
+        randomImgView.image = UIImage(ciImage: compImg);
         
         
     }
