@@ -45,8 +45,26 @@ class ViewController: UIViewController {
         beginImg = cImage
         
 //        logAllFilterInfo()
-        generateImgForFilterChain()
+//        generateImgForFilterChain()
+        
+        /** 运动模糊 */
+        montinBlurDemo()
+        
     }
+    func montinBlurDemo()  {
+        // CIMotionBlur      运动模糊
+        // CIGaussianBlur    高斯模糊
+        guard let mbFilter = CIFilter(name: "CIGaussianBlur", parameters: [kCIInputImageKey:beginImg!]) else { return  }
+        mbFilter.setValue(5, forKey: "inputRadius")
+        
+        guard let outputCImage = mbFilter.outputImage else { return }
+        guard let cgImg = mcontext.createCGImage(outputCImage, from: outputCImage.extent) else {return}
+        
+        randomImgView.image = UIImage(cgImage: cgImg)
+        
+        
+    }
+    
     
     func logAllFilterInfo() {
         let properties = CIFilter.filterNames(inCategory: kCICategoryBuiltIn)
