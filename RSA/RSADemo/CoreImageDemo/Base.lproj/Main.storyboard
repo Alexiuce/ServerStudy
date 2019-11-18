@@ -69,9 +69,16 @@
                                     <constraint firstAttribute="width" constant="240" id="q89-ma-VqI"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V23-HH-Siv">
+                                <rect key="frame" x="185.5" y="768" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="V23-HH-Siv" firstAttribute="top" secondItem="Mob-i7-CYz" secondAttribute="bottom" constant="78" id="ASC-GC-FCB"/>
                             <constraint firstItem="OyZ-HU-Neg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Bee-aw-4RY"/>
                             <constraint firstItem="we0-dn-LBP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Czc-Ig-bo4"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="top" secondItem="we0-dn-LBP" secondAttribute="bottom" constant="85" id="O0k-Jd-dsb"/>
@@ -85,6 +92,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="we0-dn-LBP" secondAttribute="trailing" id="iY7-CY-zfG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="skH-cc-iMl" secondAttribute="trailing" id="k8z-m3-dEA"/>
                             <constraint firstItem="Mob-i7-CYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lxi-Ey-U84"/>
+                            <constraint firstItem="V23-HH-Siv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOH-3N-gnQ"/>
                             <constraint firstItem="jd9-Pm-SWd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDC-XS-sgq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,6 +101,7 @@
                         <outlet property="imageView" destination="we0-dn-LBP" id="lYj-dk-eAu"/>
                         <outlet property="imgSlider" destination="jd9-Pm-SWd" id="HdR-5E-g8M"/>
                         <outlet property="randomImgView" destination="Mob-i7-CYz" id="faW-Xp-pWd"/>
+                        <outlet property="textLabel" destination="V23-HH-Siv" id="b3p-8p-ecx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
