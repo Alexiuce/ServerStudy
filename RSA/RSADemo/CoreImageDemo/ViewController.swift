@@ -14,6 +14,7 @@ import Photos
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var imgSlider: UISlider!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var randomImgView: UIImageView!
@@ -33,14 +34,14 @@ class ViewController: UIViewController {
         guard let outputImage = cFilter.outputImage else { return  }
         
         
-//        let newImage = UIImage(ciImage: outputImage)
-//        self.imageView.image = newImage
+        //        let newImage = UIImage(ciImage: outputImage)
+        //        self.imageView.image = newImage
         
         let context = CIContext(options: nil)
         guard let cgImg = context.createCGImage(outputImage, from: outputImage.extent) else {return}
         imageView.image = UIImage(cgImage: cgImg)
-        
         mcontext = context
+        
         mfilter = cFilter
         beginImg = cImage
         
@@ -48,7 +49,36 @@ class ViewController: UIViewController {
 //        generateImgForFilterChain()
         
         /** 运动模糊 */
-        montinBlurDemo()
+//        montinBlurDemo()
+        
+        /** 文字转图片 */
+        textLabel.text = "Hello World"
+        showTextImg()
+        
+    }
+     /** 文字->图片 */
+    func showTextImg() {
+        
+        guard let textData = textLabel.text?.data(using: .utf8)  else {
+            print("text -> data error")
+            return
+        }
+       
+        
+        
+        guard let img = UIImage(data: textData) else {
+            textData.withUnsafeBytes { byte in
+                print(byte)
+            }
+
+            print("data -> img error")
+            return
+        }
+
+        randomImgView.image = img
+        
+    
+        
         
     }
     func montinBlurDemo()  {
