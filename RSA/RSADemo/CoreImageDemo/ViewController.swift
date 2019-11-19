@@ -59,27 +59,24 @@ class ViewController: UIViewController {
      /** 文字->图片 */
     func showTextImg() {
         
-        guard let textData = textLabel.text?.data(using: .utf8)  else {
+        guard let textData = textLabel.text?.data(using: .utf8) as NSData? else {
             print("text -> data error")
             return
         }
        
-        
-        
-        guard let img = UIImage(data: textData) else {
-            textData.withUnsafeBytes { byte in
-                print(byte)
-            }
-
-            print("data -> img error")
-            return
+        var a = 0;
+        for i in 0 ..< textData.length {
+            textData.getBytes(&a, length: i)
+            print(a)
+            
         }
 
-        randomImgView.image = img
-        
-    
-        
-        
+//        guard let img = UIImage(data: textData) else {
+//
+//            print("data -> img error")
+//            return
+//        }
+//        randomImgView.image = img
     }
     func montinBlurDemo()  {
         // CIMotionBlur      运动模糊
