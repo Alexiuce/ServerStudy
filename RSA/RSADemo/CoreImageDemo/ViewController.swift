@@ -52,32 +52,41 @@ class ViewController: UIViewController {
 //        montinBlurDemo()
         
         /** 文字转图片 */
-        textLabel.text = "Hello World"
+        textLabel.text = "abc"
         showTextImg()
         
     }
      /** 文字->图片 */
     func showTextImg() {
         
-        guard let textData = textLabel.text?.data(using: .utf8) else {
-            print("text -> data error")
-            return
-        }
-       
-        var byteBuffer: [UInt8] = []
-        textData.withUnsafeBytes {
-            byteBuffer.append(contentsOf: $0)
-        }
-        print(byteBuffer)
+//        guard let textData = textLabel.text?.data(using: .utf8) else {
+//            print("text -> data error")
+//            return
+//        }
+//
+//        var byteBuffer: [UInt8] = []
+//        textData.withUnsafeBytes {
+//            byteBuffer.append(contentsOf: $0)
+//        }
+//        print(byteBuffer)
      
-
-        guard let img = UIImage(data: textData) else {
-
-           
-            print("data -> img error")
-            return
+        guard let imgData = imageView.image?.pngData() else { return  }
+        
+        var imgByteBuffer: [UInt8] = []
+        imgData.withUnsafeBytes {
+            imgByteBuffer.append(contentsOf: $0)
         }
-        randomImgView.image = img
+        imgByteBuffer.forEach {
+            print($0)
+        }
+
+//        guard let img = UIImage(data: textData) else {
+//
+//
+//            print("data -> img error")
+//            return
+//        }
+//        randomImgView.image = img
     }
     func montinBlurDemo()  {
         // CIMotionBlur      运动模糊
