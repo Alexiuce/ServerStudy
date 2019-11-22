@@ -52,41 +52,57 @@ class ViewController: UIViewController {
 //        montinBlurDemo()
         
         /** 文字转图片 */
-        textLabel.text = "abc"
+        textLabel.text = "abcadkfja;kjfa;kjfa;kjfa;skjfa;kljf;aldfkja;"
         showTextImg()
         
     }
      /** 文字->图片 */
     func showTextImg() {
         
-//        guard let textData = textLabel.text?.data(using: .utf8) else {
-//            print("text -> data error")
-//            return
-//        }
-//
+        guard let textData = textLabel.text?.data(using: .utf8) else {
+            print("text -> data error")
+            return
+        }
+
+        var textByteBuffer: [UInt8] = [0x89]
+        
+        textData.withUnsafeBytes {
+            textByteBuffer.append(contentsOf: $0)
+        }
+        
+//        textByteBuffer.insert(0x89, at: 0)
+        
+        textByteBuffer.forEach {
+            print($0)
+        }
+//        print(textData.count)
+//        print("========")
+        
+        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
+        
 //        var byteBuffer: [UInt8] = []
 //        textData.withUnsafeBytes {
 //            byteBuffer.append(contentsOf: $0)
 //        }
 //        print(byteBuffer)
      
-        guard let imgData = imageView.image?.pngData() else { return  }
-        
-        var imgByteBuffer: [UInt8] = []
-        imgData.withUnsafeBytes {
-            imgByteBuffer.append(contentsOf: $0)
-        }
-        imgByteBuffer.forEach {
-            print($0)
-        }
-
-//        guard let img = UIImage(data: textData) else {
+//        guard let imgData = imageView.image?.pngData() else { return  }
 //
-//
-//            print("data -> img error")
-//            return
+//        var imgByteBuffer: [UInt8] = []
+//        imgData.withUnsafeBytes {
+//            imgByteBuffer.append(contentsOf: $0)
 //        }
-//        randomImgView.image = img
+//        imgByteBuffer.forEach {
+//            print(String(format: "%x",$0))
+//        }
+
+        guard let img = UIImage(data: formatData) else {
+
+
+            print("data -> img error")
+            return
+        }
+        randomImgView.image = img
     }
     func montinBlurDemo()  {
         // CIMotionBlur      运动模糊
