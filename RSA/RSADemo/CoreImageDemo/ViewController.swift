@@ -59,28 +59,29 @@ class ViewController: UIViewController {
      /** 文字->图片 */
     func showTextImg() {
         
-//        guard let textData = textLabel.text?.data(using: .utf8) else {
-//            print("text -> data error")
-//            return
-//        }
+        guard let textData = textLabel.text?.data(using: .utf8) else {
+            print("text -> data error")
+            return
+        }
 
         
         /** Png 固定8个头字节*/
-//        var textByteBuffer: [UInt8] = [137,80, 78, 71, 13, 10, 26, 10]
-//
-//        textData.withUnsafeBytes {
-//            textByteBuffer.append(contentsOf: $0)
-//        }
+        var textByteBuffer: [UInt8] = [137,80, 78, 71, 13, 10, 26, 10]
+
+        textData.withUnsafeBytes {
+            textByteBuffer.append(contentsOf: $0)
+        }
         
-//        textByteBuffer.insert(0x89, at: 0)
+        textByteBuffer.append(contentsOf: [0x00,0x00,0x00,0x00,0x49, 0x45, 0x4e, 0x44, 0xae, 0x42,0x60 ,0x82])
         
-//        textByteBuffer.forEach {
-//            print($0)
-//        }
+        
+        textByteBuffer.forEach {
+            print($0)
+        }
 //        print(textData.count)
 //        print("========")
         
-//        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
+        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
         
 //        var byteBuffer: [UInt8] = []
 //        textData.withUnsafeBytes {
@@ -88,33 +89,34 @@ class ViewController: UIViewController {
 //        }
 //        print(byteBuffer)
      
-        guard let img = UIImage(named: "headLineCurrentDot") else {return}
-        guard let imgData = img.pngData() else { return  }
-
-        var imgByteBuffer: [UInt8] = []
-        imgData.withUnsafeBytes {
-            imgByteBuffer.append(contentsOf: $0)
-        }
-        
-        var i = 0;
-        imgByteBuffer.forEach {
-            i += 1
-            print(String(format: "%02x ",$0 ), separator: " ", terminator: "")
-            if i % 8 == 0 {
-                print("\n")
-            }
-        }
-        print("\n")
+//        guard let img = UIImage(named: "headLineCurrentDot") else {return}
+//        guard let imgData = img.pngData() else { return  }
+//
+//        var imgByteBuffer: [UInt8] = []
+//        imgData.withUnsafeBytes {
+//            imgByteBuffer.append(contentsOf: $0)
+//        }
+//
+//        var i = 0;
+//        imgByteBuffer.forEach {
+//            i += 1
+//            print(String(format: "%02x ",$0 ), separator: " ", terminator: "")
+//            if i % 8 == 0 {
+//                print("\n")
+//            }
+//        }
+//        print("\n")
     
          /**
+         // 固定头部描述数据
          89 50 4e 47 0d 0a 1a 0a
-
+         // 标准数据  IHDR
          00 00 00 0d 49 48 44 52
-
+        <前四字节标识宽度,后四个字节标识高度>
          00 00 00 08 00 00 00 08
-
+                        // IHDR CRC
          08 06 00 00 00 c4 0f be
-
+            // 调色板数据PLTE
          8b 00 00 00 01 73 52 47
 
          42 00 ae ce 1c e9 00 00
@@ -200,24 +202,19 @@ class ViewController: UIViewController {
          00 55 04 34 09 64 9d f5
 
          33 90 4e 98 24 00 5f cc
-
+                           // 图像结束数据(固定格式,必须在PNG文件最尾部)
          6d b1 b7 49 ec 5a 00 00
-
+         
          00 00 49 45 4e 44 ae 42
-
+         
          60 82
-         
-         
-         
+        
          */
-         
-        
-        
-//        guard let img = UIImage(data: formatData) else {
-//
-//            print("data -> img error")
-//            return
-//        }
+        guard let img = UIImage(data: formatData) else {
+
+            print("data -> img error")
+            return
+        }
         randomImgView.image = img
     }
     func montinBlurDemo()  {
