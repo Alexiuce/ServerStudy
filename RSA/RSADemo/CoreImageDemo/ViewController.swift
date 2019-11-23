@@ -59,26 +59,28 @@ class ViewController: UIViewController {
      /** 文字->图片 */
     func showTextImg() {
         
-        guard let textData = textLabel.text?.data(using: .utf8) else {
-            print("text -> data error")
-            return
-        }
+//        guard let textData = textLabel.text?.data(using: .utf8) else {
+//            print("text -> data error")
+//            return
+//        }
 
-        var textByteBuffer: [UInt8] = [0x89]
         
-        textData.withUnsafeBytes {
-            textByteBuffer.append(contentsOf: $0)
-        }
+        /** Png 固定8个头字节*/
+//        var textByteBuffer: [UInt8] = [137,80, 78, 71, 13, 10, 26, 10]
+//
+//        textData.withUnsafeBytes {
+//            textByteBuffer.append(contentsOf: $0)
+//        }
         
 //        textByteBuffer.insert(0x89, at: 0)
         
-        textByteBuffer.forEach {
-            print($0)
-        }
+//        textByteBuffer.forEach {
+//            print($0)
+//        }
 //        print(textData.count)
 //        print("========")
         
-        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
+//        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
         
 //        var byteBuffer: [UInt8] = []
 //        textData.withUnsafeBytes {
@@ -86,22 +88,136 @@ class ViewController: UIViewController {
 //        }
 //        print(byteBuffer)
      
-//        guard let imgData = imageView.image?.pngData() else { return  }
-//
-//        var imgByteBuffer: [UInt8] = []
-//        imgData.withUnsafeBytes {
-//            imgByteBuffer.append(contentsOf: $0)
-//        }
-//        imgByteBuffer.forEach {
-//            print(String(format: "%x",$0))
-//        }
+        guard let img = UIImage(named: "headLineCurrentDot") else {return}
+        guard let imgData = img.pngData() else { return  }
 
-        guard let img = UIImage(data: formatData) else {
-
-
-            print("data -> img error")
-            return
+        var imgByteBuffer: [UInt8] = []
+        imgData.withUnsafeBytes {
+            imgByteBuffer.append(contentsOf: $0)
         }
+        
+        var i = 0;
+        imgByteBuffer.forEach {
+            i += 1
+            print(String(format: "%02x ",$0 ), separator: " ", terminator: "")
+            if i % 8 == 0 {
+                print("\n")
+            }
+        }
+        print("\n")
+    
+         /**
+         89 50 4e 47 0d 0a 1a 0a
+
+         00 00 00 0d 49 48 44 52
+
+         00 00 00 08 00 00 00 08
+
+         08 06 00 00 00 c4 0f be
+
+         8b 00 00 00 01 73 52 47
+
+         42 00 ae ce 1c e9 00 00
+
+         00 78 65 58 49 66 4d 4d
+
+         00 2a 00 00 00 08 00 04
+
+         01 1a 00 05 00 00 00 01
+
+         00 00 00 3e 01 1b 00 05
+
+         00 00 00 01 00 00 00 46
+
+         01 28 00 03 00 00 00 01
+
+         00 02 00 00 87 69 00 04
+
+         00 00 00 01 00 00 00 4e
+
+         00 00 00 00 00 00 00 90
+
+         00 00 00 01 00 00 00 90
+
+         00 00 00 01 00 03 a0 01
+
+         00 03 00 00 00 01 00 01
+
+         00 00 a0 02 00 04 00 00
+
+         00 01 00 00 00 08 a0 03
+
+         00 04 00 00 00 01 00 00
+
+         00 08 00 00 00 00 47 09
+
+         c3 f3 00 00 00 09 70 48
+
+         59 73 00 00 16 25 00 00
+
+         16 25 01 49 52 24 f0 00
+
+         00 00 1c 69 44 4f 54 00
+
+         00 00 02 00 00 00 00 00
+
+         00 00 04 00 00 00 28 00
+
+         00 00 04 00 00 00 04 00
+
+         00 00 70 b0 6c 16 2a 00
+
+         00 00 3c 49 44 41 54 28
+
+         15 62 60 00 02 e9 6d 0e
+
+         32 e2 9b ac 96 89 6d b4
+
+         7e 06 c2 20 36 48 0c 24
+
+         07 93 7c 2b b6 d1 ea 3f
+
+         32 06 2a 7a 0b 56 04 d1
+
+         89 2a 09 53 08 92 63 80
+
+         18 8b 5d 01 48 0e 00 00
+
+         00 ff ff d4 a5 ce 85 00
+
+         00 00 3b 49 44 41 54 63
+
+         10 db 68 fd 4c 6c a3 d5
+
+         7f ec d8 fa 19 83 f8 26
+
+         ab 65 d8 25 ad fe 83 e4
+
+         18 a4 b7 39 c8 00 19 6f
+
+         d1 15 81 c4 40 72 0c 20
+
+         00 55 04 34 09 64 9d f5
+
+         33 90 4e 98 24 00 5f cc
+
+         6d b1 b7 49 ec 5a 00 00
+
+         00 00 49 45 4e 44 ae 42
+
+         60 82
+         
+         
+         
+         */
+         
+        
+        
+//        guard let img = UIImage(data: formatData) else {
+//
+//            print("data -> img error")
+//            return
+//        }
         randomImgView.image = img
     }
     func montinBlurDemo()  {
