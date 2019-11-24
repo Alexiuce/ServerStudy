@@ -59,29 +59,29 @@ class ViewController: UIViewController {
      /** 文字->图片 */
     func showTextImg() {
         
-        guard let textData = textLabel.text?.data(using: .utf8) else {
-            print("text -> data error")
-            return
-        }
+//        guard let textData = textLabel.text?.data(using: .utf8) else {
+//            print("text -> data error")
+//            return
+//        }
 
         
         /** Png 固定8个头字节*/
-        var textByteBuffer: [UInt8] = [137,80, 78, 71, 13, 10, 26, 10]
-
-        textData.withUnsafeBytes {
-            textByteBuffer.append(contentsOf: $0)
-        }
-        
-        textByteBuffer.append(contentsOf: [0x00,0x00,0x00,0x00,0x49, 0x45, 0x4e, 0x44, 0xae, 0x42,0x60 ,0x82])
-        
-        
-        textByteBuffer.forEach {
-            print($0)
-        }
+//        var textByteBuffer: [UInt8] = [137,80, 78, 71, 13, 10, 26, 10]
+//
+//        textData.withUnsafeBytes {
+//            textByteBuffer.append(contentsOf: $0)
+//        }
+//
+//        textByteBuffer.append(contentsOf: [0x00,0x00,0x00,0x00,0x49, 0x45, 0x4e, 0x44, 0xae, 0x42,0x60 ,0x82])
+//
+//
+//        textByteBuffer.forEach {
+//            print($0)
+//        }
 //        print(textData.count)
 //        print("========")
         
-        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
+//        let formatData = Data(bytes: textByteBuffer, count: textByteBuffer.count)
         
 //        var byteBuffer: [UInt8] = []
 //        textData.withUnsafeBytes {
@@ -89,23 +89,23 @@ class ViewController: UIViewController {
 //        }
 //        print(byteBuffer)
      
-//        guard let img = UIImage(named: "headLineCurrentDot") else {return}
-//        guard let imgData = img.pngData() else { return  }
-//
-//        var imgByteBuffer: [UInt8] = []
-//        imgData.withUnsafeBytes {
-//            imgByteBuffer.append(contentsOf: $0)
-//        }
-//
-//        var i = 0;
-//        imgByteBuffer.forEach {
-//            i += 1
-//            print(String(format: "%02x ",$0 ), separator: " ", terminator: "")
-//            if i % 8 == 0 {
-//                print("\n")
-//            }
-//        }
-//        print("\n")
+        guard let img = UIImage(named: "headLineCurrentDot") else {return}
+        guard let imgData = img.pngData() else { return  }
+
+        var imgByteBuffer: [UInt8] = []
+        imgData.withUnsafeBytes {
+            imgByteBuffer.append(contentsOf: $0)
+        }
+
+        var i = 0;
+        imgByteBuffer.forEach {
+            i += 1
+            print(String(format: "%02x ",$0 ), separator: " ", terminator: "")
+            if i % 8 == 0 {
+                print("\n")
+            }
+        }
+        print("\n")
     
          /**
          // 固定头部描述数据
@@ -116,9 +116,9 @@ class ViewController: UIViewController {
          00 00 00 08 00 00 00 08
                         // IHDR CRC
          08 06 00 00 00 c4 0f be
-            // 调色板数据PLTE
+            // sRGB 信息
          8b 00 00 00 01 73 52 47
-
+                           // eXIf
          42 00 ae ce 1c e9 00 00
 
          00 78 65 58 49 66 4d 4d
@@ -148,15 +148,15 @@ class ViewController: UIViewController {
          00 00 a0 02 00 04 00 00
 
          00 01 00 00 00 08 a0 03
-
+                           
          00 04 00 00 00 01 00 00
-
+               
          00 08 00 00 00 00 47 09
-
+               // pHYs  物理像素尺寸数据块
          c3 f3 00 00 00 09 70 48
 
          59 73 00 00 16 25 00 00
-
+                              // iDOT
          16 25 01 49 52 24 f0 00
 
          00 00 1c 69 44 4f 54 00
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
          00 00 04 00 00 00 28 00
 
          00 00 04 00 00 00 04 00
-
+                              // IDAT   图像数据
          00 00 70 b0 6c 16 2a 00
 
          00 00 3c 49 44 41 54 28
@@ -184,7 +184,7 @@ class ViewController: UIViewController {
          89 2a 09 53 08 92 63 80
 
          18 8b 5d 01 48 0e 00 00
-
+                              // IDAT 图像数据
          00 ff ff d4 a5 ce 85 00
 
          00 00 3b 49 44 41 54 63
@@ -202,7 +202,7 @@ class ViewController: UIViewController {
          00 55 04 34 09 64 9d f5
 
          33 90 4e 98 24 00 5f cc
-                           // 图像结束数据(固定格式,必须在PNG文件最尾部)
+                           // IEND 图像结束数据(固定格式,必须在PNG文件最尾部)
          6d b1 b7 49 ec 5a 00 00
          
          00 00 49 45 4e 44 ae 42
