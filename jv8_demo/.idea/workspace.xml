@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a35bfbbb-2f6f-4ed0-8cb6-976bbe25e9ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XCStreamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XCStreamApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RSA/RSADemo/CoreImageDemo/JPGFormat.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RSA/RSADemo/CoreImageDemo/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RSA/RSADemo/CoreImageDemo/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcodeproj/xcuserdata/caijinzhu.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcodeproj/xcuserdata/caijinzhu.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcworkspace/xcuserdata/caijinzhu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../RSA/RSADemo/RSADemo.xcworkspace/xcuserdata/caijinzhu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/XCStreamApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="345">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,9 +119,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="108" />
+    <option name="y" value="73" />
+    <option name="width" value="1478" />
+    <option name="height" value="866" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -128,7 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,28 +140,11 @@
               <item name="lambde" type="b2602c69:ProjectViewProjectNode" />
               <item name="jv8_demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lambde" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jv8_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lambde" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jv8_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lambde" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jv8_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -274,16 +261,18 @@
       <workItem from="1570843331374" duration="355000" />
       <workItem from="1570924691169" duration="398000" />
       <workItem from="1571451104112" duration="737000" />
+      <workItem from="1574826296823" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21158000" />
+    <option name="totallyTimeSpent" value="21183000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="108" y="73" width="1478" height="866" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21260816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24717514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -372,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XCStreamApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
