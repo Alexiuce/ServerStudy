@@ -43,6 +43,7 @@
 		56BDDCAB236C2FE0009EE8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BDDCA9236C2FE0009EE8CD /* Main.storyboard */; };
 		56BDDCAD236C2FE2009EE8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56BDDCAC236C2FE2009EE8CD /* Assets.xcassets */; };
 		56BDDCB0236C2FE2009EE8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BDDCAE236C2FE2009EE8CD /* LaunchScreen.storyboard */; };
+		56C7B249239224B900F22BC8 /* syncHightLightStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C7B248239224B900F22BC8 /* syncHightLightStorage.swift */; };
 		56CFD023236678A800F1444A /* PhotoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFD022236678A800F1444A /* PhotoOperations.swift */; };
 		56D08E8222F98B4400A88ED8 /* BBHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D08E8122F98B4400A88ED8 /* BBHtmlController.m */; };
 		56DF2AC4238E242200D5CCD1 /* JPGFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DF2AC3238E242200D5CCD1 /* JPGFormat.swift */; };
@@ -111,6 +112,7 @@
 		56BDDCAC236C2FE2009EE8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56BDDCAF236C2FE2009EE8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56BDDCB1236C2FE2009EE8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C7B248239224B900F22BC8 /* syncHightLightStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncHightLightStorage.swift; sourceTree = "<group>"; };
 		56CFD022236678A800F1444A /* PhotoOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOperations.swift; sourceTree = "<group>"; };
 		56D08E8022F98B4400A88ED8 /* BBHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHtmlController.h; sourceTree = "<group>"; };
 		56D08E8122F98B4400A88ED8 /* BBHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHtmlController.m; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				569F6BEB238FD37B000D9E4C /* AppDelegate.swift */,
 				569F6BED238FD37B000D9E4C /* SceneDelegate.swift */,
 				569F6BEF238FD37B000D9E4C /* ViewController.swift */,
+				56C7B248239224B900F22BC8 /* syncHightLightStorage.swift */,
 				569F6BF1238FD37B000D9E4C /* Main.storyboard */,
 				569F6BF4238FD37D000D9E4C /* Assets.xcassets */,
 				569F6BF6238FD37D000D9E4C /* LaunchScreen.storyboard */,
@@ -623,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C7B249239224B900F22BC8 /* syncHightLightStorage.swift in Sources */,
 				569F6BF0238FD37B000D9E4C /* ViewController.swift in Sources */,
 				569F6BEC238FD37B000D9E4C /* AppDelegate.swift in Sources */,
 				569F6BEE238FD37B000D9E4C /* SceneDelegate.swift in Sources */,
