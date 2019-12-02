@@ -17,18 +17,10 @@ class ViewController: UIViewController {
         
         let text = "Hello world is the first words in Computer programming"
         let mas = NSMutableAttributedString.init(string: text, attributes: [NSAttributedString.Key.foregroundColor:UIColor.black])
-        
         let attribDict: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 38),
-                          NSAttributedString.Key.textEffect : NSAttributedString.TextEffectStyle.letterpressStyle]
-        
+                                                          NSAttributedString.Key.textEffect : NSAttributedString.TextEffectStyle.letterpressStyle]
         mas.addAttributes(attribDict, range: NSMakeRange(0, 5))
-        
         testLabel.attributedText = mas
-        
-        
-        
-        
-        
         
     }
 
