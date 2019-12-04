@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         mas.addAttributes(attribDict, range: NSMakeRange(0, 5))
         testLabel.attributedText = mas
         
+        
+        /** 排斥路径 */
+        
+        
+        
+        
     }
 
 
