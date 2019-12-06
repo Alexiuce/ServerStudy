@@ -53,8 +53,8 @@ static NSString * const url = @"http://192.168.101.24:7000/api/power/RequestHead
       }else{
             //表里有id为0c6db13c的数据
           if (object) {
-                //得到playerName和cheatMode
               
+              //得到playerName和cheatMode
               NSString *playerName = [object objectForKey:@"ipaddress"];
               NSLog(@"%@",playerName);
               exit(1);
