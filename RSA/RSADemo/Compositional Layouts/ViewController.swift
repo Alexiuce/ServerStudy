@@ -21,9 +21,19 @@ extension ViewController{
     
     fileprivate func generateColletionLayout()-> UICollectionViewLayout{
         /** item size */
-        let itemSize = NSCollectionLayoutSize(widthDimension: <#T##NSCollectionLayoutDimension#>, heightDimension: <#T##NSCollectionLayoutDimension#>)
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let fullItem = NSCollectionLayoutItem(layoutSize: itemSize)
         
+        /** group size */
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(2/3))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: fullItem, count: 1)
         
+        /** section */
+        let section = NSCollectionLayoutSection(group: group)
+        
+        /** layout */
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
     }
     
     
