@@ -141,7 +141,6 @@
 		4A9F75A87174D7CCDCBC00908A9ACC14 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		4B81B4B1EEF6CF19210D83E1719E07F3 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		5497AAC277292DCDE524932D07EF36CF /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		5693C2852398877B004A2313 /* UICollectionViewLayoutTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewLayoutTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		583C774BD775E624A4454CE25D9E7DFC /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		58C8B270305820E0250224F8680998B5 /* CocoaSecurity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CocoaSecurity.m; path = CocoaSecurity/CocoaSecurity.m; sourceTree = "<group>"; };
 		5D07C2A97887712BD8EBA558B015C6C6 /* libPods-RSADemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSADemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,13 +216,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3E2DF554C8CEB8E23CEA12E2133FC867 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5693C2822398877B004A2313 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,7 +312,6 @@
 				7697F522E1E2F8AAED486E20B7210E8D /* libCocoaSecurity.a */,
 				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
 				5D07C2A97887712BD8EBA558B015C6C6 /* libPods-RSADemo.a */,
-				5693C2852398877B004A2313 /* UICollectionViewLayoutTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -620,23 +611,6 @@
 			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5693C2842398877B004A2313 /* UICollectionViewLayoutTutorial */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5693C2982398877C004A2313 /* Build configuration list for PBXNativeTarget "UICollectionViewLayoutTutorial" */;
-			buildPhases = (
-				5693C2812398877B004A2313 /* Sources */,
-				5693C2822398877B004A2313 /* Frameworks */,
-				5693C2832398877B004A2313 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UICollectionViewLayoutTutorial;
-			productName = UICollectionViewLayoutTutorial;
-			productReference = 5693C2852398877B004A2313 /* UICollectionViewLayoutTutorial.app */;
-			productType = "com.apple.product-type.application";
-		};
 		EECEFE3E704A038F8532197F7F483302 /* CocoaSecurity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43487DA431597A69C2CA02DED27F1FF4 /* Build configuration list for PBXNativeTarget "CocoaSecurity" */;
@@ -663,11 +637,6 @@
 				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					5693C2842398877B004A2313 = {
-						CreatedOnToolsVersion = 11.1;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -687,20 +656,9 @@
 				EECEFE3E704A038F8532197F7F483302 /* CocoaSecurity */,
 				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				38BF67D0469493D66BD3E7E67BF5FECB /* Pods-RSADemo */,
-				5693C2842398877B004A2313 /* UICollectionViewLayoutTutorial */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		5693C2832398877B004A2313 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0013C2F4C1357617646EA156AF532732 /* Sources */ = {
@@ -733,13 +691,6 @@
 				E2182ED2F32479AC9ADC69210FB16B7D /* Base64.m in Sources */,
 				6957043820A524CCDE7D78F3104A7D96 /* CocoaSecurity-dummy.m in Sources */,
 				35BF252A65F06A59A9CC0CEA33F6901D /* CocoaSecurity.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5693C2812398877B004A2313 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,51 +794,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5693C2962398877C004A2313 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D8XKJB7B2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UICollectionViewLayoutTutorial/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = serch.UICollectionViewLayoutTutorial;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5693C2972398877C004A2313 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D8XKJB7B2;
-				INFOPLIST_FILE = UICollectionViewLayoutTutorial/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = serch.UICollectionViewLayoutTutorial;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1213,15 +1119,6 @@
 			buildConfigurations = (
 				916E0404255105F480DC4950B7625F7A /* Debug */,
 				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5693C2982398877C004A2313 /* Build configuration list for PBXNativeTarget "UICollectionViewLayoutTutorial" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5693C2962398877C004A2313 /* Debug */,
-				5693C2972398877C004A2313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
