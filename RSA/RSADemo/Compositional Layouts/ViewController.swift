@@ -37,8 +37,8 @@ extension ViewController{
         let fullItem = NSCollectionLayoutItem(layoutSize: itemSize)
         
         /** group size */
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(2/3))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: fullItem, count: 1)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/3))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: fullItem, count: 2)
         
         /** section */
         let section = NSCollectionLayoutSection(group: group)
