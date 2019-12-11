@@ -33,12 +33,32 @@ extension ViewController{
     
     fileprivate func generateColletionLayout()-> UICollectionViewLayout{
         /** item size */
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1.0))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(2/3))
         let fullItem = NSCollectionLayoutItem(layoutSize: itemSize)
+        fullItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        /** second item */
+        let secondSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(2/3), heightDimension: .fractionalHeight(1.0))
+        let mainItem = NSCollectionLayoutItem(layoutSize: secondSize)
+        mainItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        
+        let pairSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.5))
+        let pairItem = NSCollectionLayoutItem(layoutSize: pairSize)
+        pairItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        
+        let pairGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0))
+        let pairGroup = NSCollectionLayoutGroup.vertical(layoutSize: pairGroupSize, subitem: pairItem, count: 2)
+        
+        let secondGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(4/9))
+        let secondGroup = NSCollectionLayoutGroup.horizontal(layoutSize: secondGroupSize, subitems: [mainItem,pairGroup])
+        
+        
         
         /** group size */
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/3))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: fullItem, count: 2)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(10/9))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [fullItem,secondGroup])
         
         /** section */
         let section = NSCollectionLayoutSection(group: group)
