@@ -33,7 +33,7 @@ extension ViewController{
     
     fileprivate func generateColletionLayout()-> UICollectionViewLayout{
         /** item size */
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(2/3))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/3))
         let fullItem = NSCollectionLayoutItem(layoutSize: itemSize)
         fullItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
         
@@ -55,10 +55,18 @@ extension ViewController{
         let secondGroup = NSCollectionLayoutGroup.horizontal(layoutSize: secondGroupSize, subitems: [mainItem,pairGroup])
         
         
+        /** third item */
+        let thirdItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0))
+        let thirdItem = NSCollectionLayoutItem(layoutSize: thirdItemSize)
+        thirdItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        let thirdGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/9))
+        let thirdGroup = NSCollectionLayoutGroup.horizontal(layoutSize: thirdGroupSize, subitems: [thirdItem,thirdItem,thirdItem])
+        
         
         /** group size */
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(10/9))
-        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [fullItem,secondGroup])
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(8/9))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [fullItem,secondGroup,thirdGroup])
         
         /** section */
         let section = NSCollectionLayoutSection(group: group)
