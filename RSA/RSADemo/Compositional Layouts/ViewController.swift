@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collectionView.register(SyncingBadgeView.self, forSupplementaryViewOfKind: "aa", withReuseIdentifier: SyncingBadgeView.reusedIdentifier)
         collectionView.collectionViewLayout = generateColletionLayout()
     }
 }
