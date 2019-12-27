@@ -54,7 +54,6 @@ extension ViewController{
         let secondGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(4/9))
         let secondGroup = NSCollectionLayoutGroup.horizontal(layoutSize: secondGroupSize, subitems: [mainItem,pairGroup])
         
-        
         /** third item */
         let thirdItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0))
         let thirdItem = NSCollectionLayoutItem(layoutSize: thirdItemSize)
