@@ -14,6 +14,7 @@
 		56E38B7D23B7176900AF2588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E38B7C23B7176900AF2588 /* Assets.xcassets */; };
 		56E38B8023B7176900AF2588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E38B7E23B7176900AF2588 /* LaunchScreen.storyboard */; };
 		56E38B8323B7176900AF2588 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E38B8223B7176900AF2588 /* main.m */; };
+		94BE1F1C3F88C00AB38D43A3 /* Pods_XCTimeClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C546780B90A516FCF9E4A241 /* Pods_XCTimeClock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		56E38B7F23B7176900AF2588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E38B8123B7176900AF2588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E38B8223B7176900AF2588 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC9098CA7309EEE56930F135 /* Pods-XCTimeClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCTimeClock.release.xcconfig"; path = "Target Support Files/Pods-XCTimeClock/Pods-XCTimeClock.release.xcconfig"; sourceTree = "<group>"; };
+		C546780B90A516FCF9E4A241 /* Pods_XCTimeClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCTimeClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB03FEE574401D2E9352C885 /* Pods-XCTimeClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCTimeClock.debug.xcconfig"; path = "Target Support Files/Pods-XCTimeClock/Pods-XCTimeClock.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BE1F1C3F88C00AB38D43A3 /* Pods_XCTimeClock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				56E38B6F23B7176800AF2588 /* XCTimeClock */,
 				56E38B6E23B7176800AF2588 /* Products */,
+				6D5C271307B07F466C981446 /* Pods */,
+				DCBA04F1B559CE5033D8D38A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = XCTimeClock;
 			sourceTree = "<group>";
 		};
+		6D5C271307B07F466C981446 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB03FEE574401D2E9352C885 /* Pods-XCTimeClock.debug.xcconfig */,
+				BC9098CA7309EEE56930F135 /* Pods-XCTimeClock.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCBA04F1B559CE5033D8D38A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C546780B90A516FCF9E4A241 /* Pods_XCTimeClock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56E38B8623B7176900AF2588 /* Build configuration list for PBXNativeTarget "XCTimeClock" */;
 			buildPhases = (
+				BA895BA411B922163E715925 /* [CP] Check Pods Manifest.lock */,
 				56E38B6923B7176800AF2588 /* Sources */,
 				56E38B6A23B7176800AF2588 /* Frameworks */,
 				56E38B6B23B7176800AF2588 /* Resources */,
+				FC0F81A08C128FC7C5FA627D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA895BA411B922163E715925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XCTimeClock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0F81A08C128FC7C5FA627D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCTimeClock/Pods-XCTimeClock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XCTimeClock/Pods-XCTimeClock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XCTimeClock/Pods-XCTimeClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56E38B6923B7176800AF2588 /* Sources */ = {
@@ -287,12 +356,13 @@
 		};
 		56E38B8723B7176900AF2588 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB03FEE574401D2E9352C885 /* Pods-XCTimeClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J2AQ5K6R4;
 				INFOPLIST_FILE = XCTimeClock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,12 +375,13 @@
 		};
 		56E38B8823B7176900AF2588 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9098CA7309EEE56930F135 /* Pods-XCTimeClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J2AQ5K6R4;
 				INFOPLIST_FILE = XCTimeClock/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

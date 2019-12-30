@@ -1,0 +1,16 @@
+PODS:
+  - FDFullscreenPopGesture (1.1)
+
+DEPENDENCIES:
+  - FDFullscreenPopGesture (= 1.1)
+
+SPEC REPOS:
+  trunk:
+    - FDFullscreenPopGesture
+
+SPEC CHECKSUMS:
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+
+PODFILE CHECKSUM: 1f6c6abbc4a79317d33054dcd30ce756902531d8
+
+COCOAPODS: 1.8.3
