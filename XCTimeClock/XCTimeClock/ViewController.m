@@ -18,12 +18,32 @@
     [super viewDidLoad];
     [self updateTimeText];
     
+    
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(onChangeDirection:) name:UIDeviceOrientationDidChangeNotification object:nil];
+    
 }
-
-
 
 - (void)updateTimeText{
     
+}
+
+#pragma mark - Notification handler
+- (void)onChangeDirection:(NSNotification *)noti{
+    UIDeviceOrientation orientation = UIDevice.currentDevice.orientation;
+    switch (orientation) {
+        case UIDeviceOrientationPortrait:
+            NSLog(@"protraint");
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            NSLog(@"landscapeLeft");
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            NSLog(@"landscapeRight");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
