@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIView *hourView;              /** 小时部分view */
+@property (weak, nonatomic) IBOutlet UIView *minuteView;            /** 分钟部分view */
 
 @end
 
